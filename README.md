@@ -41,7 +41,7 @@ print(
 
 ## Binary search Mojo
 
-```Mojo
+```Python
 from Benchmark import Benchmark
 from Vector import InlinedFixedVector
 
