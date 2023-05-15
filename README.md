@@ -1,8 +1,10 @@
 # Awesome Mojo
 
-[Community driven Mojo-Lang portal](https://mojo-lang.dev)
+* [Community driven Mojo-Lang portal](https://mojo-lang.dev)
+* [Official Mojo docs](https://docs.modular.com/mojo/)
+* [Awesome Mojo](https://ego.systemdef.com/awesome-mojo/)
+* [Awesome Mojo repository](http://ego.github.io/awesome-mojo)
 
-[Official Mojo docs](https://docs.modular.com/mojo/)
 
 ## Binary search Python
 
@@ -40,8 +42,8 @@ print(
     "Average execution time of func in sec",
     timeit.timeit(lambda: test_python_binary_search(), number=MAX_ITERS),
 )
-# Average execution time of Python func in sec 0.00029639294371008873
 ```
+
 
 ## Binary search Mojo
 
@@ -88,5 +90,4 @@ print(
     "Average execution time of func in sec ",
     test_mojo_binary_search(),
 )
-# Average execution time of Mojo func in sec  0.002844
 ```
