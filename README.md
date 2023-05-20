@@ -55,7 +55,8 @@ Who knows these programming languages will be very happy, because Mojo benefits 
 other languages Rust, Swift, Julia, Zig, Nim, etc.
 
 * Rust starts the C revolution and now [Rust in the Linux kernel](https://docs.kernel.org/rust/index.html).
-* [Swift](https://www.swift.org) makes [Apple beautiful](https://developer.apple.com/swift/) from a technical perspective.
+* [Swift](https://www.swift.org) makes [Apple beautiful](https://developer.apple.com/swift/) from a technical
+  perspective.
 * [Julia](https://julialang.org) high performance.
 * [Nim](https://nim-lang.org) systems programming language.
 * [Zig](https://ziglang.org) general-purpose programming language. We are like and following it =)
@@ -203,9 +204,112 @@ Let's do some code with Python, Mojo🔥, Swift, V, Julia, Nim, Zig.
     * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
     * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
 
-```python:algorithm/binary_search_Python.py
+<details>
 
+<summary>Python Binary Search</summary>
+
+```python
+"""Implements basic binary search."""
+
+from typing import List, Union
+import timeit
+
+SIZE = 1000000
+MAX_ITERS = 100
+COLLECTION = tuple(i for i in range(SIZE))  # Make it aka at compile-time.
+
+
+def python_binary_search(element: int, array: List[int]) -> int:
+    start = 0
+    stop = len(array) - 1
+    while start <= stop:
+        index = (start + stop) // 2
+        pivot = array[index]
+        if pivot == element:
+            return index
+        elif pivot > element:
+            stop = index - 1
+        elif pivot < element:
+            start = index + 1
+    return -1
+
+
+def test_python_binary_search():
+    _ = python_binary_search(SIZE - 1, COLLECTION)
+
+
+print(
+    "Average execution time of func in sec",
+    timeit.timeit(lambda: test_python_binary_search(), number=MAX_ITERS),
+)
 ```
+
+</details>
+
+
+<details>
+
+<summary>Mojo🔥 Binary Search</summary>
+
+```python
+"""Implements basic binary search."""
+
+from Benchmark import Benchmark
+from Vector import DynamicVector
+
+alias
+SIZE = 1000000
+alias
+NUM_WARMUP = 0
+alias
+MAX_ITERS = 100
+
+fn
+mojo_binary_search(element: Int, array: DynamicVector[Int]) -> Int:
+var
+start = 0
+var
+stop = len(array) - 1
+while start <= stop:
+    let
+    index = (start + stop) // 2
+    let
+    pivot = array[index]
+    if pivot == element:
+        return index
+    elif pivot > element:
+        stop = index - 1
+    elif pivot < element:
+        start = index + 1
+return -1
+
+
+@parameter  # statement runs at compile-time.
+
+
+fn
+get_collection() -> DynamicVector[Int]:
+var
+v = DynamicVector[Int](SIZE)
+for i in range(SIZE):
+    v.push_back(i)
+return v
+
+fn
+test_mojo_binary_search() -> F64:
+fn
+test_closure():
+_ = mojo_binary_search(SIZE - 1, get_collection())
+return F64(Benchmark(NUM_WARMUP, MAX_ITERS).run[test_closure]()) / 1e9
+
+print(
+    "Average execution time of func in sec ",
+    test_mojo_binary_search(),
+)
+```
+
+</details>
+
 
 Note: For **Python** and **Mojo**, I leave some optimization and make the code similar for measurement and comparison.
 
