@@ -53,11 +53,12 @@ But Python has done its job very well =)
 
 Who knows these programming languages will be very happy, because Mojo benefits from tremendous lessons learned from
 other languages Rust, Swift, Julia, Zig, Nim, etc.
-Rust starts the C revolution and now [Rust in the Linux kernel](https://docs.kernel.org/rust/index.html).
-[Swift](https://www.swift.org) makes [Apple beautiful](https://developer.apple.com/swift/) from a technical perspective.
-[Julia](https://julialang.org) high performance.
-[Nim](https://nim-lang.org) systems programming language.
-[Zig](https://ziglang.org) general-purpose programming language. We are like and following it =)
+
+* Rust starts the C revolution and now [Rust in the Linux kernel](https://docs.kernel.org/rust/index.html).
+* [Swift](https://www.swift.org) makes [Apple beautiful](https://developer.apple.com/swift/) from a technical perspective.
+* [Julia](https://julialang.org) high performance.
+* [Nim](https://nim-lang.org) systems programming language.
+* [Zig](https://ziglang.org) general-purpose programming language. We are like and following it =)
 
 ![Mojo](img/speed.png)
 
@@ -65,7 +66,7 @@ Rust starts the C revolution and now [Rust in the Linux kernel](https://docs.ker
 
 * Your contributions are always welcome!
 * If you have any **question**, do not hesitate to contact me.
-* If you would like to participate in the initiative **Mojo 🔥Driven Community**, please contact me.
+* If you would like to participate in the initiative [Mojo 🔥Driven Community](https://mojo-lang.dev), please contact me.
 
 # Programming manual
 
@@ -201,6 +202,10 @@ Let's do some code with Python, Mojo🔥, Swift, V, Julia, Nim, Zig.
 * [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
     * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
     * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
+
+```python:algorithm/binary_search_Python.py
+
+```
 
 Note: For **Python** and **Mojo**, I leave some optimization and make the code similar for measurement and comparison.
 
