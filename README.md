@@ -193,6 +193,10 @@ value within a sorted array.
 
 Let's do some code with Python, Mojo🔥, Swift, V, Julia, Nim, Zig.
 
+Note:
+For **Python** and **Mojo** versions,
+I leave some optimization and make the code similar for measurement and comparison.
+
 * [Python Binary Search](algorithm/binary_search_Python.py)
 
 ```python
@@ -279,15 +283,162 @@ print(
 ```
 
 * [Swift Binary Search](algorithm/binarySearch_Swift.swift)
+
+```swift
+func binarySearch(items: [Int], elem: Int) -> Int {
+    var low = 0
+    var high = items.count - 1
+    var mid = 0
+    while low <= high {
+        mid = Int((high + low) / 2)
+        if items[mid] < elem {
+            low = mid + 1
+        } else if items[mid] > elem {
+            high = mid - 1
+        } else {
+            return mid
+        }
+    }
+    return -1
+}
+
+let items = [1, 2, 3, 4, 0].sorted()
+let res = binarySearch(items: items, elem: 4)
+print(res)
+```
+
 * [Julia Binary Search](algorithm/binarysearch_Julia.jl)
+
+```julia
+function binarysearch(lst::Vector{T}, val::T) where T
+    low = 1
+    high = length(lst)
+    while low ≤ high
+        mid = (low + high) ÷ 2
+        if lst[mid] > val
+            high = mid - 1
+        elseif lst[mid] < val
+            low = mid + 1
+        else
+            return mid
+        end
+    end
+    return 0
+end
+```
+
 * [Nim Binary Search](algorithm/binarySearch_Nim.nim)
+
+```nim
+proc binarySearch[T](a: openArray[T], key: T): int =
+  var b = len(a)
+  while result < b:
+    var mid = (result + b) div 2
+    if a[mid] < key: result = mid + 1
+    else: b = mid
+  if result >= len(a) or a[result] != key: result = -1
+
+
+let res = @[2,3,4,5,6,7,8,9,10,12,14,16,18,20,22,25,27,30]
+echo binarySearch(res, 10)
+```
+
 * [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
+
+```zig
+const std = @import("std");
+
+fn binarySearch(comptime T: type, arr: []const T, target: T) ?usize {
+    var lo: usize = 0;
+    var hi: usize = arr.len - 1;
+
+    while (lo <= hi) {
+        var mid: usize = (lo + hi) / 2;
+
+        if (arr[mid] == target) {
+            return mid;
+        } else if (arr[mid] < target) {
+            lo = mid + 1;
+        } else {
+            hi = mid - 1;
+        }
+    }
+
+    return null;
+}
+```
+
 * [V Binary Search](algorithm/binary_search_V.v)
+
+```v
+fn binary_search(a []int, value int) int {
+	mut low := 0
+	mut high := a.len - 1
+	for low <= high {
+		mid := (low + high) / 2
+		if a[mid] > value {
+			high = mid - 1
+		} else if a[mid] < value {
+			low = mid + 1
+		} else {
+			return mid
+		}
+	}
+	return -1
+}
+
+fn main() {
+	search_list := [1, 2, 3, 5, 6, 7, 8, 9, 10]
+	println(binary_search(search_list, 9))
+}
+```
+
 * [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
     * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
     * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
 
-Note: For **Python** and **Mojo**, I leave some optimization and make the code similar for measurement and comparison.
+```v
+fn breadth_first_search_path(graph map[string][]string, vertex string, target string) []string {
+	mut path := []string{}
+	mut visited := []string{init: vertex}
+	mut queue := [][][]string{}
+	queue << [[vertex], path]
+	for queue.len > 0 {
+		mut idx := queue.len - 1
+		node := queue[idx][0][0]
+		path = queue[idx][1]
+		queue.delete(idx)
+		if node == target {
+			path << node
+			return path
+		}
+		for child in graph[node] {
+			mut tmp := path.clone()
+			if child !in visited {
+				visited << child
+				tmp << node
+				queue << [[child], tmp]
+			}
+		}
+	}
+	return path
+}
+
+fn main() {
+	graph := map{
+		'A': ['B', 'C']
+		'B': ['A', 'D', 'E']
+		'C': ['A', 'F']
+		'D': ['B']
+		'E': ['B', 'F']
+		'F': ['C', 'E']
+	}
+	println('Graph: $graph')
+	path := breadth_first_search_path(graph, 'A', 'F')
+	println('The shortest path from node A to node F is: $path')
+	assert path == ['A', 'C', 'F']
+}
+```
 
 # The Zen of Mojo🔥
 
