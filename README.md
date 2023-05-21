@@ -69,120 +69,6 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 * If you have any **question**, do not hesitate to contact me.
 * If you would like to participate in the initiative [Mojo 🔥Driven Community](https://mojo-lang.dev), please contact me.
 
-# Programming manual
-
-## Comments
-
-## Symbol visibility
-
-## Variables
-
-## let and var declarations
-
-### Mutable variables
-
-## Mojo types
-
-### Primitive types
-
-### Int vs int
-
-### Int, Float, SIMD
-
-### Bool
-
-### Strings
-
-### Runes
-
-### Numbers
-
-### Arrays
-
-### Maps
-
-### struct types
-
-### Pointer
-
-## Value lifecycle
-
-### @value decorator
-
-## Overloaded functions and methods
-
-## Special methods
-
-### __init__
-
-### __del__
-
-### __moveinit__
-
-### __copyinit__
-
-### __iadd__
-
-### raises
-
-## Argument passing control and memory ownership
-
-### self
-
-### Immutable arguments (borrowed)
-
-### Mutable arguments (inout)
-
-### Transfer arguments (owned and ^)
-
-## Functions
-
-### def definitions
-
-### fn definitions
-
-### Comparing def and fn argument passing
-
-## Parameterization: compile-time metaprogramming
-
-### Defining parameterized types and functions
-
-### Powerful compile-time programming (@parameter)
-
-### alias: named parameter expressions
-
-## Value Lifecycle
-
-### Non-movable and non-copyable types
-
-### Unique “move-only” types
-
-## Asynchronous Programming
-
-## Common with Python
-
-## Different with Python
-
-## List of keywords
-
-## List of builtin function
-
-### strdup
-
-# Mojo notebooks
-
-# Mojo library
-
-## Builtin (Builtin)
-
-## Standard library (Stdlib)
-
-## Python interop (Python)
-
-### Python integration
-
-### Mojo types in Python
-
 # Awesome Mojo🔥 code
 
 ## Binary Search Algorithm
@@ -372,24 +258,24 @@ fn binarySearch(comptime T: type, arr: []const T, target: T) ?usize {
 
 ```v
 fn binary_search(a []int, value int) int {
-	mut low := 0
-	mut high := a.len - 1
-	for low <= high {
-		mid := (low + high) / 2
-		if a[mid] > value {
-			high = mid - 1
-		} else if a[mid] < value {
-			low = mid + 1
-		} else {
-			return mid
-		}
-	}
-	return -1
+    mut low := 0
+    mut high := a.len - 1
+    for low <= high {
+        mid := (low + high) / 2
+        if a[mid] > value {
+            high = mid - 1
+        } else if a[mid] < value {
+            low = mid + 1
+        } else {
+            return mid
+        }
+    }
+    return -1
 }
 
 fn main() {
-	search_list := [1, 2, 3, 5, 6, 7, 8, 9, 10]
-	println(binary_search(search_list, 9))
+    search_list := [1, 2, 3, 5, 6, 7, 8, 9, 10]
+    println(binary_search(search_list, 9))
 }
 ```
 
@@ -399,46 +285,160 @@ fn main() {
 
 ```v
 fn breadth_first_search_path(graph map[string][]string, vertex string, target string) []string {
-	mut path := []string{}
-	mut visited := []string{init: vertex}
-	mut queue := [][][]string{}
-	queue << [[vertex], path]
-	for queue.len > 0 {
-		mut idx := queue.len - 1
-		node := queue[idx][0][0]
-		path = queue[idx][1]
-		queue.delete(idx)
-		if node == target {
-			path << node
-			return path
-		}
-		for child in graph[node] {
-			mut tmp := path.clone()
-			if child !in visited {
-				visited << child
-				tmp << node
-				queue << [[child], tmp]
-			}
-		}
-	}
-	return path
+    mut path := []string{}
+    mut visited := []string{init: vertex}
+    mut queue := [][][]string{}
+    queue << [[vertex], path]
+    for queue.len > 0 {
+        mut idx := queue.len - 1
+        node := queue[idx][0][0]
+        path = queue[idx][1]
+        queue.delete(idx)
+        if node == target {
+            path << node
+            return path
+        }
+        for child in graph[node] {
+            mut tmp := path.clone()
+            if child !in visited {
+                visited << child
+                tmp << node
+                queue << [[child], tmp]
+            }
+        }
+    }
+    return path
 }
 
 fn main() {
-	graph := map{
-		'A': ['B', 'C']
-		'B': ['A', 'D', 'E']
-		'C': ['A', 'F']
-		'D': ['B']
-		'E': ['B', 'F']
-		'F': ['C', 'E']
-	}
-	println('Graph: $graph')
-	path := breadth_first_search_path(graph, 'A', 'F')
-	println('The shortest path from node A to node F is: $path')
-	assert path == ['A', 'C', 'F']
+    graph := map{
+        'A': ['B', 'C']
+        'B': ['A', 'D', 'E']
+        'C': ['A', 'F']
+        'D': ['B']
+        'E': ['B', 'F']
+        'F': ['C', 'E']
+    }
+    println('Graph: $graph')
+    path := breadth_first_search_path(graph, 'A', 'F')
+    println('The shortest path from node A to node F is: $path')
+    assert path == ['A', 'C', 'F']
 }
 ```
+
+# Programming manual
+
+## Comments
+
+## Symbol visibility
+
+## Variables
+
+## let and var declarations
+
+### Mutable variables
+
+## Mojo types
+
+### Primitive types
+
+### Int vs int
+
+### Int, Float, SIMD
+
+### Bool
+
+### Strings
+
+### Runes
+
+### Numbers
+
+### Arrays
+
+### Maps
+
+### struct types
+
+### Pointer
+
+## Value lifecycle
+
+### @value decorator
+
+## Overloaded functions and methods
+
+## Special methods
+
+### __init__
+
+### __del__
+
+### __moveinit__
+
+### __copyinit__
+
+### __iadd__
+
+### raises
+
+## Argument passing control and memory ownership
+
+### self
+
+### Immutable arguments (borrowed)
+
+### Mutable arguments (inout)
+
+### Transfer arguments (owned and ^)
+
+## Functions
+
+### def definitions
+
+### fn definitions
+
+### Comparing def and fn argument passing
+
+## Parameterization: compile-time metaprogramming
+
+### Defining parameterized types and functions
+
+### Powerful compile-time programming (@parameter)
+
+### alias: named parameter expressions
+
+## Value Lifecycle
+
+### Non-movable and non-copyable types
+
+### Unique “move-only” types
+
+## Asynchronous Programming
+
+## Common with Python
+
+## Different with Python
+
+## List of keywords
+
+## List of builtin function
+
+### strdup
+
+# Mojo notebooks
+
+# Mojo library
+
+## Builtin (Builtin)
+
+## Standard library (Stdlib)
+
+## Python interop (Python)
+
+### Python integration
+
+### Mojo types in Python
 
 # The Zen of Mojo🔥
 
