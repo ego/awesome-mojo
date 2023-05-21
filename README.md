@@ -245,10 +245,6 @@ print(
 </details>
 
 
-<details>
-
-<summary>Mojo🔥 Binary Search</summary>
-
 ```python
 """Implements basic binary search."""
 
@@ -295,9 +291,6 @@ print(
     test_mojo_binary_search(),
 )
 ```
-
-</details>
-
 
 Note: For **Python** and **Mojo**, I leave some optimization and make the code similar for measurement and comparison.
 
