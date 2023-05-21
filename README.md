@@ -194,19 +194,6 @@ value within a sorted array.
 Let's do some code with Python, Mojo🔥, Swift, V, Julia, Nim, Zig.
 
 * [Python Binary Search](algorithm/binary_search_Python.py)
-* [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
-* [Swift Binary Search](algorithm/binarySearch_Swift.swift)
-* [Julia Binary Search](algorithm/binarysearch_Julia.jl)
-* [Nim Binary Search](algorithm/binarySearch_Nim.nim)
-* [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
-* [V Binary Search](algorithm/binary_search_V.v)
-* [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
-    * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
-    * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
-
-<details>
-
-<summary>Python Binary Search</summary>
 
 ```python
 from typing import List
@@ -242,8 +229,7 @@ print(
 )
 ```
 
-</details>
-
+* [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
 
 ```python
 """Implements basic binary search."""
@@ -291,6 +277,15 @@ print(
     test_mojo_binary_search(),
 )
 ```
+
+* [Swift Binary Search](algorithm/binarySearch_Swift.swift)
+* [Julia Binary Search](algorithm/binarysearch_Julia.jl)
+* [Nim Binary Search](algorithm/binarySearch_Nim.nim)
+* [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
+* [V Binary Search](algorithm/binary_search_V.v)
+* [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
+    * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
+    * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
 
 Note: For **Python** and **Mojo**, I leave some optimization and make the code similar for measurement and comparison.
 
