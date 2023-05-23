@@ -172,6 +172,11 @@ print(
 )
 ```
 
+**It is the first binary search written in Mojo🔥by community (@Ego) and posted in mojo-chat.**
+
+![Mojo🔥](img/python_binary_search_05.15.2023.png)
+![Mojo🔥](img/mojo_binary_search_05.15.2023.png)
+
 * [Swift Binary Search](algorithm/binarySearch_Swift.swift)
 
 ```swift
@@ -450,6 +455,7 @@ print(
 
 # Average execution time of func in sec  0.000104 🔥
 ```
+**It is the first Fizz buzz written in Mojo🔥 ever by community (@Ego).**
 
 # Programming manual
 
