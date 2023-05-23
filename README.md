@@ -69,6 +69,10 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 * If you have any **question**, do not hesitate to contact me.
 * If you would like to participate in the initiative [Mojo 🔥Driven Community](https://mojo-lang.dev), please contact me.
 
+# News
+
+[Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
+
 # Awesome Mojo🔥 code
 
 ## Binary Search Algorithm
@@ -326,6 +330,127 @@ fn main() {
 }
 ```
 
+# Fizz buzz
+
+* [Leetcode Fizz buzz problem](https://leetcode.com/problems/fizz-buzz/)
+* [Wikipedia Fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz)
+* Add some optimisation, according to a Wikipedia problem statement.
+
+* [Python Fizz buzz](algorithm/fizz_buzz_Python.py)
+
+```python
+import timeit
+
+SIZE = 100
+MAX_ITERS = 100
+
+
+def _fizz_buzz():  # Make it aka at compile-time.
+  res = []
+  for n in range(1, SIZE+1):
+    if (n % 3 == 0) and (n % 5 == 0):
+      s = "FizzBuzz"
+    elif n % 3 == 0:
+      s = "Fizz"
+    elif n % 5 == 0:
+      s = "Buzz"
+    else:
+      s = str(n)
+    res.append(s)
+  return res
+
+
+DATA = _fizz_buzz()
+
+
+def fizz_buzz():
+  print("\n".join(DATA))
+
+
+print(
+  "Average execution time of Python func in sec",
+  timeit.timeit(lambda: fizz_buzz(), number=MAX_ITERS),
+)
+
+# Average execution time of Python func in sec 0.005334990004485007
+```
+
+* [Clojure Fizz buzz](algorithm/fizz_buzz_Clojure.clj)
+
+```clojure
+(import '[java.io OutputStream])
+(require '[clojure.java.io :as io])
+
+(def devnull (io/writer (OutputStream/nullOutputStream)))
+
+
+(defmacro timeit [n expr]
+  `(with-out-str (time
+                   (dotimes [_# ~(Math/pow 1 n)]
+                     (binding [*out* devnull]
+                       ~expr)))))
+
+
+(defn fizz-buzz [n]
+  (print
+    (apply str
+      (for [i (range 1 (inc n))]
+        (cond
+          (zero? (mod i 15)) "FizzBuzz\n"
+          (zero? (mod i 5))  "Buzz\n"
+          (zero? (mod i 3))  "Fizz\n"
+          :else              (str i "\n"))))))
+
+
+(print (timeit 100 (fizz-buzz 100)))
+;; "Elapsed time: 1.451781 msecs"
+;; Average execution time of Clojure func in sec 0.001451781
+```
+
+* [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
+
+```python
+from String import String
+from Benchmark import Benchmark
+
+alias SIZE = 100
+alias NUM_WARMUP = 0
+alias MAX_ITERS = 100
+
+
+@parameter  # statement runs at compile-time.
+fn _fizz_buzz() -> String:
+    var res: String = ""
+    for n in range(1, SIZE+1):
+      if (n % 3 == 0) and (n % 5 == 0):
+        res += "FizzBuzz"
+      elif n % 3 == 0:
+        res += "Fizz"
+      elif n % 5 == 0:
+        res += "Buzz"
+      else:
+        res += String(n)
+      res += "\n"
+    return res
+
+
+fn fizz_buzz():
+    print(_fizz_buzz())
+
+fn run_benchmark() -> F64:
+    fn _closure():
+        _ = fizz_buzz()
+    return F64(Benchmark(NUM_WARMUP, MAX_ITERS).run[_closure]()) / 1e9
+
+
+print(
+    "Average execution time of func in sec ",
+    run_benchmark(),
+)
+
+# Average execution time of func in sec  0.000104 🔥
+```
+
 # Programming manual
 
 ## Comments
@@ -349,6 +474,20 @@ fn main() {
 ### Bool
 
 ### Strings
+
+```python
+from String import String
+# String concatenation
+print(String("'") + String(1) + "'\n")
+
+# Python's join
+print(String("|").join("a", "b", "c"))
+
+# String format
+from IO import _printf as print
+let x: Int = 1
+print("'%i'\n", x.value)
+```
 
 ### Runes
 
