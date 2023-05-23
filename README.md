@@ -388,28 +388,27 @@ print(
 
 (def devnull (io/writer (OutputStream/nullOutputStream)))
 
-
 (defmacro timeit [n expr]
   `(with-out-str (time
                    (dotimes [_# ~(Math/pow 1 n)]
                      (binding [*out* devnull]
                        ~expr)))))
 
+(defmacro macro-fizz-buzz [n]
+  `(fn []
+    (print
+      ~(apply str
+        (for [i (range 1 (inc n))]
+          (cond
+            (zero? (mod i 15)) "FizzBuzz\n"
+            (zero? (mod i 5))  "Buzz\n"
+            (zero? (mod i 3))  "Fizz\n"
+            :else              (str i "\n")))))))
 
-(defn fizz-buzz [n]
-  (print
-    (apply str
-      (for [i (range 1 (inc n))]
-        (cond
-          (zero? (mod i 15)) "FizzBuzz\n"
-          (zero? (mod i 5))  "Buzz\n"
-          (zero? (mod i 3))  "Fizz\n"
-          :else              (str i "\n"))))))
+(print (timeit 100 (macro-fizz-buzz 100)))
 
-
-(print (timeit 100 (fizz-buzz 100)))
-;; "Elapsed time: 1.451781 msecs"
-;; Average execution time of Clojure func in sec 0.001451781
+;; "Elapsed time: 0.175486 msecs"
+;; Average execution time of Clojure func in sec 0.000175486 seconds
 ```
 
 * [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
