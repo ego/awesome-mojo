@@ -461,7 +461,9 @@ print(
 # [Merge_sort](https://en.wikipedia.org/wiki/Merge_sort)
 
 We will use algorithm from vell-known [reference](https://en.wikipedia.org/wiki/Introduction_to_Algorithms) for algorithms book [Introduction to Algorithms A3](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)
+
 Its fame has led to the common use of the abbreviation "**CLRS**" (Cormen, Leiserson, Rivest, Stein), or, in the first edition, "**CLR**" (Cormen, Leiserson, Rivest).
+
 **Chapter 2** "2.3.1 The divide-and-conquer approach".
 
 * [Python Merge_sort](algorithm/merge_sort_Python.py)
