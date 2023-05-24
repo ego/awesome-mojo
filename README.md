@@ -78,7 +78,7 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 
 # Awesome Mojo🔥 code
 
-## Binary Search Algorithm
+# Binary Search Algorithm
 
 In computer science, [binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm), also known as
 half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target
@@ -90,7 +90,7 @@ Note:
 For **Python** and **Mojo** versions,
 I leave some optimization and make the code similar for measurement and comparison.
 
-### [Python Binary Search](algorithm/binary_search_Python.py)
+## [Python Binary Search](algorithm/binary_search_Python.py)
 
 ```python
 from typing import List
@@ -126,7 +126,7 @@ print(
 )
 ```
 
-### [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
+## [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
 
 ```python
 """Implements basic binary search."""
@@ -180,7 +180,7 @@ print(
 <img src="img/python_binary_search_05.15.2023.png" height="300" />
 <img src="img/mojo_binary_search_05.15.2023.png" height="300" />
 
-### [Swift Binary Search](algorithm/binarySearch_Swift.swift)
+## [Swift Binary Search](algorithm/binarySearch_Swift.swift)
 
 ```swift
 func binarySearch(items: [Int], elem: Int) -> Int {
@@ -205,7 +205,7 @@ let res = binarySearch(items: items, elem: 4)
 print(res)
 ```
 
-### [Julia Binary Search](algorithm/binarysearch_Julia.jl)
+## [Julia Binary Search](algorithm/binarysearch_Julia.jl)
 
 ```julia
 function binarysearch(lst::Vector{T}, val::T) where T
@@ -225,7 +225,7 @@ function binarysearch(lst::Vector{T}, val::T) where T
 end
 ```
 
-### [Nim Binary Search](algorithm/binarySearch_Nim.nim)
+## [Nim Binary Search](algorithm/binarySearch_Nim.nim)
 
 ```nim
 proc binarySearch[T](a: openArray[T], key: T): int =
@@ -241,7 +241,7 @@ let res = @[2,3,4,5,6,7,8,9,10,12,14,16,18,20,22,25,27,30]
 echo binarySearch(res, 10)
 ```
 
-### [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
+## [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
 
 ```zig
 const std = @import("std");
@@ -266,7 +266,7 @@ fn binarySearch(comptime T: type, arr: []const T, target: T) ?usize {
 }
 ```
 
-### [V Binary Search](algorithm/binary_search_V.v)
+## [V Binary Search](algorithm/binary_search_V.v)
 
 ```v
 fn binary_search(a []int, value int) int {
@@ -291,7 +291,7 @@ fn main() {
 }
 ```
 
-### [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
+## [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
     
 * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
 * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
@@ -339,13 +339,13 @@ fn main() {
 }
 ```
 
-## Fizz buzz
+# Fizz buzz
 
 * [Leetcode Fizz buzz problem](https://leetcode.com/problems/fizz-buzz/)
 * [Wikipedia Fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz)
 * Add some optimisation, according to a Wikipedia problem statement.
 
-### [Python Fizz buzz](algorithm/fizz_buzz_Python.py)
+## [Python Fizz buzz](algorithm/fizz_buzz_Python.py)
 
 ```python
 import timeit
@@ -384,7 +384,7 @@ print(
 # Average execution time of Python func in sec 0.005334990004485007
 ```
 
-### [Clojure Fizz buzz](algorithm/fizz_buzz_Clojure.clj)
+## [Clojure Fizz buzz](algorithm/fizz_buzz_Clojure.clj)
 
 ```clojure
 (import '[java.io OutputStream])
@@ -415,7 +415,7 @@ print(
 ;; Average execution time of Clojure func in sec 0.000175486 seconds
 ```
 
-### [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
+## [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
 
 ```python
 from String import String
@@ -471,6 +471,8 @@ Its fame has led to the common use of the abbreviation "**CLRS**" (Cormen, Leise
 ## [Python Merge_sort](algorithm/merge_sort_Python.py)
 
 ```python
+%%python
+
 import timeit
 
 MAX_ITERS = 100
@@ -517,17 +519,26 @@ def merge_sort(A, p, r):
         merge(A, p, q, r)
 
 
-
-def run_benchmark():
+def run_benchmark_merge_sort():
     A = [14, 72, 50, 83, 18, 20, 13, 30, 17, 87, 94, 65, 24, 99, 70, 44, 5, 12, 74, 6, 32, 63, 91, 88, 43, 54, 27, 39, 64, 78, 29, 62, 58, 59, 61, 89, 2, 15, 41, 9, 93, 90, 23, 96, 73, 14, 8, 28, 11, 42, 77, 34, 52, 80, 57, 84, 21, 60, 66, 40, 7, 85, 47, 98, 97, 35, 82, 36, 49, 3, 68, 22, 67, 81, 56, 71, 4, 38, 69, 95, 16, 48, 1, 31, 75, 19, 10, 25, 79, 45, 76, 33, 53, 55, 46, 37, 26, 51, 92, 86]
     merge_sort(A, 0, len(A)-1)
 
+print(
+  "Average execution time of Python `merge_sort` in sec",
+  timeit.timeit(lambda: run_benchmark_merge_sort(), number=MAX_ITERS),
+)
+# Average execution time of Python `merge_sort` in sec 0.019136679999064654
+
+
+def run_benchmark_sort():
+    A = [14, 72, 50, 83, 18, 20, 13, 30, 17, 87, 94, 65, 24, 99, 70, 44, 5, 12, 74, 6, 32, 63, 91, 88, 43, 54, 27, 39, 64, 78, 29, 62, 58, 59, 61, 89, 2, 15, 41, 9, 93, 90, 23, 96, 73, 14, 8, 28, 11, 42, 77, 34, 52, 80, 57, 84, 21, 60, 66, 40, 7, 85, 47, 98, 97, 35, 82, 36, 49, 3, 68, 22, 67, 81, 56, 71, 4, 38, 69, 95, 16, 48, 1, 31, 75, 19, 10, 25, 79, 45, 76, 33, 53, 55, 46, 37, 26, 51, 92, 86]
+    A.sort()
 
 print(
-  "Average execution time of Python func in sec",
-  timeit.timeit(lambda: run_benchmark(), number=MAX_ITERS),
+    "Average execution time of Python builtin `sort` in sec",
+    timeit.timeit(lambda: run_benchmark_sort(), number=MAX_ITERS),
 )
-# Average execution time of Python func in sec 0.020259167000006073
+# Average execution time of Python builtin `sort` in sec 0.00019922800129279494
 ```
 
 ## [Mojo🔥Merge_sort](algorithm/MergeSort_Mojo.mojo)
@@ -640,13 +651,14 @@ Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book
 
 [Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
 
-Summary for sorting
+## Summary for sorting: merge sort and quicksort.
 
-| Lang              | sec           |
-|-------------------|---------------|
-| Python merge_sort | **0.020259**  |
-| Mojo merge_sort   | **0.000012**  |
-| Mojo builtin sort | **0.000003**  |
+| Lang                | sec          |
+|---------------------|--------------|
+| Python merge_sort   | **0.019136** |
+| Python builtin sort | **0.000199** |
+| Mojo merge_sort     | **0.000012** |
+| Mojo builtin sort   | **0.000003** |
 
 
 # Programming manual
@@ -695,27 +707,7 @@ v = create_vertor()
 print(v[0], v[3])
 ```
 
-## Comments
-
-## Symbol visibility
-
-## Variables
-
-## let and var declarations
-
-### Mutable variables
-
-## Mojo types
-
-### Primitive types
-
-### Int vs int
-
-### Int, Float, SIMD
-
-### Bool
-
-### Strings
+## Strings
 
 ```python
 from String import String
@@ -730,96 +722,6 @@ from IO import _printf as print
 let x: Int = 1
 print("'%i'\n", x.value)
 ```
-
-### Runes
-
-### Numbers
-
-### Arrays
-
-### Maps
-
-### struct types
-
-### Pointer
-
-## Value lifecycle
-
-### @value decorator
-
-## Overloaded functions and methods
-
-## Special methods
-
-### __init__
-
-### __del__
-
-### __moveinit__
-
-### __copyinit__
-
-### __iadd__
-
-### raises
-
-## Argument passing control and memory ownership
-
-### self
-
-### Immutable arguments (borrowed)
-
-### Mutable arguments (inout)
-
-### Transfer arguments (owned and ^)
-
-## Functions
-
-### def definitions
-
-### fn definitions
-
-### Comparing def and fn argument passing
-
-## Parameterization: compile-time metaprogramming
-
-### Defining parameterized types and functions
-
-### Powerful compile-time programming (@parameter)
-
-### alias: named parameter expressions
-
-## Value Lifecycle
-
-### Non-movable and non-copyable types
-
-### Unique “move-only” types
-
-## Asynchronous Programming
-
-## Common with Python
-
-## Different with Python
-
-## List of keywords
-
-## List of builtin function
-
-### strdup
-
-# Mojo notebooks
-
-# Mojo library
-
-## Builtin (Builtin)
-
-## Standard library (Stdlib)
-
-## Python interop (Python)
-
-### Python integration
-
-### Mojo types in Python
 
 # The Zen of Mojo🔥
 
@@ -863,7 +765,7 @@ If you want to build something not trivial, it will be hard but funny!
 
 # Additional materials
 
-* [](https://nondot.org/sabre/Resume.html)
+* [Chris Lattner](https://nondot.org/sabre/)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
