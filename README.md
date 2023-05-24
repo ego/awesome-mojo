@@ -73,7 +73,8 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 
 # News
 
-[Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
+* [Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
+* [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
 
 # Awesome Mojo🔥 code
 
@@ -822,8 +823,47 @@ print("'%i'\n", x.value)
 
 # The Zen of Mojo🔥
 
+# Space for improvements
+
+It is my personal view, so don't judge me too harshly.
+
+I can't say that Mojo🔥 is an easy programming language for learning, like a Python as an example.
+
+It requires a lot of understanding, patience and experience in any other programming languages.
+
+If you want to build something not trivial, it will be hard but funny!
+
+## Major things to improve:
+
+1. Weak and unclear **documentation**.
+2. Lack of **code examples**.
+   A good example is [clojuredocs](https://clojuredocs.org) website.
+3. More **explanation** to the language **paradigms**
+4. Lack **comparison** to Python base things datatypes/functions/classes/expressions.
+5. Even though Mojo is superset of Python, the **threshold** of language entry is **not so simple**.
+6. A little bit raw, need some time for **stabilizing** language.
+7. **Bugs**, like in any one.
+8. Small **standard library**.
+9. Project Jupyter and **notebooks environment**.
+   I understand that Jupyter plugin and custom kernel are a good solution, but it is makes development so slow.
+10. Not **open-sourced** yet.
+   The community is waiting for open source compiler and REPL to start developing and producing libraries and applications.
+   I think the community will easily rewrite the (bootstrapping) compiler from C++ to itself Mojo🔥.
+
+## Good and nice for win
+
+1. **Modular team** easily responds to requests/questions/letters/ideas
+2. **Friendly** and very smart **community**
+3. **Problem-solving** programming language with an idea to not create new syntax but deal with real word challenges.
+4. I don't know about you, but I was waiting and researching a long time for a Mojo🔥.
+   I have been tried a hundred of programming languages.
+   The World is ready for the revolution and the future of computation and AI.
+   I'm really into Mojo🔥, it excites, fascinates me, and I hope it does the same for you.
+5. I believe that a well-known distinguished leader Ph.D. Computer Science Chris Lattner can build things, systems, teams and change the future.
+
 # Additional materials
 
+* [](https://nondot.org/sabre/Resume.html)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
