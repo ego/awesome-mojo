@@ -466,7 +466,7 @@ Its fame has led to the common use of the abbreviation "**CLRS**" (Cormen, Leise
 
 **Chapter 2** "2.3.1 The divide-and-conquer approach".
 
-* [Python Merge_sort](algorithm/merge_sort_Python.py)
+## [Python Merge_sort](algorithm/merge_sort_Python.py)
 
 ```python
 import timeit
@@ -528,7 +528,7 @@ print(
 # Average execution time of Python func in sec 0.020259167000006073
 ```
 
-* [Mojo🔥Merge_sort](algorithm/MergeSort_Mojo.mojo)
+## [Mojo🔥Merge_sort](algorithm/MergeSort_Mojo.mojo)
 
 ```python
 from Benchmark import Benchmark
