@@ -632,9 +632,13 @@ print(A[0], A[99])
 ```
 
 Builtin `from Sort import sort` a little bit faster than our implementation, but we can optimize it during deep in language
-and as usual with algorithms =) and programming paradigms. Multithreaded Algorithms, Multithreaded merge sort at page 797 of the book **CLRS** above.
+and as usual with algorithms =) and programming paradigms.
 
-* [Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
+Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book **CLRS** above.
+
+[Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
+
+Summary for sorting
 
 | Lang              | sec           |
 |-------------------|---------------|
