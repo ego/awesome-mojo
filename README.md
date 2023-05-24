@@ -89,7 +89,7 @@ Note:
 For **Python** and **Mojo** versions,
 I leave some optimization and make the code similar for measurement and comparison.
 
-* [Python Binary Search](algorithm/binary_search_Python.py)
+### [Python Binary Search](algorithm/binary_search_Python.py)
 
 ```python
 from typing import List
@@ -125,7 +125,7 @@ print(
 )
 ```
 
-* [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
+### [Mojo🔥 Binary Search](algorithm/BinarySearch_Mojo.mojo)
 
 ```python
 """Implements basic binary search."""
@@ -179,7 +179,7 @@ print(
 <img src="img/python_binary_search_05.15.2023.png" height="300" />
 <img src="img/mojo_binary_search_05.15.2023.png" height="300" />
 
-* [Swift Binary Search](algorithm/binarySearch_Swift.swift)
+### [Swift Binary Search](algorithm/binarySearch_Swift.swift)
 
 ```swift
 func binarySearch(items: [Int], elem: Int) -> Int {
@@ -204,7 +204,7 @@ let res = binarySearch(items: items, elem: 4)
 print(res)
 ```
 
-* [Julia Binary Search](algorithm/binarysearch_Julia.jl)
+### [Julia Binary Search](algorithm/binarysearch_Julia.jl)
 
 ```julia
 function binarysearch(lst::Vector{T}, val::T) where T
@@ -224,7 +224,7 @@ function binarysearch(lst::Vector{T}, val::T) where T
 end
 ```
 
-* [Nim Binary Search](algorithm/binarySearch_Nim.nim)
+### [Nim Binary Search](algorithm/binarySearch_Nim.nim)
 
 ```nim
 proc binarySearch[T](a: openArray[T], key: T): int =
@@ -240,7 +240,7 @@ let res = @[2,3,4,5,6,7,8,9,10,12,14,16,18,20,22,25,27,30]
 echo binarySearch(res, 10)
 ```
 
-* [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
+### [Zig Binary Search](algorithm/BinarySearch_Zig.zig)
 
 ```zig
 const std = @import("std");
@@ -265,7 +265,7 @@ fn binarySearch(comptime T: type, arr: []const T, target: T) ?usize {
 }
 ```
 
-* [V Binary Search](algorithm/binary_search_V.v)
+### [V Binary Search](algorithm/binary_search_V.v)
 
 ```v
 fn binary_search(a []int, value int) int {
@@ -290,9 +290,10 @@ fn main() {
 }
 ```
 
-* [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
-    * [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
-    * [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
+### [Bonus V Breadth First Search Path](algorithm/bfs_V.v)
+    
+* [BFS at vlang examples](https://github.com/vlang/v/blob/master/examples/graphs/bfs.v)
+* [BFS original PR](https://github.com/ego/v/blob/e13474757bee0afa00e8c4dd013b14e2f4fbc428/examples/bfs.v)
 
 ```v
 fn breadth_first_search_path(graph map[string][]string, vertex string, target string) []string {
@@ -337,13 +338,13 @@ fn main() {
 }
 ```
 
-# Fizz buzz
+## Fizz buzz
 
 * [Leetcode Fizz buzz problem](https://leetcode.com/problems/fizz-buzz/)
 * [Wikipedia Fizz buzz](https://en.wikipedia.org/wiki/Fizz_buzz)
 * Add some optimisation, according to a Wikipedia problem statement.
 
-* [Python Fizz buzz](algorithm/fizz_buzz_Python.py)
+### [Python Fizz buzz](algorithm/fizz_buzz_Python.py)
 
 ```python
 import timeit
@@ -382,7 +383,7 @@ print(
 # Average execution time of Python func in sec 0.005334990004485007
 ```
 
-* [Clojure Fizz buzz](algorithm/fizz_buzz_Clojure.clj)
+### [Clojure Fizz buzz](algorithm/fizz_buzz_Clojure.clj)
 
 ```clojure
 (import '[java.io OutputStream])
@@ -413,7 +414,7 @@ print(
 ;; Average execution time of Clojure func in sec 0.000175486 seconds
 ```
 
-* [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
+### [Mojo🔥Fizz buzz](algorithm/fizz_buzz_Mojo.mojo)
 
 ```python
 from String import String
