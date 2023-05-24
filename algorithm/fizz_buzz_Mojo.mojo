@@ -26,7 +26,7 @@ fn fizz_buzz():
     print(_fizz_buzz())
 
 fn run_benchmark() -> F64:
-    fn _closure():        
+    fn _closure():
         _ = fizz_buzz()
     return F64(Benchmark(NUM_WARMUP, MAX_ITERS).run[_closure]()) / 1e9
 
