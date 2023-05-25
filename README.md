@@ -651,7 +651,7 @@ Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book
 
 [Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
 
-## Summary for sorting algorithms merge sort and quicksort.
+## Summary for sorting algorithms merge sort and quicksort
 
 | Lang                | sec             |
 |---------------------|-----------------|
