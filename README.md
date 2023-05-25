@@ -820,16 +820,24 @@ If you want to build something not trivial, it will be hard but funny!
 * [Mojo Cheatsheet](https://github.com/czheo/mojo-cheatsheet/tree/main)
 * [Counting chars with SIMD in Mojo](https://mzaks.medium.com/counting-chars-with-simd-in-mojo-140ee730bd4d)
 
-## Python
+## Python / C++
 
 * [Numpy](https://numpy.org/doc/stable/user/whatisnumpy.html)
-* [Numba](https://numba.pydata.org/numba-doc/latest/user/5minguide.html)
+* [Numba](https://numba.pydata.org/numba-doc/latest/user/5minguide.html) based on (LLVM)
 * [PyPy](https://www.pypy.org/)
-* [Google JAX](https://github.com/google/jax)
+* [Google JAX](https://github.com/google/jax) based on (XLA)
   * [Autograd](https://github.com/hips/autograd)
   * [XLA](https://www.tensorflow.org/xla)
 * [Ray](https://github.com/ray-project/ray)
+* [Taichi Lang](https://github.com/taichi-dev/taichi)
+  * [Taichi compared to cub cupy numba](https://docs.taichi-lang.org/blog/taichi-compared-to-cub-cupy-numba)
+* [Codon](https://github.com/exaloop/codon)
+  * [Codon benchmarks](https://exaloop.io/benchmarks)
+* [CuPy](https://github.com/cupy/cupy)
 * [DeepSpeed](https://github.com/microsoft/DeepSpeed)
+* [Benchmarks for CPU and GPU performance high-performance Python libs](https://github.com/dionhaefner/pyhpc-benchmarks)
+* [Metaflow](https://metaflow.org)
+* [Accelerating experimentation with mlops](https://www.rea-group.com/about-us/news-and-insights/blog/accelerating-experimentation-with-mlops/)
 
 ## AI
 
