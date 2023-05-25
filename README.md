@@ -177,8 +177,8 @@ print(
 
 **It is the first binary search written in Mojo🔥by community (@Ego) and posted in mojo-chat.**
 
-<img src="img/python_binary_search_05.15.2023.png" height="250" />
-<img src="img/mojo_binary_search_05.15.2023.png" height="250" />
+<img src="img/python_binary_search_05.15.2023.png" height="300" />
+<img src="img/mojo_binary_search_05.15.2023.png" height="300" />
 
 ## [Swift Binary Search](algorithm/binarySearch_Swift.swift)
 
@@ -682,7 +682,7 @@ plt.title('Comparison of Sorting Algorithms (Custom Transformation)')
 plt.show()
 ```
 
-<img src="img/comparison_sorting.png" height="250" />
+<img src="img/comparison_sorting.png" />
 
 # Programming manual
 
