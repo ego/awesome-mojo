@@ -69,12 +69,15 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 
 * Your contributions are always welcome!
 * If you have any **question**, do not hesitate to contact me.
-* If you would like to participate in the initiative [Mojo 🔥Driven Community](https://mojo-lang.dev), please contact me.
+* If you would like to participate in the initiative [Mojo🔥Driven Community](https://mojo-lang.dev), please contact me.
 
 # News
 
 * [Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
+* May-25-2023, Guido van Rossum, creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
+
+<img src="img/gvanrossum.png" height="300" />
 
 # Awesome Mojo🔥 code
 
