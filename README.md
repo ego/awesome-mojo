@@ -682,7 +682,7 @@ plt.title('Comparison of Sorting Algorithms (Custom Transformation)')
 plt.show()
 ```
 
-Note: more is better.
+Plot notes, more is better and faster.
 
 <img src="img/comparison_sorting.png" />
 
