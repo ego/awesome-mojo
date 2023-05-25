@@ -53,6 +53,17 @@ But Python has done its job very well =)
 > So we chose to embrace the Python ecosystem because it is so widely used, it is loved by the AI ecosystem, and because
 > we believe it is a really nice language.
 
+## Why is it called Mojo?
+
+> Mojo🔥 means “a magical charm” or “magical powers.”
+> We thought this was a fitting name for a language that brings magical powers to Python :python:,
+> including unlocking an innovative programming model for accelerators and other heterogeneous systems pervasive in AI today.
+
+According to the description
+
+* [Mojo word definition](https://duckduckgo.com/?q=mojo&ia=definition&iax=definition)
+* [Mojo sound](mojo_American_English_pronunciation.mp3)
+
 Who knows these programming languages will be very happy, because Mojo benefits from tremendous lessons learned from
 other languages Rust, Swift, Julia, Zig, Nim, etc.
 
