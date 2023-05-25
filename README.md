@@ -541,7 +541,7 @@ print(
 # Average execution time of Python builtin `sort` in sec 0.00019922800129279494
 ```
 
-## [Mojo🔥Merge sort](algorithm/MergeSort_Mojo.mojo)
+## [Mojo🔥 Merge sort](algorithm/MergeSort_Mojo.mojo)
 
 ```python
 from Benchmark import Benchmark
