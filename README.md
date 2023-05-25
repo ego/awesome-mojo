@@ -812,8 +812,39 @@ If you want to build something not trivial, it will be hard but funny!
 # Additional materials
 
 * [Chris Lattner](https://nondot.org/sabre/)
+* [LLVM](https://llvm.org)
+* [MLIR](https://mlir.llvm.org)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
 * [Mojo Cheatsheet](https://github.com/czheo/mojo-cheatsheet/tree/main)
 * [Counting chars with SIMD in Mojo](https://mzaks.medium.com/counting-chars-with-simd-in-mojo-140ee730bd4d)
+
+## Python
+
+* [Numpy](https://numpy.org/doc/stable/user/whatisnumpy.html)
+* [Numba](https://numba.pydata.org/numba-doc/latest/user/5minguide.html)
+* [PyPy](https://www.pypy.org/)
+* [Google JAX](https://github.com/google/jax)
+  * [Autograd](https://github.com/hips/autograd)
+  * [XLA](https://www.tensorflow.org/xla)
+* [Ray](https://github.com/ray-project/ray)
+* [DeepSpeed](https://github.com/microsoft/DeepSpeed)
+
+## AI
+
+* [Accelerated Computing](https://blogs.nvidia.com/blog/2021/09/01/what-is-accelerated-computing/)
+* [ONNX open standard for machine learning](https://github.com/onnx/onnx)
+* [ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator](https://github.com/microsoft/onnxruntime)
+* [CUDA](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
+* [OpenCL](https://www.khronos.org/opencl/)
+* [SYCL](https://www.khronos.org/api/index_2017/sycl)
+* [Google Brain TensorFlow](https://github.com/tensorflow/tensorflow)
+* [PyTorch](https://github.com/pytorch/pytorch)
+* [TensorRT](https://github.com/NVIDIA/TensorRT)
+* [OpenaAI Triton language and compiler](https://github.com/openai/triton)
+* [Made With ML](https://madewithml.com)
+* [Vertex AI](https://cloud.google.com/vertex-ai)
+* [Google TPU](https://cloud.google.com/tpu)
+* [Sagemaker](https://aws.amazon.com/sagemaker/)
+* [MLIR: accelerating AI with open-source infrastructure](https://www.blog.google/technology/ai/mlir-accelerating-ai-open-source-infrastructure/)
