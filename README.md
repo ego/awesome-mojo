@@ -177,8 +177,8 @@ print(
 
 **It is the first binary search written in Mojo🔥by community (@Ego) and posted in mojo-chat.**
 
-<img src="img/python_binary_search_05.15.2023.png" height="300" />
-<img src="img/mojo_binary_search_05.15.2023.png" height="300" />
+<img src="img/python_binary_search_05.15.2023.png" height="250" />
+<img src="img/mojo_binary_search_05.15.2023.png" height="250" />
 
 ## [Swift Binary Search](algorithm/binarySearch_Swift.swift)
 
@@ -460,7 +460,7 @@ print(
 ```
 **It is the first Fizz buzz written in Mojo🔥 ever by community (@Ego).**
 
-# [Merge_sort](https://en.wikipedia.org/wiki/Merge_sort)
+# [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
 
 We will use algorithm from vell-known [reference](https://en.wikipedia.org/wiki/Introduction_to_Algorithms) for algorithms book [Introduction to Algorithms A3](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)
 
@@ -468,7 +468,7 @@ Its fame has led to the common use of the abbreviation "**CLRS**" (Cormen, Leise
 
 **Chapter 2** "2.3.1 The divide-and-conquer approach".
 
-## [Python Merge_sort](algorithm/merge_sort_Python.py)
+## [Python Merge sort](algorithm/merge_sort_Python.py)
 
 ```python
 %%python
@@ -541,7 +541,7 @@ print(
 # Average execution time of Python builtin `sort` in sec 0.00019922800129279494
 ```
 
-## [Mojo🔥Merge_sort](algorithm/MergeSort_Mojo.mojo)
+## [Mojo🔥Merge sort](algorithm/MergeSort_Mojo.mojo)
 
 ```python
 from Benchmark import Benchmark
@@ -616,7 +616,7 @@ print(
     "Average execution time of Mojo🔥 `merge_sort` in sec ",
     run_benchmark_merge_sort(),
 )
-# Average execution time of Mojo🔥 `merge_sort` in sec  0.000012
+# Average execution time of Mojo🔥 `merge_sort` in sec 1.1345999999999999e-05
 
 
 fn run_benchmark_sort() -> F64:
@@ -629,7 +629,7 @@ print(
     "Average execution time of Mojo🔥 builtin `sort` in sec ",
     run_benchmark_sort(),
 )
-# Average execution time of Mojo🔥 `sort` in sec  0.000003
+# Average execution time of Mojo🔥 builtin `sort` in sec 2.988e-06
 ```
 
 You can use it like:
@@ -653,13 +653,36 @@ Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book
 
 ## Summary for sorting: merge sort and quicksort.
 
-| Lang                | sec          |
-|---------------------|--------------|
-| Python merge_sort   | **0.019136** |
-| Python builtin sort | **0.000199** |
-| Mojo merge_sort     | **0.000012** |
-| Mojo builtin sort   | **0.000003** |
+| Lang                | sec             |
+|---------------------|-----------------|
+| Python merge_sort   | **0.019136679** |
+| Python builtin sort | **0.000199228** |
+| Mojo merge_sort     | **0.000011346** |
+| Mojo builtin sort   | **0.000002988** |
 
+Let's build a plot for this table.
+
+```python
+#%%python
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+languages = ['Python merge_sort', 'Python builtin sort', 'Mojo merge_sort', 'Mojo builtin sort']
+seconds = [0.019136679, 0.000199228, 0.000011346, 0.000002988]
+
+# Apply a custom transformation to the values
+transformed_seconds = [np.sqrt(1 / x) for x in seconds]
+
+plt.barh(languages, transformed_seconds)
+plt.xlabel('Custom Transformation')
+plt.ylabel('Language and Sort Type')
+plt.title('Comparison of Sorting Algorithms (Custom Transformation)')
+
+plt.show()
+```
+
+<img src="img/comparison_sorting.png" height="250" />
 
 # Programming manual
 

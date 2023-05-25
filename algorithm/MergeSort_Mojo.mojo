@@ -67,10 +67,10 @@ fn run_benchmark_merge_sort() -> F64:
     return F64(Benchmark(NUM_WARMUP, MAX_ITERS).run[_closure]()) / 1e9
 
 print(
-    "Average execution time of Mojo🔥 `merge_sort` in sec ",
+    "Average execution time of Mojo🔥 `merge_sort` in sec",
     run_benchmark_merge_sort(),
 )
-# Average execution time of Mojo🔥 `merge_sort` in sec  0.000012
+# Average execution time of Mojo🔥 `merge_sort` in sec 1.1345999999999999e-05
 
 
 fn run_benchmark_sort() -> F64:
@@ -80,10 +80,10 @@ fn run_benchmark_sort() -> F64:
     return F64(Benchmark(NUM_WARMUP, MAX_ITERS).run[_closure]()) / 1e9
 
 print(
-    "Average execution time of Mojo🔥 builtin `sort` in sec ",
+    "Average execution time of Mojo🔥 builtin `sort` in sec",
     run_benchmark_sort(),
 )
-# Average execution time of Mojo🔥 `sort` in sec  0.000003
+# Average execution time of Mojo🔥 builtin `sort` in sec 2.988e-06
 
 
 # Usage: merge_sort
