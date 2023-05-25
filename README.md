@@ -644,12 +644,19 @@ print(len(A))
 print(A[0], A[99])
 ```
 
-Builtin `from Sort import sort` a little bit faster than our implementation, but we can optimize it during deep in language
-and as usual with algorithms =) and programming paradigms.
+Builtin `from Sort import sort` [quicksort](https://en.wikipedia.org/wiki/Quicksort) a little bit [faster](https://en.wikipedia.org/wiki/Sorting_algorithm#Comparison_of_algorithms) than our implementation,
+but we can optimize it during deep in language and as usual with algorithms =) and programming paradigms.
 
-Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book **CLRS** above.
-
-[Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
+- Multithreaded Algorithms, Multithreaded merge sort at pages 797, 803 of the book **CLRS** above
+- Three Hungarians' Algorithm
+- Use insertion sort for small subarrays, hybrid merge sort
+- Merge in a different direction
+- Use an adaptive approach
+- Implement in-place merging
+- Optimize memory access
+- [Mojo Stdlib Functional](https://docs.modular.com/mojo/MojoStdlib/Functional.html)
+- **Tiled merge sort** like in [Tiling Matmul](https://docs.modular.com/mojo/notebooks/Matmul.html#tiling-matmul)
+- Parallel multiway merge sort
 
 ## Summary for sorting algorithms merge sort and quicksort
 
