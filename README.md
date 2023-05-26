@@ -88,6 +88,7 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
 * May-25-2023, Guido van Rossum (gvanrossum#8415), creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
 
+<img src="img/guido-chris.png" height="300" />
 <img src="img/gvanrossum.png" height="300" />
 
 # Awesome Mojo🔥 code
@@ -847,9 +848,13 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
 * [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground.
 
-# Radiative transfer
+# Code implementation
 
+## Radiative transfer
 [Benchmark Mojo vs Numba by Nick Wogan](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
+
+## Instant and DateTimeLocal
+[Time utils by Samay Kapadia @Zalando](https://github.com/modularml/mojo/issues/156)
 
 # Programming manual
 
@@ -1085,6 +1090,14 @@ If you want to build something not trivial, it will be hard but funny!
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
 * [Mojo Cheatsheet](https://github.com/czheo/mojo-cheatsheet/tree/main)
 * [Counting chars with SIMD in Mojo](https://mzaks.medium.com/counting-chars-with-simd-in-mojo-140ee730bd4d)
+
+## MLIR and low-level implementation
+
+* [Doxygen mlir](https://mlir.llvm.org/doxygen/index.html)
+* [IndexOps](https://mlir.llvm.org/docs/Dialects/IndexOps/)
+* [LLVM libc](https://libc.llvm.org/)
+* [GNU libc](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
+* [GNU libc Index](https://www.gnu.org/software/libc/manual/html_node/Function-Index.html)
 
 ## Python / C++
 
