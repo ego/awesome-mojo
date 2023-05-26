@@ -773,6 +773,17 @@ let x: Int = 1
 print("'%i'\n", x.value)
 ```
 
+## Read CSV file by Maxim Zaks
+
+```python
+from String import String
+from PythonInterface import Python
+
+let pathlib = Python.import_module('pathlib')
+let txt = pathlib.Path('nfl.csv').read_text()
+let s: String = txt.to_string()
+```
+
 # The Zen of Mojo🔥
 
 # Space for improvements
