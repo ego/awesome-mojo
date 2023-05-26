@@ -969,7 +969,9 @@ let x: Int = 1
 print("'%i'\n", x.value)
 ```
 
-## Read CSV file by Maxim Zaks
+## Read CSV file
+
+by Maxim Zaks
 
 ```python
 from String import String
