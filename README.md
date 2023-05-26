@@ -847,9 +847,9 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
 * [Welcome to Codon](https://docs.exaloop.io/codon)
 
-# Radiative transfer with Mojo by Nick Wogan
+# Radiative transfer
 
-[Benchmark Mojo vs Numba](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
+[Benchmark Mojo vs Numba by Nick Wogan](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
 
 # Programming manual
 
