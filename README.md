@@ -840,12 +840,12 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 | Mojo🔥 def recursion  | 4.293431831     |
 | Mojo🔥 fn recursion   | 0.416578139     |
 | **Mojo🔥 fn range**   | **0.000000037** |
-| Codon recursion       | 0.275645        |
+| Codon recursion       | 0.275645 [1]    |
 
 * Mojo🔥boost in **122 times**.
 * Mojo🔥 `fn` definitely better optimize than `def` [read more here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions)
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
-* [Welcome to Codon](https://docs.exaloop.io/codon)
+* [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground.
 
 # Radiative transfer
 
