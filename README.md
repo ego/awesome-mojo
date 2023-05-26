@@ -707,6 +707,146 @@ Plot notes, more is better and faster.
 
 <img src="img/comparison_sorting.png" />
 
+# [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)
+
+## [Python Fib](algorithm/Fib_Python.py)
+
+```python
+#%%python
+from time import time
+
+
+def fib(n):
+    return n if n < 2 else fib(n - 1) + fib(n - 2)
+
+
+def run_python_benchmark():
+    t0 = time()
+    ans = fib(40)
+    t1 = time()
+    print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
+
+
+run_python_benchmark()
+# Computed fib(40) = 102334155 in 21.669286727905273 seconds.
+
+
+def fib_range(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+
+
+def run_python_fib_range_benchmark():
+    t0 = time()
+    ans = fib_range(40)
+    t1 = time()
+    print(f'Computed fib_range(40) = {ans} in {t1 - t0} seconds.')
+
+
+run_python_fib_range_benchmark()
+# Computed fib_range(40) = 102334155 in 4.5299530029296875e-06 seconds.
+```
+
+## [Mojo🔥 Fib with def](algorithm/FibDef_Mojo.mojo)
+
+```python
+from Time import now
+
+
+def fibm(n):
+    return n if n < 2 else fibm(n - 1) + fibm(n - 2)
+
+
+def run_mojo_benchmark():
+    let t0 = now()
+    let ans = fibm(40)
+    let t1 = now()
+
+    ans.print()
+    print("\n")
+    print("Computed fibm(40)", F64(t1 - t0) / 1e9, "seconds")
+
+
+run_mojo_benchmark()
+# 102334155
+# Computed fibm(40) 4.2934318319999996 seconds
+```
+
+## [Mojo🔥 Fib with fn](algorithm/FibFn_Mojo.mojo)
+
+```python
+from Time import now
+
+
+fn fibf(n: Int) -> Int:
+return n if n < 2 else fibf(n - 1) + fibf(n - 2)
+
+
+def run_mojo_fn_benchmark():
+    let t0 = now()
+    let ans = fibf(40)
+    let t1 = now()
+    print("Computed fibf(40)", ans, F64(t1 - t0) / 1e9, "seconds")
+
+
+run_mojo_fn_benchmark()
+# Computed fibf(40) 102334155 0.41657813999999999 seconds
+
+
+fn fibf_range(n: Int) -> Int:
+    var a: Int = 0
+    var b: Int = 1
+    for _ in range(n):
+        a = b
+        b = a+b
+    return a
+
+
+def run_mojo_fibf_range_benchmark():
+    let t0 = now()
+    let ans = fibf_range(40)
+    let t1 = now()
+    print("Computed fibf_range(40)", ans, F64(t1 - t0) / 1e9, "seconds")
+
+
+run_mojo_fibf_range_benchmark()
+# Computed fibf_range(40) 549755813 3.7e-08 seconds
+```
+
+## [Codon Fib](algorithm/Fib_Codon.py)
+
+```python
+from time import time
+
+def fib(n):
+    return n if n < 2 else fib(n - 1) + fib(n - 2)
+
+
+t0 = time()
+ans = fib(40)
+t1 = time()
+print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
+# Computed fib(40) = 102334155 in 0.275645 seconds.
+```
+
+## Summary for Fibonacci sequence algorithms
+
+| Lang                  | sec             |
+|-----------------------|-----------------|
+| Python recursion      | 21.66928672     |
+| Python range          | **0.000004529** |
+| Mojo🔥 def recursion  | 4.293431831     |
+| Mojo🔥 fn recursion   | 0.416578139     |
+| **Mojo🔥 fn range**   | **0.000000037** |
+| Codon recursion       | 0.275645        |
+
+* Mojo🔥boost in **122 times**.
+* Mojo🔥 `fn` definitely better optimize than `def` [read more here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions)
+* Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
+* [Welcome to Codon](https://docs.exaloop.io/codon)
+
 # Radiative transfer with Mojo by Nick Wogan
 
 [Benchmark Mojo vs Numba](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
