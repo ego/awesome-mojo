@@ -874,9 +874,9 @@ let x = concat[2,2](a, a)
 x.dump()
 ```
 
-Compile time parameters: `fn concat[len1: Int, len2: Int]`.
+Compile time **Parameters:** `fn concat[len1: Int, len2: Int]`.
 
-Run time parameters: `fn concat(lhs: MySIMD, rhs: MySIMD)`.
+Run time **Args**: `fn concat(lhs: MySIMD, rhs: MySIMD)`.
 
 Parameters [PEP695](https://peps.python.org/pep-0695/) syntax in square `[]` brackets.
 
