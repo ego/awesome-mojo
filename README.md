@@ -707,6 +707,10 @@ Plot notes, more is better and faster.
 
 <img src="img/comparison_sorting.png" />
 
+# Radiative transfer with Mojo by Nick Wogan
+
+[Benchmark Mojo vs Numba](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
+
 # Programming manual
 
 ## `VariadicList` for destructuring/unpacking/accessing arguments
@@ -842,6 +846,7 @@ If you want to build something not trivial, it will be hard but funny!
 * [Benchmarks for CPU and GPU performance high-performance Python libs](https://github.com/dionhaefner/pyhpc-benchmarks)
 * [Metaflow](https://metaflow.org)
 * [Accelerating experimentation with mlops](https://www.rea-group.com/about-us/news-and-insights/blog/accelerating-experimentation-with-mlops/)
+* [nebuly-ai](https://github.com/nebuly-ai/nebuly/tree/v0.9.0)
 
 ## AI
 
@@ -860,3 +865,4 @@ If you want to build something not trivial, it will be hard but funny!
 * [Google TPU](https://cloud.google.com/tpu)
 * [Sagemaker](https://aws.amazon.com/sagemaker/)
 * [MLIR: accelerating AI with open-source infrastructure](https://www.blog.google/technology/ai/mlir-accelerating-ai-open-source-infrastructure/)
+* [Apache TVM](https://tvm.apache.org)
