@@ -88,7 +88,7 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
 * May-25-2023, Guido van Rossum (gvanrossum#8415), creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
 
-<img src="img/guido-chris.png" />
+<img src="img/guido-chris.png" width="300" />
 <img src="img/gvanrossum.png" height="300" />
 
 # Awesome Mojo🔥 code
