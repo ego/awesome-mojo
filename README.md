@@ -713,6 +713,62 @@ Plot notes, more is better and faster.
 
 # Programming manual
 
+## Parameterization[]: compile time meta-programming
+
+I strongly recommended start from here [HelloMojo](https://docs.modular.com/mojo/notebooks/HelloMojo.html)
+and understand **parameter** and **parameter expressions** [parameterization here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#parameterization-compile-time-meta-programming).
+Like in this example:
+
+```python
+fn concat[len1: Int, len2: Int](lhs: MySIMD[len1], rhs: MySIMD[len2]) -> MySIMD[len1+len2]:
+    let result = MySIMD[len1 + len2]()
+    for i in range(len1):
+        result[i] = lhs[i]
+    for j in range(len2):
+        result[len1 + j] = rhs[j]
+    return result
+
+
+let a = MySIMD[2](1, 2)
+let x = concat[2,2](a, a)
+x.dump()
+```
+
+Compile time parameters: `fn concat[len1: Int, len2: Int]`.
+
+Run time parameters: `fn concat(lhs: MySIMD, rhs: MySIMD)`.
+
+Parameters [PEP695](https://peps.python.org/pep-0695/) syntax in square `[]` brackets.
+
+Now in Python:
+
+```python
+def func(a: _T, b: _T) -> _T:
+    ...
+```
+
+Now in Mojo🔥:
+
+```python
+def func[T](a: T, b: T) -> T:
+    ...
+```
+
+**Parameters** are named and have types **like normal values** in a Mojo program, but `parameters[]` are evaluated at **compile time**.
+
+The runtime program may use the value of parameters - because the parameters are resolved at compile time
+before they are needed by the runtime program - but the compile time parameter expressions may not use runtime values.
+
+`Self` type from [PEP673](https://peps.python.org/pep-0673/)
+
+```python
+fn __sub__(self, rhs: Self) -> Self:
+    let result = MySIMD[size]()
+    for i in range(size):
+        result[i] = self[i] - rhs[i]
+    return result
+```
+
 ## `VariadicList` for destructuring/unpacking/accessing arguments
 
 ```python
@@ -784,7 +840,60 @@ let txt = pathlib.Path('nfl.csv').read_text()
 let s: String = txt.to_string()
 ```
 
+## Mojo🔥decorators
+
+### @value
+`struct` decorator aka Python `@dataclass`.
+It will generate methods `__init__`, `__copyinit__`, `__moveinit__` for you automatically.
+
+```python
+@value
+struct dataclass:
+    var name: String
+    var age: Int
+```
+Note that the `@value` decorator only works on types whose members are `copyable` and/or `movable`.
+
+### @value("trivial")
+
+### @register_passable("trivial")
+Trivial types. This decorator tells Mojo that the type should be copyable `__copyinit__` and movable `__moveinit__`.
+It also tells Mojo to prefer to pass the value in CPU registers.
+Allows `structs` to opt-in to being passed in a `register` instead of passing through `memory`.
+
+```python
+@register_passable("trivial")
+struct Int:
+    var value: __mlir_type.`!pop.scalar<index>`
+```
+
+### @always_inline
+Decorators that provide full **control** over **compiler optimizations**.
+Instructs compiler to always **inline** this function when it’s called.
+
+```python
+@always_inline
+fn foo(x: Int, y: Int) -> Int:
+    return x + y
+
+fn bar(z: Int):
+    let r = foo(z, z) # This call will be inlined
+```
+
+### @parameter
+It can be placed on nested functions that capture runtime values to create “parametric” capturing closures.
+It allows closures that capture runtime values to be passed as parameter values.
+
+### Decorators combination
+```python
+@always_inline
+@parameter
+fn test(): return
+```
+
 # The Zen of Mojo🔥
+
+* [Style Guide for Mojo Code. Zen of Mojo #141](https://github.com/modularml/mojo/discussions/141)
 
 # Space for improvements
 
