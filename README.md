@@ -861,14 +861,6 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
 * [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground.
 
-# Code implementation
-
-## Radiative transfer
-[Benchmark Mojo vs Numba by Nick Wogan](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
-
-## Instant and DateTimeLocal
-[Time utils by Samay Kapadia @Zalando](https://github.com/modularml/mojo/issues/156)
-
 # Programming manual
 
 ## Parameterization[]: compile time meta-programming
@@ -1025,7 +1017,7 @@ print(v[0], v[3])
 
 Read more about function [def](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions) and [fn](https://docs.modular.com/mojo/programming-manual.html#fn-definitions)
 
-## Strings
+## String
 
 ```python
 from String import String
@@ -1039,6 +1031,30 @@ print(String("|").join("a", "b", "c"))
 from IO import _printf as print
 let x: Int = 1
 print("'%i'\n", x.value)
+```
+
+### String and builtin slice
+
+For a string you can use [Builtin Slice](https://docs.modular.com/mojo/MojoBuiltin/BuiltinSlice.html) with format string slice[start:end:step].
+
+```python
+from String import String
+
+let hello_mojo = String("Hello Mojo!")
+print("Till the end:", hello_mojo[0::])
+print("Before last 2 chars:", hello_mojo[0:-2])
+print("From start to the end with step 2:", hello_mojo[0::2])
+print("From start to the before last with step 3:", hello_mojo[0:-1:3])
+```
+
+<img src="string_slice.png" height="200" />
+
+There is some problem with unicode, when slicing 🔥:
+
+```python
+let hello_mojo_unicode = String("Hello Mojo🔥!")
+print("Unicode efore last 2 chars:", hello_mojo_unicode[0:-2])
+# no result, silents
 ```
 
 ## Mojo🔥decorators
@@ -1142,6 +1158,57 @@ Pretty cool, yeah!
 I have a lot of ideas from this topic and I am eagerly awaiting the opportunity to implement them soon.
 Taking action can lead to amazing outcomes =)
 
+## MLIR libc gethostname
+
+Let's do something interesting - call `libc function` [gethostname](https://www.gnu.org/software/libc/manual/html_node/Host-Identification.html#index-gethostname).
+
+Function has this interface `int gethostname (char *name, size_t size)`.
+
+For that we can use helper function [external_call](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html#external_call) from **Intrinsics** module or write own [MLIR](https://docs.modular.com/mojo/notebooks/HelloMojo.html#direct-access-to-mlir).
+
+Let's go code:
+
+```python
+from Intrinsics import external_call
+from SIMD import SIMD, SI8
+from DType import DType
+from Vector import DynamicVector
+from DType import DType
+from Pointer import DTypePointer, Pointer
+
+# We can use `from String import String` but for clarification we will use a full form.
+# DynamicVector[SIMD[DType.si8, 1]] == DynamicVector[SI8] == String
+
+# Compile time staff.
+alias cArrayOfStrings = DynamicVector[SIMD[DType.si8, 1]]
+alias capacity = 1024
+
+var c_pointer_to_array_of_strings = DTypePointer[DType.si8](cArrayOfStrings(capacity).data)
+var c_int_result = external_call["gethostname", Int, DTypePointer[DType.si8], Int](c_pointer_to_array_of_strings, capacity)
+let mojo_string_result = String(c_pointer_to_array_of_strings.address)
+
+print("C function gethostname result code:", c_int_result)
+print("C function gethostname result value:", star_hostname(mojo_string_result))
+
+
+@always_inline
+fn star_hostname(hostname: String) -> String:
+    # [Builtin Slice](https://docs.modular.com/mojo/MojoBuiltin/BuiltinSlice.html)
+    # string slice[start:end:step]
+    return hostname[0:-1:2]
+```
+
+<img src="img/gethostname.png" height="200" />
+
+
+# Code implementation
+
+## Radiative transfer
+[Benchmark Mojo vs Numba by Nick Wogan](https://gist.github.com/Nicholaswogan/ca156adb065cb598bd3903b3eaab2381)
+
+## Instant and DateTimeLocal
+[Time utils by Samay Kapadia @Zalando](https://github.com/modularml/mojo/issues/156)
+
 ## Python Interface and reading files
 
 by Maxim Zaks
@@ -1154,7 +1221,6 @@ let pathlib = Python.import_module('pathlib')
 let txt = pathlib.Path('nfl.csv').read_text()
 let s: String = txt.to_string()
 ```
-
 
 # The Zen of Mojo🔥
 
