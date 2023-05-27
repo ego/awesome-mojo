@@ -59,13 +59,21 @@ But Python has done its job very well =)
 > We thought this was a fitting name for a language that brings magical powers to Python :python:,
 > including unlocking an innovative programming model for accelerators and other heterogeneous systems pervasive in AI today.
 
+**Guido van Rossum** [benevolent dictator for life](https://en.wikipedia.org/wiki/Guido_van_Rossum) and **Christopher Arthur Lattner** [distinguished inventor, creator and well-known leader](https://en.wikipedia.org/wiki/Chris_Lattner) about Mojo🔥pronunciation =)
+
+<img src="img/guido-chris.png" width="300" />
+<img src="img/gvanrossum.png" height="200" />
+
 According to the description
 
 * [Mojo word definition](https://duckduckgo.com/?q=mojo&ia=definition&iax=definition)
 * [Mojo sound](mojo_American_English_pronunciation.mp3)
 
-Who knows these programming languages will be very happy, because Mojo benefits from tremendous lessons learned from
-other languages Rust, Swift, Julia, Zig, Nim, etc.
+
+# Background and influenced by
+
+Who knows that these programming languages will be very happy, because Mojo benefits from tremendous lessons learned from
+other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages) Rust, Swift, Julia, Zig, Nim, etc.
 
 * Rust starts the C revolution and now [Rust in the Linux kernel](https://docs.kernel.org/rust/index.html).
 * [Swift](https://www.swift.org) makes [Apple beautiful](https://developer.apple.com/swift/) from a technical
@@ -76,20 +84,25 @@ other languages Rust, Swift, Julia, Zig, Nim, etc.
 
 ![Mojo](img/speed.png)
 
-# Contributing
-
-* Your contributions are always welcome!
-* If you have any **question**, do not hesitate to contact me.
-* If you would like to participate in the initiative [Mojo🔥Driven Community](https://mojo-lang.dev), please contact me.
-
 # News
 
+[new_/\_]
+|
+* [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
+* [Matrix fn with numpy #267](https://github.com/modularml/mojo/discussions/267)
+* Updates about `lambda` and `parameter` [Closures and higer order functions in mojo #244](https://github.com/modularml/mojo/discussions/244#discussioncomment-6008071)
+* May-25-2023, Guido van Rossum (gvanrossum#8415), creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
 * [Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
-* May-25-2023, Guido van Rossum (gvanrossum#8415), creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
+|
+[old_|_]
 
-<img src="img/guido-chris.png" width="300" />
-<img src="img/gvanrossum.png" height="200" />
+Mojo🔥
+
+* [Changelog](https://docs.modular.com/mojo/changelog.html)
+* [Discussions](https://github.com/modularml/mojo/discussions?discussions_q=is%3Aopen)
+* [Issues](https://github.com/modularml/mojo/issues)
+
 
 # Awesome Mojo🔥 code
 
@@ -861,7 +874,7 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 ## Parameterization[]: compile time meta-programming
 
 I strongly recommended start from here [HelloMojo](https://docs.modular.com/mojo/notebooks/HelloMojo.html)
-and understand **parameter** and **parameter expressions** [parameterization here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#parameterization-compile-time-meta-programming).
+and understand **[parameter]** and **[parameter expressions]** [parameterization here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#parameterization-compile-time-meta-programming).
 Like in this example:
 
 ```python
@@ -879,9 +892,9 @@ let x = concat[2,2](a, a)
 x.dump()
 ```
 
-Compile time **Parameters:** `fn concat[len1: Int, len2: Int]`.
+Compile time **[Parameters]:** `fn concat[len1: Int, len2: Int]`.
 
-Run time **Args**: `fn concat(lhs: MySIMD, rhs: MySIMD)`.
+Run time **(Args)**: `fn concat(lhs: MySIMD, rhs: MySIMD)`.
 
 Parameters [PEP695](https://peps.python.org/pep-0695/) syntax in square `[]` brackets.
 
@@ -899,9 +912,9 @@ def func[T](a: T, b: T) -> T:
     ...
 ```
 
-**Parameters** are named and have types **like normal values** in a Mojo program, but `parameters[]` are evaluated at **compile time**.
+**[Parameters]** are named and have types **like normal values** in a Mojo program, but `parameters[]` are evaluated at **compile time**.
 
-The runtime program may use the value of parameters - because the parameters are resolved at compile time
+The runtime program may use the value of **[parameters]** - because the parameters are resolved at compile time
 before they are needed by the runtime program - but the compile time parameter expressions may not use runtime values.
 
 `Self` type from [PEP673](https://peps.python.org/pep-0673/)
@@ -913,6 +926,58 @@ fn __sub__(self, rhs: Self) -> Self:
         result[i] = self[i] - rhs[i]
     return result
 ```
+
+In the docs you can find word **Fields** it is aka class **Attributes** in the Python.
+
+So, you call them with `dot`.
+
+```python
+from DType import DType
+let bool_type = DType.bool
+```
+
+## Data Type Model and alias
+
+* The base construct block is [DType](https://docs.modular.com/mojo/MojoStdlib/DType.html).
+  Some analogies:
+  - [NumPy dtype](https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy-dtype)
+  - [Jax dtype](https://jax.readthedocs.io/en/latest/_autosummary/jax.numpy.dtype.html#jax-numpy-dtype)
+  - [TensorFlow DType](https://www.tensorflow.org/api_docs/python/tf/dtypes/DType)
+
+```python
+from DType import DType
+DType.si8
+```
+
+* Then you can wrap it with [SIMD struct](https://docs.modular.com/mojo/MojoStdlib/SIMD.html) aka container.
+
+```python
+from DType import DType
+from SIMD import SIMD, SI8
+
+alias MY_SIMD_DType_si8 = SIMD[DType.si8, 1]
+alias MY_SI8 = SI8
+print(MY_SIMD_DType_si8 == MY_SI8)
+# true
+```
+
+* Then a sequence of these types you can wrap with a container [DynamicVector](https://docs.modular.com/mojo/MojoStdlib/Vector.html) or similar.
+
+```python
+from DType import DType
+from SIMD import SIMD, SI8
+from Vector import DynamicVector
+from String import String
+
+alias a = DynamicVector[SIMD[DType.si8, 1]]
+alias b = DynamicVector[SI8]
+print(a == b)
+print(a == String)
+print(b == String)
+# all true
+```
+
+So the `String` is only alias for a something like `DynamicVector[SIMD[DType.si8, 1]]`.
 
 ## `VariadicList` for destructuring/unpacking/accessing arguments
 
@@ -1038,6 +1103,52 @@ It allows closures that capture runtime values to be passed as parameter values.
 fn test(): return
 ```
 
+## Intrinsics and Advanced Mojo🔥features
+Modular [Intrinsics](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html) it is some kind of **execution backends**:
+
+- Mojo🔥**compiler** features
+- **LLVM intrinsic** maybe [this one](https://libc.llvm.org/stdio.html)
+- **External call** like [libc](https://www.gnu.org/software/libc/manual/html_node/Function-Index.html)
+- [MLIR Multi-Level Intermediate Representation](https://docs.modular.com/mojo/notebooks/BoolMLIR.html)
+
+Mojo🔥-> [MLIR Dialects](https://mlir.llvm.org/docs/Dialects/) -> execution backend with optimization code and architectures.
+
+[MLIR](https://mlir.llvm.org/docs) is a compiler infrastructure witch implementing various transformation and optimization passes for different **programming languages** and **architectures**.
+
+MLIR itself does not directly provide functionality for interacting with operating system [syscalls](https://en.wikipedia.org/wiki/System_call).
+
+Which are low-level interfaces to operating system services, are typically handled at the level of the target programming language or the operating system itself.
+MLIR is designed to be language-and-target-agnostic, and its primary focus is on providing an intermediate representation for performing optimizations.
+To perform operating system syscalls in MLIR, we need to use a target-specific **backend**.
+
+But with these `execution backends`, basically, we have access to OS syscalls.
+And we have the whole world of C/LLVM/Python staff under the hood.
+
+Lets have same quick look on it in practice:
+
+```python
+from OS import getenv
+
+print(getenv("PATH"))
+print(getenv(StringRef("PATH")))
+
+# or like this
+from SIMD import SI8
+from Intrinsics import external_call
+
+var path1 = external_call["getenv", StringRef](StringRef("PATH"))
+print(path1.data)
+
+var path2 = external_call["getenv", StringRef]("PATH")
+print(path2.data)
+
+let abs_10 = external_call["abs", SI8, Int](-10)
+print(abs_10)
+```
+
+In this example we used `external_call` to get OS environment variable with a casting type between Mojo and libc functions.
+Pretty cool, yeah!
+
 # The Zen of Mojo🔥
 
 * [Style Guide for Mojo Code. Zen of Mojo #141](https://github.com/modularml/mojo/discussions/141)
@@ -1080,6 +1191,22 @@ If you want to build something not trivial, it will be hard but funny!
    I'm really into Mojo🔥, it excites, fascinates me, and I hope it does the same for you.
 5. I believe that a well-known distinguished leader Ph.D. Computer Science Chris Lattner can build things, systems, teams and change the future.
 
+## Modular and Mojo🔥 history and etymology
+
+Mojo🔥 is a [Modular Inc](https://www.modular.com) programming language. Why **Mojo** we [discussed here](https://github.com/ego/awesome-mojo#why-is-it-called-mojo).
+About [Company](https://www.modular.com/about) we know less, but it has a very cool name `Modular`,
+which can be referred to:
+
+* [Modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)
+* [Modulo](https://en.wikipedia.org/wiki/Modulo)
+* [Modular programming](https://en.wikipedia.org/wiki/Modular_programming)
+* [Modularity](https://en.wikipedia.org/wiki/Modularity)
+
+> ["In other words: Mojo isn’t magic, it’s modular."](https://docs.modular.com/mojo/notebooks/BoolMLIR.html)
+
+All about computing, programming, AI/ML.
+A very good domain name that accurately describes the meaning of the Company.
+
 # Additional materials
 
 * [Chris Lattner](https://nondot.org/sabre/)
@@ -1090,6 +1217,7 @@ If you want to build something not trivial, it will be hard but funny!
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
 * [Mojo Cheatsheet](https://github.com/czheo/mojo-cheatsheet/tree/main)
 * [Counting chars with SIMD in Mojo](https://mzaks.medium.com/counting-chars-with-simd-in-mojo-140ee730bd4d)
+* [History of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages)
 
 ## MLIR and low-level implementation
 
@@ -1141,3 +1269,10 @@ If you want to build something not trivial, it will be hard but funny!
 * [Sagemaker](https://aws.amazon.com/sagemaker/)
 * [MLIR: accelerating AI with open-source infrastructure](https://www.blog.google/technology/ai/mlir-accelerating-ai-open-source-infrastructure/)
 * [Apache TVM](https://tvm.apache.org)
+
+
+# Contributing
+
+* Your contributions are always welcome!
+* If you have any **question**, do not hesitate to contact me.
+* If you would like to participate in the initiative [Mojo🔥Driven Community](https://mojo-lang.dev), please contact me.
