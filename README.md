@@ -86,16 +86,14 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 # News
 
-[/\]
+[new]
 
-* |
 * [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
 * [Matrix fn with numpy #267](https://github.com/modularml/mojo/discussions/267)
 * Updates about `lambda` and `parameter` [Closures and higer order functions in mojo #244](https://github.com/modularml/mojo/discussions/244#discussioncomment-6008071)
 * May-25-2023, Guido van Rossum (gvanrossum#8415), creator and emeritus BDFL of Python, visit the Mojo🔥 public [Discord Chat](https://www.discord.gg/modular)
 * [Waiting for a Mojo🔥 syntax highlighting at GitHub](https://github.com/github-linguist/linguist/pull/6400)
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
-* |
 
 [old]
 
