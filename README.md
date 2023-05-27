@@ -1397,6 +1397,7 @@ A very good domain name that accurately describes the meaning of the Company.
 * [Chris Lattner](https://nondot.org/sabre/)
 * [LLVM](https://llvm.org)
 * [MLIR](https://mlir.llvm.org)
+* [Circuit IR Compilers and Tools](https://circt.llvm.org)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
