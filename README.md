@@ -1047,7 +1047,7 @@ print("From start to the end with step 2:", hello_mojo[0::2])
 print("From start to the before last with step 3:", hello_mojo[0:-1:3])
 ```
 
-<img src="string_slice.png" height="200" />
+<img src="img/string_slice.png" height="200" />
 
 There is some problem with unicode, when slicing 🔥:
 
