@@ -86,7 +86,7 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 # News
 
-[new_/\_]
+[/\]
 
 * |
 * [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
@@ -97,7 +97,7 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 * [New Mojo🔥release 2023-05-24](https://docs.modular.com/mojo/changelog.html#section)
 * |
 
-[old_|_]
+[old]
 
 Mojo🔥
 
