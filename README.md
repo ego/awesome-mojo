@@ -941,7 +941,8 @@ from DType import DType
 DType.si8
 ```
 
-* Then you can wrap it with [SIMD struct](https://docs.modular.com/mojo/MojoStdlib/SIMD.html) aka container.
+* Then you can wrap it with **SIMD struct** aka container.
+* SIMD [Single Instruction, Multiple Data](https://docs.modular.com/mojo/MojoStdlib/SIMD.html)
 
 ```python
 from DType import DType
@@ -1061,27 +1062,6 @@ Here is an [explanation](https://mzaks.medium.com/counting-chars-with-simd-in-mo
 
 [mbstowcs - convert a multibyte string to a wide-character string](https://man7.org/linux/man-pages/man3/mbstowcs.3.html)
 
-
-### casting
-
-Some casting examples
-
-```python
-s: StringLiteral
-let p = DTypePointer[DType.si8](s.data()).bitcast[DType.ui8]()
-var result = 0
-result += ((p.simd_load[64](offset) >> 6) != 0b10).cast[DType.ui8]().reduce_add().to_int()
-let rest_p: DTypePointer[DType.ui8] = stack_allocation[simd_width, UI8, 1]()
-
-from Bit import ctlz
-s: String
-i: Int
-let code = s.buffer.data.load(i)
-let byte_length_code = ctlz(~code).to_int()
-```
-
-
-
 ## Mojo🔥decorators
 
 ### @value
@@ -1132,6 +1112,108 @@ It allows closures that capture runtime values to be passed as parameter values.
 @parameter
 fn test(): return
 ```
+
+## Casting
+
+Some casting examples
+
+```python
+s: StringLiteral
+let p = DTypePointer[DType.si8](s.data()).bitcast[DType.ui8]()
+var result = 0
+result += ((p.simd_load[64](offset) >> 6) != 0b10).cast[DType.ui8]().reduce_add().to_int()
+let rest_p: DTypePointer[DType.ui8] = stack_allocation[simd_width, UI8, 1]()
+
+from Bit import ctlz
+s: String
+i: Int
+let code = s.buffer.data.load(i)
+let byte_length_code = ctlz(~code).to_int()
+```
+
+## Stack, Mem, Pointer, Allocation, Free
+
+## DTypePointer, Heap and Stack
+
+**DTypePointer** - store an address with a given DType, allowing you to allocate, load and modify data with convenient access to SIMD operations.
+
+```python
+from Pointer import DTypePointer
+from DType import DType
+from Random import rand
+from Memory import memset_zero
+
+# `heap`
+var my_pointer_on_heap = DTypePointer[DType.ui8].alloc(8)
+memset_zero(my_pointer_on_heap, 8)
+
+# `stack or register`
+var data = my_pointer_on_heap.simd_load[8](0)
+print(data)
+
+rand(my_pointer_on_heap, 4)
+
+# `data` does not contain a reference to the `heap`, so load the data again
+data = my_pointer_on_heap.simd_load[8](0)
+print(data)
+
+# simd_load and simd_store
+var half = my_pointer_on_heap.simd_load[4](0)
+half = half + 1
+my_pointer_on_heap.simd_store[4](4, half)
+print(my_pointer_on_heap.simd_load[8](0))
+
+# Pointer move back
+my_pointer_on_heap -= 1
+print(my_pointer_on_heap.simd_load[8](0))
+
+# Mast free memory
+my_pointer_on_heap.free()
+```
+
+Struct can minimaze potential dangerous of pointers by limiting scoup.
+
+Excellent article on Mojo Dojo blog about [DTypePointer here](https://mojodojo.dev/guides/modules/Pointer/DTypePointer.html#storing-and-loading-simd-data)
+
+Plus his example [Matrix Struct and DTypePointer](algorithm/MatrixStruct.mojo)
+
+## Pointer
+
+[Pointer](https://docs.modular.com/mojo/MojoStdlib/Pointer.html) store an address to any `register_passable type`, and allocate `n` amount of them to the `heap`.
+
+```python
+from Pointer import Pointer
+from Memory import memset_zero
+from String import String
+
+@register_passable  # for syntaxt like `let coord = p1[0]` and let it be passed through registers.
+struct Coord:  # memory-only type
+    var x: UI8
+    var y: UI8
+
+var p1 = Pointer[Coord].alloc(2)
+
+memset_zero(p1, 2)
+var coord = p1[0]  # is an identifier to memory on the stack or in a register
+print(coord.x)
+
+# Store the value
+
+coord.x = 5
+coord.y = 5
+print(coord.x)
+
+# We need to store the data.
+p1.store(0, coord)
+print(p1[0].x)
+
+# Mast free memory
+p1.free()
+```
+
+Full article about [Pointer](https://mojodojo.dev/guides/modules/Pointer/Pointer.html)
+
+Plus his exemple [Pointer and Struct](algorithm/MatrixStruct.mojo)
 
 ## Advanced Mojo🔥features and Intrinsics module
 Modular [Intrinsics](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html) it is some kind of **execution backends**:
@@ -1235,7 +1317,6 @@ fn star_hostname(hostname: String) -> String:
 [Time utils by Samay Kapadia @Zalando](https://github.com/modularml/mojo/issues/156)
 
 ## Python Interface and reading files
-
 by Maxim Zaks
 
 ```python
