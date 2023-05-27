@@ -1023,6 +1023,8 @@ v = create_vertor()
 print(v[0], v[3])
 ```
 
+Read more about function [def](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions) and [fn](https://docs.modular.com/mojo/programming-manual.html#fn-definitions)
+
 ## Strings
 
 ```python
