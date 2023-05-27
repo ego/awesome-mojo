@@ -1170,6 +1170,12 @@ It requires a lot of understanding, patience and experience in any other program
 
 If you want to build something not trivial, it will be hard but funny!
 
+It has been **2 weeks** since I embarked on this **journey**, and I am thrilled to share that I have now become **well-acquainted** with the Mojo🔥.
+
+The intricacies of its **structure and syntax** have started to **unravel before my eyes**, and I am filled with a newfound **understanding**.
+
+I am proud to say that I can now confidently **craft code** in this language, allowing me to bring to life a **diverse** range of **ideas**.
+
 ## Major things to improve:
 
 1. Weak and unclear **documentation**.
@@ -1178,7 +1184,7 @@ If you want to build something not trivial, it will be hard but funny!
 3. More **explanation** to the language **paradigms**
 4. Lack **comparison** to Python base things datatypes/functions/classes/expressions.
 5. Even though Mojo is superset of Python, the **threshold** of language entry is **not so simple**.
-6. A little bit raw, need some time for **stabilizing** language.
+6. A little bit raw, need some time for **stabilizing** language. Production release 1.0.
 7. **Bugs**, like in any one.
 8. Small **standard library**.
 9. Project Jupyter and **notebooks environment**.
