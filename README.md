@@ -1098,7 +1098,7 @@ Modular [Intrinsics](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html) i
 - **External call** like [libc](https://www.gnu.org/software/libc/manual/html_node/Function-Index.html)
 - [MLIR Multi-Level Intermediate Representation](https://docs.modular.com/mojo/notebooks/BoolMLIR.html)
 
-Mojo🔥-> [MLIR Dialects](https://mlir.llvm.org/docs/Dialects/) -> execution backend with optimization code and architectures.
+Mojo🔥-> [MLIR Dialects](https://mlir.llvm.org/docs/Dialects/) -> execution backends with optimization code and architectures.
 
 [MLIR](https://mlir.llvm.org/docs) is a compiler infrastructure witch implementing various transformation and optimization passes for different **programming languages** and **architectures**.
 
