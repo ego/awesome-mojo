@@ -1213,7 +1213,7 @@ p1.free()
 
 Full article about [Pointer](https://mojodojo.dev/guides/modules/Pointer/Pointer.html)
 
-Plus his exemple [Pointer and Struct](algorithm/MatrixStruct.mojo)
+Plus exemple [Pointer and Struct](algorithm/Pointer.mojo)
 
 ## Advanced Mojo🔥features and Intrinsics module
 Modular [Intrinsics](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html) it is some kind of **execution backends**:
