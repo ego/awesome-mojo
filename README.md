@@ -203,7 +203,7 @@ print(
 )
 ```
 
-**It is the first binary search written in Mojo🔥by community (@Ego) and posted in mojo-chat.**
+**It is the first binary search written in Mojo🔥by community (@ego) and posted in mojo-chat.**
 
 <img src="img/python_binary_search_05.15.2023.png" height="300" />
 <img src="img/mojo_binary_search_05.15.2023.png" height="300" />
@@ -1039,19 +1039,6 @@ let x: Int = 1
 print("'%i'\n", x.value)
 ```
 
-## Read CSV file
-
-by Maxim Zaks
-
-```python
-from String import String
-from PythonInterface import Python
-
-let pathlib = Python.import_module('pathlib')
-let txt = pathlib.Path('nfl.csv').read_text()
-let s: String = txt.to_string()
-```
-
 ## Mojo🔥decorators
 
 ### @value
@@ -1103,7 +1090,7 @@ It allows closures that capture runtime values to be passed as parameter values.
 fn test(): return
 ```
 
-## Intrinsics and Advanced Mojo🔥features
+## Advanced Mojo🔥features and Intrinsics module
 Modular [Intrinsics](https://docs.modular.com/mojo/MojoStdlib/Intrinsics.html) it is some kind of **execution backends**:
 
 - Mojo🔥**compiler** features
@@ -1148,6 +1135,20 @@ print(abs_10)
 
 In this example we used `external_call` to get OS environment variable with a casting type between Mojo and libc functions.
 Pretty cool, yeah!
+
+## Python Interface and reading files
+
+by Maxim Zaks
+
+```python
+from String import String
+from PythonInterface import Python
+
+let pathlib = Python.import_module('pathlib')
+let txt = pathlib.Path('nfl.csv').read_text()
+let s: String = txt.to_string()
+```
+
 
 # The Zen of Mojo🔥
 
