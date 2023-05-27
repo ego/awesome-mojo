@@ -1057,6 +1057,31 @@ print("Unicode efore last 2 chars:", hello_mojo_unicode[0:-2])
 # no result, silents
 ```
 
+Here is an [explanation](https://mzaks.medium.com/counting-chars-with-simd-in-mojo-140ee730bd4d) and some [discussion](https://github.com/modularml/mojo/discussions/270).
+
+[mbstowcs - convert a multibyte string to a wide-character string](https://man7.org/linux/man-pages/man3/mbstowcs.3.html)
+
+
+### casting
+
+Some casting examples
+
+```python
+s: StringLiteral
+let p = DTypePointer[DType.si8](s.data()).bitcast[DType.ui8]()
+var result = 0
+result += ((p.simd_load[64](offset) >> 6) != 0b10).cast[DType.ui8]().reduce_add().to_int()
+let rest_p: DTypePointer[DType.ui8] = stack_allocation[simd_width, UI8, 1]()
+
+from Bit import ctlz
+s: String
+i: Int
+let code = s.buffer.data.load(i)
+let byte_length_code = ctlz(~code).to_int()
+```
+
+
+
 ## Mojo🔥decorators
 
 ### @value
