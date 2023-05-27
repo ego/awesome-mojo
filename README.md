@@ -1102,6 +1102,7 @@ Mojo🔥-> [MLIR Dialects](https://mlir.llvm.org/docs/Dialects/) -> execution ba
 
 [MLIR](https://mlir.llvm.org/docs) is a compiler infrastructure witch implementing various transformation and optimization passes for different **programming languages** and **architectures**.
 
+### Syscalls
 MLIR itself does not directly provide functionality for interacting with operating system [syscalls](https://en.wikipedia.org/wiki/System_call).
 
 Which are low-level interfaces to operating system services, are typically handled at the level of the target programming language or the operating system itself.
@@ -1133,8 +1134,11 @@ let abs_10 = external_call["abs", SI8, Int](-10)
 print(abs_10)
 ```
 
-In this example we used `external_call` to get OS environment variable with a casting type between Mojo and libc functions.
+In this simple example we used `external_call` to get OS environment variable with a casting type between Mojo and libc functions.
 Pretty cool, yeah!
+
+I have a lot of ideas from this topic and I am eagerly awaiting the opportunity to implement them soon.
+Taking action can lead to amazing outcomes =)
 
 ## Python Interface and reading files
 
