@@ -1350,7 +1350,7 @@ tar -czPf web.tar.gz web
 ```
 and upload `web.tar.gz` to playground via web interface.
 
-Ten we need to `install` it, just put into proper folder:
+Then we need to `install` it, just put into proper folder:
 
 ```python
 %%python
