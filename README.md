@@ -1308,7 +1308,7 @@ fn star_hostname(hostname: String) -> String:
 <img src="img/gethostname.png" height="200" />
 
 
-## Mojo TCP Socket Server with PythonInterface
+## Mojo🔥TCP Socket Server with PythonInterface
 
 Let's do some things for a WEB with Mojo🔥.
 We do not have Internet access at playground.modular.com
@@ -1333,6 +1333,116 @@ You should create two separate notebooks, and run **TCPSocketServer** first then
 * [Pytohn socket low-level networking interface](https://docs.python.org/3/library/socket.html)
 * [Pytohn socketserver framework for network servers](https://docs.python.org/3/library/socketserver.html#module-socketserver)
 
+
+## Mojo🔥FastAPI with PythonInterface
+
+After TCP Server in Mojo🔥 we are going forward =)
+
+It's crazy, but let's try to run modern Python web server [FastAPI](https://fastapi.tiangolo.com) with Mojo🔥!
+
+### Preparation
+We need to upload FastAPI code to playground.
+So, on your local machine do
+
+```shell
+pip install --target=web fastapi uvicorn
+tar -czPf web.tar.gz web
+```
+and upload `web.tar.gz` to playground via web interface.
+
+Ten we need to `install` it, just put into proper folder:
+
+```python
+%%python
+import os
+import site
+
+site_packages_path = site.getsitepackages()[0]
+# install fastapi
+os.system(f"tar xzf web.tar.gz -C {site_packages_path}")
+os.system(f"cp -r {site_packages_path}/web/* {site_packages_path}/")
+os.system(f"ls {site_packages_path} | grep fastapi")
+# clean packages
+os.system(f"rm -rf {site_packages_path}/web")
+os.system(f"rm web.tar.gz")
+```
+
+### Mojo🔥FastAPI Server
+
+```python
+from PythonInterface import Python
+
+# Python fastapi
+let fastapi = Python.import_module("fastapi")
+let uvicorn = Python.import_module("uvicorn")
+
+var app = fastapi.FastAPI()
+var router = fastapi.APIRouter()
+
+# tricky part
+let py = Python()
+let py_code = """lambda: 'Hello Mojo🔥!'"""
+let py_obj = py.evaluate(py_code)
+print(py_obj)
+
+router.add_api_route("/mojo", py_obj)
+app.include_router(router)
+
+print("Start FastAPI WEB Server")
+uvicorn.run(app)
+print("Done")
+```
+
+### Mojo🔥FastAPI Client
+
+```python
+from PythonInterface import Python
+let http_client = Python.import_module("http.client")
+
+let conn = http_client.HTTPConnection("localhost", 8000)
+conn.request("GET", "/mojo")
+let response = conn.getresponse()
+print(response.status, response.reason, response.read())
+```
+
+As usual, you should create two separate notebooks, and run **FastAPI** first then **FastAPIClient**.
+
+* [Mojo🔥FastAPI Server](algorithm/MojoFastAPI.mojo)
+* [Mojo🔥FastAPI Client](algorithm/MojoFastAPIClient.mojo)
+
+There are a lot of open questions, but basically we achieve the goal.
+
+<img src="img/MojoFastAPI.png" width="600" />
+<img src="img/MojoFastAPIClient.png" width="600" />
+
+Mojo🔥 well done!
+
+Some of them:
+
+- Lack of Python syntax sugar
+- Lack of Mojo types implicitly converted into Python objects
+- How to pass Mojo function into Python space/function
+
+```python
+from PythonInterface import Python
+
+let pyfn = Python.evaluate("lambda x, y: x+y")
+let functools = Python.import_module("functools")
+print(functools.reduce(pyfn, [1, 2, 3, 4]))
+
+# How to, without Mojo pyfn.so?
+def pyfn(x, y):
+    retyrn x+y
+```
+
+The future looks very optimistic!
+
+Links:
+
+* [Mojo types in Python](https://docs.modular.com/mojo/programming-manual.html#mojo-types-in-python)
+* [Mandelbrot in Mojo with Python plots](https://docs.modular.com/mojo/notebooks/Mandelbrot.html)
+
+
 # Code implementation
 
 ## Radiative transfer
@@ -1340,6 +1450,9 @@ You should create two separate notebooks, and run **TCPSocketServer** first then
 
 ## Instant and DateTimeLocal
 [Time utils by Samay Kapadia @Zalando](https://github.com/modularml/mojo/issues/156)
+
+## IDEA
+[Connecting to your mojo playground from VSCode or DataSpell](https://github.com/modularml/mojo/discussions/277)
 
 ## Python Interface and reading files
 by Maxim Zaks
@@ -1352,6 +1465,17 @@ let pathlib = Python.import_module('pathlib')
 let txt = pathlib.Path('nfl.csv').read_text()
 let s: String = txt.to_string()
 ```
+
+## Code share from Mojo Playground
+
+1. From the Mojo Playground, `right click` the file in the explorer and press `Open With > Editor`
+2. Right click in the editor, `select all` and `copy`
+3. Create a new [GitHub gist](https://gist.github.com) or put Jupyter notebook file into yor GitHub repository
+4. Paste in the contents and name the file with the Jupyter extension like test`.ipynb`
+5. Paste the link to the gist in the Discord chat
+
+Github renders it properly, and then if someone wants to try out the code in their playground they can copy paste the raw code.
+
 
 # The Zen of Mojo🔥
 
