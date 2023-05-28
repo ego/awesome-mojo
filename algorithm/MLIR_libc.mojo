@@ -12,7 +12,7 @@ from Pointer import DTypePointer, Pointer
 # We can use `from String import String` but for clarification we will use a full form.
 # DynamicVector[SIMD[DType.si8, 1]] == DynamicVector[SI8] == String
 
-# Compile time staff.
+# Compile time stuff.
 alias cArrayOfStrings = DynamicVector[SIMD[DType.si8, 1]]
 alias capacity = 1024
 

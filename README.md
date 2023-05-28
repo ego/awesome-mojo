@@ -1235,7 +1235,7 @@ MLIR is designed to be language-and-target-agnostic, and its primary focus is on
 To perform operating system syscalls in MLIR, we need to use a target-specific **backend**.
 
 But with these `execution backends`, basically, we have access to OS syscalls.
-And we have the whole world of C/LLVM/Python staff under the hood.
+And we have the whole world of C/LLVM/Python stuff under the hood.
 
 Lets have same quick look on it in practice:
 
@@ -1286,7 +1286,7 @@ from Pointer import DTypePointer, Pointer
 # We can use `from String import String` but for clarification we will use a full form.
 # DynamicVector[SIMD[DType.si8, 1]] == DynamicVector[SI8] == String
 
-# Compile time staff.
+# Compile time stuff.
 alias cArrayOfStrings = DynamicVector[SIMD[DType.si8, 1]]
 alias capacity = 1024
 
@@ -1307,6 +1307,22 @@ fn star_hostname(hostname: String) -> String:
 
 <img src="img/gethostname.png" height="200" />
 
+
+## Mojo TCP Socket Server with PythonInterface
+
+Let's do some things for a WEB with Mojo🔥.
+We do not have Internet access at playground.modular.com
+But we can steal do some interesting stuff like TCP on one machine.
+
+Let's write the first TCP client-server code in Mojo🔥 with [PythonInterface](https://docs.modular.com/mojo/MojoPython/PythonInterface.html)
+
+<img src="img/TCPSocketServer.png" width="250" />
+<img src="img/TCPSocketClient.png" width="250" />
+
+* [Mojo TCP Socket Server](algorithm/TCPSocketServer.mojo)
+* [Mojo TCP Client Server](algorithm/TCPSocketClient.mojo)
+
+Preatty nice
 
 # Code implementation
 
@@ -1398,6 +1414,7 @@ A very good domain name that accurately describes the meaning of the Company.
 * [LLVM](https://llvm.org)
 * [MLIR](https://mlir.llvm.org)
 * [Circuit IR Compilers and Tools](https://circt.llvm.org)
+* [Cross Compile Compiler-rt](https://releases.llvm.org/8.0.1/docs/HowToCrossCompileBuiltinsOnArm.html)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
