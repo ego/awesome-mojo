@@ -1417,7 +1417,7 @@ There are a lot of open questions, but basically we achieve the goal.
 
 Mojo🔥 well done!
 
-Some of them:
+Some open questions:
 
 - Lack of Python syntax sugar
 - Lack of Mojo types implicitly converted into Python objects
