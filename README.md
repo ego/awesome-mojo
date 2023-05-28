@@ -1408,7 +1408,9 @@ print(response.status, response.reason, response.read())
 As usual, you should create two separate notebooks, and run **FastAPI** first then **FastAPIClient**.
 
 * [Mojo🔥FastAPI Server](algorithm/MojoFastAPI.mojo)
+* [Mojo🔥FastAPI Server Jupyter Notebook](notebooks/MojoFastAPI.ipynb)
 * [Mojo🔥FastAPI Client](algorithm/MojoFastAPIClient.mojo)
+* [Mojo🔥FastAPI Client Jupyter Notebook](notebooks/MojoFastAPIClient.ipynb)
 
 There are a lot of open questions, but basically we achieve the goal.
 
