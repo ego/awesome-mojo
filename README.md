@@ -1316,13 +1316,22 @@ But we can steal do some interesting stuff like TCP on one machine.
 
 Let's write the first TCP client-server code in Mojo🔥 with [PythonInterface](https://docs.modular.com/mojo/MojoPython/PythonInterface.html)
 
-<img src="img/TCPSocketServer.png" width="250" />
-<img src="img/TCPSocketClient.png" width="250" />
+<img src="img/TCPSocketServer.png" width="400" />
+<img src="img/TCPSocketClient.png" width="400" />
 
 * [Mojo TCP Socket Server](algorithm/TCPSocketServer.mojo)
 * [Mojo TCP Client Server](algorithm/TCPSocketClient.mojo)
 
-Preatty nice
+You should create two separate notebooks, and run **TCPSocketServer** first then **TCPSocketClient**.
+
+**Python version** of this code almost the same, except:
+
+- `with` syntax
+- `let` assigning
+- and destructuring like `a, b = (1, 2)`
+
+* [Pytohn socket low-level networking interface](https://docs.python.org/3/library/socket.html)
+* [Pytohn socketserver framework for network servers](https://docs.python.org/3/library/socketserver.html#module-socketserver)
 
 # Code implementation
 
