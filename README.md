@@ -1316,8 +1316,8 @@ But we can steal do some interesting stuff like TCP on one machine.
 
 Let's write the first TCP client-server code in Mojo🔥 with [PythonInterface](https://docs.modular.com/mojo/MojoPython/PythonInterface.html)
 
-<img src="img/TCPSocketServer.png" width="800" />
-<img src="img/TCPSocketClient.png" width="800" />
+<img src="img/TCPSocketServer.png" width="600" />
+<img src="img/TCPSocketClient.png" width="600" />
 
 * [Mojo TCP Socket Server](algorithm/TCPSocketServer.mojo)
 * [Mojo TCP Client Server](algorithm/TCPSocketClient.mojo)
