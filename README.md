@@ -1550,6 +1550,7 @@ A very good domain name that accurately describes the meaning of the Company.
 * [MLIR](https://mlir.llvm.org)
 * [Circuit IR Compilers and Tools](https://circt.llvm.org)
 * [Cross Compile Compiler-rt](https://releases.llvm.org/8.0.1/docs/HowToCrossCompileBuiltinsOnArm.html)
+* [The future of AI depends on Modularity](https://www.modular.com/blog/the-future-of-ai-depends-on-modularity)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
