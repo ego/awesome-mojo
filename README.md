@@ -1543,6 +1543,9 @@ which can be referred to:
 All about computing, programming, AI/ML.
 A very good domain name that accurately describes the meaning of the Company.
 
+There are some additional materials about [Modular's Brand Story](https://www.modular.com/blog/modulars-brand-story)
+and [Helping Modular Humanize AI Through Brand](https://www.metalab.com/blog/helping-modular-humanize-ai-through-brand)
+
 # Additional materials
 
 * [Chris Lattner](https://nondot.org/sabre/)
@@ -1551,6 +1554,7 @@ A very good domain name that accurately describes the meaning of the Company.
 * [Circuit IR Compilers and Tools](https://circt.llvm.org)
 * [Cross Compile Compiler-rt](https://releases.llvm.org/8.0.1/docs/HowToCrossCompileBuiltinsOnArm.html)
 * [The future of AI depends on Modularity](https://www.modular.com/blog/the-future-of-ai-depends-on-modularity)
+* [The Architecture of Open Source Applications LLVM](https://aosabook.org/en/v1/llvm.html)
 * [The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner](https://youtu.be/4HgShra-KnY)
 * [LLVM in 100 Seconds](https://youtu.be/BT2Cv-Tjq7Q)
 * [Mojo Dojo](https://mojodojo.dev/mojo_team_answers.html)
