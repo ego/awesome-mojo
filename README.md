@@ -88,6 +88,8 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* [Guido van Rossum about Mojo = Python with C++/GPU performance?](https://discuss.python.org/t/mojo-python-with-c-gpu-performance/26993/6)
+  <img src="img/guido-cpython-mojo.png" height="200" />
 * [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
 * [Matrix fn with numpy #267](https://github.com/modularml/mojo/discussions/267)
 * Updates about `lambda` and `parameter` [Closures and higer order functions in mojo #244](https://github.com/modularml/mojo/discussions/244#discussioncomment-6008071)
