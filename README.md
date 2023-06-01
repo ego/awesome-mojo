@@ -89,7 +89,9 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 [new]
 
 * New [GitHub Topic mojo-lang](https://github.com/topics/mojo-lang). So you can follow it.
-  <img src="img/GitHub-Topic-Mojo-Lang.png" height="300" />
+
+  <img src="img/GitHub-Topic-Mojo-Lang.png" height="200" />
+
 * [Guido van Rossum about Mojo = Python with C++/GPU performance?](https://discuss.python.org/t/mojo-python-with-c-gpu-performance/26993/6)
   <img src="img/guido-cpython-mojo.png" height="200" />
 * [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
