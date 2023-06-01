@@ -88,6 +88,8 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* New [GitHub Topic mojo-lang](https://github.com/topics/mojo-lang). So you can follow it.
+  <img src="img/GitHub-Topic-Mojo-Lang.png" height="300" />
 * [Guido van Rossum about Mojo = Python with C++/GPU performance?](https://discuss.python.org/t/mojo-python-with-c-gpu-performance/26993/6)
   <img src="img/guido-cpython-mojo.png" height="200" />
 * [Tensor struct with some basic ops #251](https://github.com/modularml/mojo/discussions/251)
@@ -1595,6 +1597,7 @@ and [Helping Modular Humanize AI Through Brand](https://www.metalab.com/blog/hel
 * [Metaflow](https://metaflow.org)
 * [Accelerating experimentation with mlops](https://www.rea-group.com/about-us/news-and-insights/blog/accelerating-experimentation-with-mlops/)
 * [nebuly-ai](https://github.com/nebuly-ai/nebuly/tree/v0.9.0)
+* [Numba compiler for Python bytecode, Numba IR into LLVM IR, Compile LLVM IR to machine code](https://numba.readthedocs.io/en/stable/developer/architecture.html)
 
 ## AI
 
