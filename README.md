@@ -88,6 +88,9 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* [Chris Lattner: Future of Programming and AI | Lex Fridman Podcast #381](https://www.youtube.com/watch?v=pdJQ8iVTwj8)
+* [Mojo and Python type system explained | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=0VCq8jJjAPc)
+* [Can Mojo run Python code? | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=99hRAvk3wIk)
 * [Switching from Python to Mojo programming language | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=7wo4vyB7l3s)
 * New [GitHub Topic mojo-lang](https://github.com/topics/mojo-lang). So you can follow it.
 
