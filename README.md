@@ -88,6 +88,7 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* [Switching from Python to Mojo programming language | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=7wo4vyB7l3s)
 * New [GitHub Topic mojo-lang](https://github.com/topics/mojo-lang). So you can follow it.
 
   <img src="img/GitHub-Topic-Mojo-Lang.png" height="200" />
