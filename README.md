@@ -1478,6 +1478,10 @@ let txt = pathlib.Path('nfl.csv').read_text()
 let s: String = txt.to_string()
 ```
 
+
+[libc implementation](https://github.com/crisadamo/mojo-libc/blob/main/Libc.mojo)
+
+
 ## Code share from Mojo Playground
 
 1. From the Mojo Playground, `right click` the file in the explorer and press `Open With > Editor`
