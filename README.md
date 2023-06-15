@@ -952,7 +952,7 @@ DType.si8
 ```
 
 * Then you can wrap it with **SIMD struct** aka container.
-* SIMD [Single Instruction, Multiple Data](https://docs.modular.com/mojo/MojoStdlib/SIMD.html)
+* SIMD [Single Instruction, Multiple Data](https://docs.modular.com/mojo/MojoStdlib/SIMD.html) and [SIMD at wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)
 
 ```python
 from DType import DType
