@@ -1,0 +1,15 @@
+def fib_range(n):
+    a, b = 0, 1
+    @par
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+
+
+fib_range(10000)
+
+
+# brew install hyperfine
+# hyperfine --warmup 10 -r 100 --time-unit=microsecond 'codon run -release algorithm/fib.codon'
+# codon build -release -exe algorithm/fib.codon -o algorithm/fib.codon.exe
+# hyperfine --warmup 10 -r 100 --time-unit=microsecond './algorithm/fib.codon.exe' --export-markdown=algorithm/fib.codon.exe.md

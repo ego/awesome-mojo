@@ -871,6 +871,13 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
 * [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground.
 
+Files:
+
+* [fib.codon](algorithm/fib.codon)
+* [fib.codon.exe.md](algorithm/fib.codon.exe.md)
+* [fib.cpython-311.pyc.md](algorithm/fib.cpython-311.pyc.md)
+
+
 # Programming manual
 
 ## Parameterization[]: compile time meta-programming

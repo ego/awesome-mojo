@@ -54,3 +54,5 @@ MANIFEST
 .python-version
 
 *.iml
+
+!algorithm/__pycache__/fib.cpython-311.pyc
