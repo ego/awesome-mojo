@@ -857,19 +857,20 @@ print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
 
 ## Summary for Fibonacci sequence algorithms
 
-| Lang                  | sec             |
-|-----------------------|-----------------|
-| Python recursion      | 21.66928672     |
-| Python range          | **0.000004529** |
-| Mojo🔥 def recursion  | 4.293431831     |
-| Mojo🔥 fn recursion   | 0.416578139     |
-| **Mojo🔥 fn range**   | **0.000000037** |
-| Codon recursion       | 0.275645 [1]    |
+| Lang                  | sec               |
+|-----------------------|-------------------|
+| Python recursion      | 21.66928672       |
+| Python range          | **0.000004529**   |
+| Mojo🔥 def recursion  | 4.293431831       |
+| Mojo🔥 fn recursion   | 0.416578139       |
+| **Mojo🔥 fn range**   | **0.000000037**   |
+| Codon recursion[1]    | 0.275528          |
+| Codon range[1]        | **0.00000020768** |
 
 * Mojo🔥boost in **122 times**.
 * Mojo🔥 `fn` definitely better optimize than `def` [read more here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions)
 * Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
-* [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground.
+* [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground. Codon version is 0.16.3
 
 Files:
 

@@ -1,5 +1,6 @@
 #%%python
-from time import time
+import os
+from time import time, perf_counter
 
 
 def fib(n):
@@ -25,11 +26,19 @@ def fib_range(n):
 
 
 def run_python_fib_range_benchmark():
+    start_time = perf_counter()
     t0 = time()
     ans = fib_range(40)
     t1 = time()
-    print(f'Computed fib_range(40) = {ans} in {t1 - t0} seconds.')
+    end_time = perf_counter()
+    if t1 - t0 <= 0:
+        res = end_time - start_time
+        print(f'Computed fib_range(40) = {ans} in {res} seconds.')
+    else:
+        res = t1 - t0
+        print(f'Computed fib_range(40) = {ans} in {res:f} seconds.')
 
 
 run_python_fib_range_benchmark()
-# Computed fib_range(40) = 102334155 in 4.5299530029296875e-06 seconds.
+# Python: Computed fib_range(40) = 102334155 in 4.5299530029296875e-06 seconds.
+# Codon:  Computed fib_range(40) = 102334155 in 2.07685e-07 seconds.
