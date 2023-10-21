@@ -149,7 +149,7 @@ brew install silicon
 
 <img src="benchmarks/macchina-sys-info.png" width="800" />
 
-Python / Mojo / Codon versions
+Python / Mojo / Codon / Rust  versions
 
 ```shell
 > python3 --version
@@ -160,6 +160,9 @@ mojo 0.4.0 (9e33b013)
 
 > codon --version
 0.16.3
+
+> rustc --version
+rustc 1.65.0-nightly (9243168fa 2022-08-31)
 ```
 
 ## [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)
@@ -340,6 +343,59 @@ Benchmark 1: ./benchmarks/fibonacci_sequence/codon_iteration\
   Range (min … max):   2036.6 µs … 13236.3 µs    100 runs
 
 
+### [Rust Fibonacci Sequence Recursion](benchmarks/fibonacci_sequence/rust/main.rs)
+
+```rust
+fn fibonacci_recursive(n: i64) -> i64 {
+    if n < 2 {
+        return n;
+    }
+    return fibonacci_recursive(n - 1) + fibonacci_recursive( n - 2);
+}
+fn main() {
+    let _ = fibonacci_recursive(100);
+}
+```
+
+```shell
+rustc -C opt-level=3 benchmarks/fibonacci_sequence/rust_recursion.rs -o benchmarks/fibonacci_sequence/rust_recursion
+
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/rust_recursion.json './benchmarks/fibonacci_sequence/rust_recursion'
+```
+
+**RESULT: TIMEOUT, I canceled computation after 1m**
+
+
+### [Rust Fibonacci Sequence Iteration](benchmarks/fibonacci_sequence/rust_iteration.rs)
+
+```rust
+fn fibonacci_iteration(n: usize) -> usize {
+    let mut a = 1;
+    let mut b = 1;
+    for _ in 1..n {
+        let old = a;
+        a = b;
+        b += old;
+    }
+    b
+}
+fn main() {
+    let _ = fibonacci_iteration(100);
+}
+```
+
+```shell
+rustc -C opt-level=3 benchmarks/fibonacci_sequence/rust_iteration.rs -o benchmarks/fibonacci_sequence/rust_iteration
+
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/rust_iteration.json './benchmarks/fibonacci_sequence/rust_iteration'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/fibonacci_sequence/rust_iteration\
+  Time (mean ± σ):     848.9 µs ± 283.2 µs    [User: 371.8 µs, System: 261.4 µs]\
+  Range (min … max):   525.9 µs … 2607.3 µs    100 runs
+
+
 ## Summary Fibonacci Sequence
 
 ```shell
@@ -373,6 +429,7 @@ Detailed one by one
 
 Places
 
+1. Rust
 1. Mojo
 2. Codon
 3. Python

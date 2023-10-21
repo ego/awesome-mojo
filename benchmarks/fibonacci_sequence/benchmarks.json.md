@@ -1,4 +1,16 @@
-1 Command './benchmarks/fibonacci_sequence/mojo_iteration'
+1 Command './benchmarks/fibonacci_sequence/rust_iteration'
+  runs:        100
+  mean:      0.001 s
+  stddev:    0.000 s
+  median:    0.001 s
+  min:       0.001 s
+  max:       0.003 s
+
+  percentiles:
+     P_05 .. P_95:    0.001 s .. 0.001 s
+     P_25 .. P_75:    0.001 s .. 0.001 s  (IQR = 0.000 s)
+
+2 Command './benchmarks/fibonacci_sequence/mojo_iteration'
   runs:        100
   mean:      0.001 s
   stddev:    0.000 s
@@ -10,7 +22,7 @@
      P_05 .. P_95:    0.001 s .. 0.002 s
      P_25 .. P_75:    0.001 s .. 0.001 s  (IQR = 0.000 s)
 
-2 Command './benchmarks/fibonacci_sequence/codon_iteration'
+3 Command './benchmarks/fibonacci_sequence/codon_iteration'
   runs:        100
   mean:      0.003 s
   stddev:    0.001 s
@@ -22,7 +34,7 @@
      P_05 .. P_95:    0.002 s .. 0.004 s
      P_25 .. P_75:    0.002 s .. 0.003 s  (IQR = 0.000 s)
 
-3 Command 'python3 benchmarks/fibonacci_sequence/python_iteration.py'
+4 Command 'python3 benchmarks/fibonacci_sequence/python_iteration.py'
   runs:        100
   mean:      0.016 s
   stddev:    0.001 s
@@ -34,7 +46,7 @@
      P_05 .. P_95:    0.016 s .. 0.017 s
      P_25 .. P_75:    0.016 s .. 0.017 s  (IQR = 0.001 s)
 
-4 Command 'python3 benchmarks/fibonacci_sequence/__pycache__/python_iteration.cpython-311.pyc'
+5 Command 'python3 benchmarks/fibonacci_sequence/__pycache__/python_iteration.cpython-311.pyc'
   runs:        100
   mean:      0.017 s
   stddev:    0.001 s
@@ -46,7 +58,7 @@
      P_05 .. P_95:    0.016 s .. 0.018 s
      P_25 .. P_75:    0.016 s .. 0.017 s  (IQR = 0.001 s)
 
-5 Command 'mojo run benchmarks/fibonacci_sequence/mojo_iteration.mojo'
+6 Command 'mojo run benchmarks/fibonacci_sequence/mojo_iteration.mojo'
   runs:        100
   mean:      0.044 s
   stddev:    0.001 s
@@ -58,14 +70,14 @@
      P_05 .. P_95:    0.042 s .. 0.047 s
      P_25 .. P_75:    0.043 s .. 0.044 s  (IQR = 0.001 s)
 
-6 Command 'codon run -release benchmarks/fibonacci_sequence/codon_iteration.codon'
+7 Command 'codon run --release benchmarks/fibonacci_sequence/codon_iteration.codon'
   runs:        100
-  mean:      0.628 s
-  stddev:    0.010 s
-  median:    0.628 s
-  min:       0.613 s
-  max:       0.663 s
+  mean:      0.631 s
+  stddev:    0.015 s
+  median:    0.627 s
+  min:       0.612 s
+  max:       0.677 s
 
   percentiles:
-     P_05 .. P_95:    0.615 s .. 0.646 s
-     P_25 .. P_75:    0.620 s .. 0.633 s  (IQR = 0.013 s)
+     P_05 .. P_95:    0.615 s .. 0.662 s
+     P_25 .. P_75:    0.619 s .. 0.640 s  (IQR = 0.020 s)
