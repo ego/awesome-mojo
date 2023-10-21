@@ -443,6 +443,9 @@ But here a lot of questions:
 * Why Python interpreter faster than Mojo/Codon `run`?
 
 
+So, we can say that Mojo🔥 is as fast as Rust on Mac!
+
+
 # Awesome Mojo🔥 code
 
 
