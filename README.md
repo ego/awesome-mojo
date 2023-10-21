@@ -88,6 +88,8 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* October 19, 2023 [Mojo🔥 is now available on Mac!](https://www.modular.com/blog/mojo-is-now-available-on-mac)
+[Use developer console](https://developer.modular.com/download)
 * [Chris Lattner: Future of Programming and AI | Lex Fridman Podcast #381](https://www.youtube.com/watch?v=pdJQ8iVTwj8)
 * [Mojo and Python type system explained | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=0VCq8jJjAPc)
 * [Can Mojo run Python code? | Chris Lattner and Lex Fridman](https://www.youtube.com/watch?v=99hRAvk3wIk)
@@ -114,7 +116,276 @@ Mojo🔥
 * [Issues](https://github.com/modularml/mojo/issues)
 
 
+# Benchmarks
+
+## Tools
+
+* [hyperfine](https://github.com/sharkdp/hyperfine) a command-line benchmarking tool
+
+```shell
+brew install hyperfine
+```
+
+* [macchina](https://github.com/Macchina-CLI/macchina) a system information frontend with an emphasis on performance.
+
+```shell
+brew install macchina
+```
+
+* Python3 libs for plots
+
+```shell
+pip3 install numpy matplotlib scipy
+```
+
+* Code to image PNG
+
+```shell
+brew install silicon
+```
+
+
+## Benchmarking environment
+
+<img src="benchmarks/macchina-sys-info.png" width="600" />
+
+Python / Mojo / Codon versions
+
+```shell
+> python3 --version
+Python 3.11.6
+
+> mojo --version
+mojo 0.4.0 (9e33b013)
+
+> codon --version
+0.16.3
+```
+
+## [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)
+
+Lets find Fibonacci Sequence where
+
+**N = 100**
+
+### [Python Fibonacci Sequence Recursion](benchmarks/fibonacci_sequence/python_recursion.py)
+
+```python
+def fibonacci_recursion(n):
+    return n if n < 2 else fibonacci_recursion(n - 1) + fibonacci_recursion(n - 2)
+fibonacci_recursion(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json python_recursion.json 'python3 benchmarks/fibonacci_sequence/python_recursion.py'
+```
+
+**RESULT: TIMEOUT, I canceled computation after 1m**
+
+
+### [Python Fibonacci Sequence Iteration](benchmarks/fibonacci_sequence/python_iteration.py)
+
+```python
+def fibonacci_iteration(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+fibonacci_iteration(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/python_iteration.json 'python3 benchmarks/fibonacci_sequence/python_iteration.py'
+```
+
+**RESULT**:\
+Benchmark 1: python3 benchmarks/fibonacci_sequence/python_iteration.py\
+  Time (mean ± σ):     16374.7 µs ± 904.0 µs    [User: 11483.5 µs, System: 3680.0 µs]\
+  Range (min … max):   15361.0 µs … 22863.3 µs    100 runs
+
+
+### Compile Python byte code
+
+```shell
+python3 -m compileall benchmarks/fibonacci_sequence/python_recursion.py
+python3 -m compileall benchmarks/fibonacci_sequence/python_iteration.py
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/python_recursion.cpython-311.json 'python3 benchmarks/fibonacci_sequence/__pycache__/python_recursion.cpython-311.pyc'
+# TIMEOUT!
+
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/python_iteration.cpython-311.json 'python3 benchmarks/fibonacci_sequence/__pycache__/python_iteration.cpython-311.pyc'
+```
+
+**RESULT**:\
+Benchmark 1: python3 benchmarks/fibonacci_sequence/__pycache__/python_iteration.cpython-311.pyc\
+  Time (mean ± σ):     16584.6 µs ± 761.5 µs    [User: 11451.8 µs, System: 3813.3 µs]\
+  Range (min … max):   15592.0 µs … 20953.2 µs    100 runs
+
+
+### [Mojo Fibonacci Sequence Recursion](benchmarks/fibonacci_sequence/mojo_recursion.mojo)
+
+```mojo
+fn fibonacci_recursion(n: Int) -> Int:
+    return n if n < 2 else fibonacci_recursion(n - 1) + fibonacci_recursion(n - 2)
+fn main():
+    _ = fibonacci_recursion(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/mojo_recursion.json 'mojo run benchmarks/fibonacci_sequence/mojo_recursion.mojo'
+```
+
+**RESULT: TIMEOUT, I canceled computation after 1m**
+
+
+### [Mojo Fibonacci Sequence Iteration](benchmarks/fibonacci_sequence/mojo_iteration.mojo)
+
+```mojo
+fn fibonacci_iteration(n: Int) -> Int:
+    var a: Int = 0
+    var b: Int = 1
+    for _ in range(n):
+        a = b
+        b = a+b
+    return a
+fn main():
+    _ = fibonacci_iteration(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/mojo_iteration.json 'mojo run benchmarks/fibonacci_sequence/mojo_iteration.mojo'
+```
+
+**RESULT**:\
+Benchmark 1: mojo run benchmarks/fibonacci_sequence/mojo_iteration.mojo\
+  Time (mean ± σ):     43852.7 µs ± 1353.5 µs    [User: 38156.0 µs, System: 10407.3 µs]\
+  Range (min … max):   42033.6 µs … 49357.3 µs    100 runs
+
+
+### Compile Mojo code
+
+```shell
+mojo build benchmarks/fibonacci_sequence/mojo_recursion.mojo
+mojo build benchmarks/fibonacci_sequence/mojo_iteration.mojo
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/mojo_recursion.exe.json './benchmarks/fibonacci_sequence/mojo_recursion'
+# TIMEOUT!
+
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/mojo_iteration.exe.json './benchmarks/fibonacci_sequence/mojo_iteration'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/fibonacci_sequence/mojo_iteration\
+  Time (mean ± σ):     934.6 µs ± 468.9 µs    [User: 409.8 µs, System: 247.8 µs]\
+  Range (min … max):   552.7 µs … 4522.9 µs    100 runs
+
+
+### [Codon Fibonacci Sequence Recursion](benchmarks/fibonacci_sequence/codon_recursion.codon)
+
+```codon
+def fibonacci_recursion(n):
+    return n if n < 2 else fibonacci_recursion(n - 1) + fibonacci_recursion(n - 2)
+fibonacci_recursion(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/codon_recursion.json 'codon run --release benchmarks/fibonacci_sequence/codon_recursion.codon'
+```
+
+**RESULT: TIMEOUT, I canceled computation after 1m**
+
+
+### [Codon Fibonacci Sequence Iteration](benchmarks/fibonacci_sequence/codon_iteration.codon)
+
+```codon
+def fibonacci_iteration(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+fibonacci_iteration(100)
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/codon_iteration.json 'codon run --release benchmarks/fibonacci_sequence/codon_iteration.codon'
+```
+
+**RESULT**:\
+Benchmark 1: codon run --release benchmarks/fibonacci_sequence/codon_iteration.codon\
+  Time (mean ± σ):     628060.1 µs ± 10430.5 µs    [User: 584524.3 µs, System: 39358.5 µs]\
+  Range (min … max):   612742.5 µs … 662716.9 µs    100 runs
+
+
+### Compile Codon code
+
+```shell
+codon build --release -exe benchmarks/fibonacci_sequence/codon_recursion.codon
+codon build --release -exe benchmarks/fibonacci_sequence/codon_iteration.codon
+```
+
+```shell
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json codon_recursion.exe.json './benchmarks/fibonacci_sequence/codon_recursion'
+# TIMEOUT!
+
+hyperfine --warmup 10 -r 100 --time-unit=microsecond --export-json benchmarks/fibonacci_sequence/codon_iteration.exe.json './benchmarks/fibonacci_sequence/codon_iteration'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/fibonacci_sequence/codon_iteration\
+  Time (mean ± σ):     2732.7 µs ± 1145.5 µs    [User: 1466.0 µs, System: 1061.5 µs]\
+  Range (min … max):   2036.6 µs … 13236.3 µs    100 runs
+
+
+## Summary Fibonacci Sequence
+
+```shell
+# Merge all JSON files into benchmarks.json
+python3 benchmarks/hyperfine-scripts/merge_jsons.py benchmarks/fibonacci_sequence/ benchmarks/fibonacci_sequence/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/plot2.py benchmarks/fibonacci_sequence/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/plot3.py benchmarks/fibonacci_sequence/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/plot_histogram.py benchmarks/fibonacci_sequence/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/advanced_statistics.py benchmarks/fibonacci_sequence/benchmarks.json > benchmarks/fibonacci_sequence/benchmarks.json.md
+
+silicon benchmarks/fibonacci_sequence/benchmarks.json.md -l python -o benchmarks/fibonacci_sequence/benchmarks.json.md.png
+```
+
+Advanced statistics
+
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.md.png" width="600" />
+
+All together
+
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.all.png" width="600" />
+
+Detailed one by one
+
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.combined.png" width="600" />
+
+Places
+
+1. Mojo
+2. Codon
+3. Python
+
+But here a lot of questions:
+
+* How to optimize code/build/run?
+* Why `mojo run` so slow?
+* Why `codon run --release` so slow?
+* Why compiled Python byte code +/- equals Python interpreter?
+* Why Python interpreter faster than Mojo/Codon `run`?
+
+
 # Awesome Mojo🔥 code
+
 
 # Binary Search Algorithm
 
@@ -730,153 +1001,6 @@ plt.show()
 Plot notes, more is better and faster.
 
 <img src="img/comparison_sorting.png" />
-
-# [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)
-
-## [Python Fib](algorithm/Fib_Python.py)
-
-```python
-#%%python
-from time import time
-
-
-def fib(n):
-    return n if n < 2 else fib(n - 1) + fib(n - 2)
-
-
-def run_python_benchmark():
-    t0 = time()
-    ans = fib(40)
-    t1 = time()
-    print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
-
-
-run_python_benchmark()
-# Computed fib(40) = 102334155 in 21.669286727905273 seconds.
-
-
-def fib_range(n):
-    a, b = 0, 1
-    for _ in range(n):
-        a, b = b, a+b
-    return a
-
-
-def run_python_fib_range_benchmark():
-    t0 = time()
-    ans = fib_range(40)
-    t1 = time()
-    print(f'Computed fib_range(40) = {ans} in {t1 - t0} seconds.')
-
-
-run_python_fib_range_benchmark()
-# Computed fib_range(40) = 102334155 in 4.5299530029296875e-06 seconds.
-```
-
-## [Mojo🔥 Fib with def](algorithm/FibDef_Mojo.mojo)
-
-```python
-from Time import now
-
-
-def fibm(n):
-    return n if n < 2 else fibm(n - 1) + fibm(n - 2)
-
-
-def run_mojo_benchmark():
-    let t0 = now()
-    let ans = fibm(40)
-    let t1 = now()
-
-    ans.print()
-    print("\n")
-    print("Computed fibm(40)", F64(t1 - t0) / 1e9, "seconds")
-
-
-run_mojo_benchmark()
-# 102334155
-# Computed fibm(40) 4.2934318319999996 seconds
-```
-
-## [Mojo🔥 Fib with fn](algorithm/FibFn_Mojo.mojo)
-
-```python
-from Time import now
-
-
-fn fibf(n: Int) -> Int:
-return n if n < 2 else fibf(n - 1) + fibf(n - 2)
-
-
-def run_mojo_fn_benchmark():
-    let t0 = now()
-    let ans = fibf(40)
-    let t1 = now()
-    print("Computed fibf(40)", ans, F64(t1 - t0) / 1e9, "seconds")
-
-
-run_mojo_fn_benchmark()
-# Computed fibf(40) 102334155 0.41657813999999999 seconds
-
-
-fn fibf_range(n: Int) -> Int:
-    var a: Int = 0
-    var b: Int = 1
-    for _ in range(n):
-        a = b
-        b = a+b
-    return a
-
-
-def run_mojo_fibf_range_benchmark():
-    let t0 = now()
-    let ans = fibf_range(40)
-    let t1 = now()
-    print("Computed fibf_range(40)", ans, F64(t1 - t0) / 1e9, "seconds")
-
-
-run_mojo_fibf_range_benchmark()
-# Computed fibf_range(40) 549755813 3.7e-08 seconds
-```
-
-## [Codon Fib](algorithm/Fib_Codon.py)
-
-```python
-from time import time
-
-def fib(n):
-    return n if n < 2 else fib(n - 1) + fib(n - 2)
-
-
-t0 = time()
-ans = fib(40)
-t1 = time()
-print(f'Computed fib(40) = {ans} in {t1 - t0} seconds.')
-# Computed fib(40) = 102334155 in 0.275645 seconds.
-```
-
-## Summary for Fibonacci sequence algorithms
-
-| Lang                  | sec               |
-|-----------------------|-------------------|
-| Python recursion      | 21.66928672       |
-| Python range          | **0.000004529**   |
-| Mojo🔥 def recursion  | 4.293431831       |
-| Mojo🔥 fn recursion   | 0.416578139       |
-| **Mojo🔥 fn range**   | **0.000000037**   |
-| Codon recursion[1]    | 0.275528          |
-| Codon range[1]        | **0.00000020768** |
-
-* Mojo🔥boost in **122 times**.
-* Mojo🔥 `fn` definitely better optimize than `def` [read more here](https://docs.modular.com/mojo/notebooks/HelloMojo.html#fn-definitions)
-* Python lack of [tail recursion optimization](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
-* [Welcome to Codon](https://docs.exaloop.io/codon), [1] we can not measure it in Modular playground. Codon version is 0.16.3
-
-Files:
-
-* [fib.codon](algorithm/fib.codon)
-* [fib.codon.exe.md](algorithm/fib.codon.exe.md)
-* [fib.cpython-311.pyc.md](algorithm/fib.cpython-311.pyc.md)
 
 
 # Programming manual
