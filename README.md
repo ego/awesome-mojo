@@ -147,7 +147,7 @@ brew install silicon
 
 ## Benchmarking environment
 
-<img src="benchmarks/macchina-sys-info.png" width="600" />
+<img src="benchmarks/macchina-sys-info.png" width="800" />
 
 Python / Mojo / Codon versions
 
@@ -350,8 +350,6 @@ python3 benchmarks/hyperfine-scripts/plot2.py benchmarks/fibonacci_sequence/benc
 
 python3 benchmarks/hyperfine-scripts/plot3.py benchmarks/fibonacci_sequence/benchmarks.json
 
-python3 benchmarks/hyperfine-scripts/plot_histogram.py benchmarks/fibonacci_sequence/benchmarks.json
-
 python3 benchmarks/hyperfine-scripts/advanced_statistics.py benchmarks/fibonacci_sequence/benchmarks.json > benchmarks/fibonacci_sequence/benchmarks.json.md
 
 silicon benchmarks/fibonacci_sequence/benchmarks.json.md -l python -o benchmarks/fibonacci_sequence/benchmarks.json.md.png
@@ -359,15 +357,19 @@ silicon benchmarks/fibonacci_sequence/benchmarks.json.md -l python -o benchmarks
 
 Advanced statistics
 
-<img src="benchmarks/fibonacci_sequence/benchmarks.json.md.png" width="600" />
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.md.png" width="800" />
 
 All together
 
-<img src="benchmarks/fibonacci_sequence/benchmarks.json.all.png" width="600" />
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.all.png" width="800" />
+
+Zoomed
+
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.all2.png" width="800" />
 
 Detailed one by one
 
-<img src="benchmarks/fibonacci_sequence/benchmarks.json.combined.png" width="600" />
+<img src="benchmarks/fibonacci_sequence/benchmarks.json.combined.png" width="800" />
 
 Places
 
