@@ -446,6 +446,214 @@ But here a lot of questions:
 So, we can say that Mojo🔥 is as fast as Rust on Mac!
 
 
+## [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set)
+
+Lets find Mandelbrot Set where
+
+WIDTH = 960\
+HEIGHT = 960\
+MAX_ITERS = 200
+
+MIN_X = -2.0\
+MAX_X = 0.6\
+MIN_Y = -1.5\
+MAX_Y = 1.5
+
+
+### [Python Mandelbrot Set](benchmarks/multibrot_set/multibrot.py)
+```python
+def mandelbrot_kernel(c):
+    z = c
+    for i in range(MAX_ITERS):
+        z = z * z + c  # Change this for different Multibrot sets (e.g., 2 for Mandelbrot)
+        if z.real * z.real + z.imag * z.imag > 4:
+            return i
+    return MAX_ITERS
+
+
+def compute_mandelbrot():
+    t = [[0 for _ in range(WIDTH)] for _ in range(HEIGHT)] # Pixel matrix
+    dx = (MAX_X - MIN_X) / WIDTH
+    dy = (MAX_Y - MIN_Y) / HEIGHT
+    for row in range(HEIGHT):
+        for col in range(WIDTH):
+            t[row][col] = mandelbrot_kernel(complex(MIN_X + col * dx, MIN_Y + row * dy))
+    return t
+
+
+compute_mandelbrot()
+```
+
+```shell
+python3 -m compileall benchmarks/multibrot_set/multibrot.py
+
+hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/multibrot_set/multibrot.cpython-311.json 'python3 benchmarks/multibrot_set/__pycache__/multibrot.cpython-311.pyc'
+```
+
+**RESULT**:\
+Benchmark 1: python3 benchmarks/multibrot_set/__pycache__/multibrot.cpython-311.pyc\
+  Time (mean ± σ):     5444155.4 µs ± 23059.7 µs    [User: 5419790.1 µs, System: 18131.3 µs]\
+  Range (min … max):   5408155.3 µs … 5490548.4 µs    10 runs\
+
+
+### [Mojo Mandelbrot Set](benchmarks/multibrot_set/multibrot.mojo)
+
+Mojo version with no optimization.
+
+```mojo
+# Compute the number of steps to escape.
+def multibrot_kernel(c: ComplexFloat64) -> Int:
+    z = c
+    for i in range(MAX_ITERS):
+        z = z * z + c  # Change this for different Multibrot sets (e.g., 2 for Mandelbrot)
+        if z.squared_norm() > 4:
+            return i
+    return MAX_ITERS
+
+
+def compute_multibrot() -> Tensor[FloatType]:
+    # create a matrix. Each element of the matrix corresponds to a pixel
+    t = Tensor[FloatType](HEIGHT, WIDTH)
+
+    dx = (MAX_X - MIN_X) / WIDTH
+    dy = (MAX_Y - MIN_Y) / HEIGHT
+
+    y = MIN_Y
+    for row in range(HEIGHT):
+        x = MIN_X
+        for col in range(WIDTH):
+            t[Index(row, col)] = multibrot_kernel(ComplexFloat64(x, y))
+            x += dx
+        y += dy
+    return t
+
+
+_ = compute_multibrot()
+```
+
+```shell
+mojo build benchmarks/multibrot_set/multibrot.mojo
+
+hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/multibrot_set/multibrot.exe.json './benchmarks/multibrot_set/multibrot'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/multibrot_set/multibrot\
+  Time (mean ± σ):     135880.5 µs ± 1175.4 µs    [User: 133309.3 µs, System: 1700.1 µs]\
+  Range (min … max):   134639.9 µs … 137621.4 µs    10 runs
+
+
+### [Codon Mandelbrot Set](benchmarks/multibrot_set/multibrot.codon)
+```codon
+def mandelbrot_kernel(c):
+    z = c
+    for i in range(MAX_ITERS):
+        z = z * z + c  # Change this for different Multibrot sets (e.g., 2 for Mandelbrot)
+        if z.real * z.real + z.imag * z.imag > 4:
+            return i
+    return MAX_ITERS
+
+
+def compute_mandelbrot():
+    t = [[0 for _ in range(WIDTH)] for _ in range(HEIGHT)]  # Pixel matrix
+
+    dx = (MAX_X - MIN_X) / WIDTH
+    dy = (MAX_Y - MIN_Y) / HEIGHT
+
+    @par(collapse=2)
+    for row in range(HEIGHT):
+        for col in range(WIDTH):
+            t[row][col] = mandelbrot_kernel(complex(MIN_X + col * dx, MIN_Y + row * dy))
+    return t
+
+
+compute_mandelbrot()
+```
+
+For test run or plot (uncomment code in the file)
+
+```shell
+CODON_PYTHON=/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/libpython3.11.dylib codon run --release benchmarks/multibrot_set/multibrot.codon
+```
+
+Build and run
+
+```shell
+codon build --release -exe benchmarks/multibrot_set/multibrot.codon -o benchmarks/multibrot_set/multibrot_codon
+
+hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/multibrot_set/multibrot_codon.json './benchmarks/multibrot_set/multibrot_codon'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/multibrot_set/multibrot_codon\
+  Time (mean ± σ):     44184.7 µs ± 1142.0 µs    [User: 248773.9 µs, System: 72935.3 µs]\
+  Range (min … max):   42963.8 µs … 46456.2 µs    10 runs
+
+
+## Summary Mandelbrot Set
+
+```shell
+# Merge all JSON files into benchmarks.json
+python3 benchmarks/hyperfine-scripts/merge_jsons.py benchmarks/multibrot_set/ benchmarks/multibrot_set/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/plot2.py benchmarks/multibrot_set/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/plot3.py benchmarks/multibrot_set/benchmarks.json
+
+python3 benchmarks/hyperfine-scripts/advanced_statistics.py benchmarks/multibrot_set/benchmarks.json > benchmarks/multibrot_set/benchmarks.json.md
+
+silicon benchmarks/multibrot_set/benchmarks.json.md -l python -o benchmarks/multibrot_set/benchmarks.json.md.png
+```
+
+Advanced statistics
+
+<img src="benchmarks/multibrot_set/benchmarks.json.md.png" width="800" />
+
+All together
+
+<img src="benchmarks/multibrot_set/benchmarks.json.all.png" width="800" />
+
+Zoomed
+
+<img src="benchmarks/multibrot_set/benchmarks.json.all2.png" width="800" />
+
+Detailed one by one
+
+<img src="benchmarks/multibrot_set/benchmarks.json.combined.png" width="800" />
+
+Places
+
+1. Codon
+2. Mojo
+3. Python
+
+TODO:
+
+1) We are waiting for Mojo optimized version!
+Like here [Mojo Mandelbrot](https://docs.modular.com/mojo/notebooks/Mandelbrot.html)
+
+
+Links:
+
+* [Multibrot Set](https://en.wikipedia.org/wiki/Multibrot_set)
+
+Mandelbrot = Multibrot with `power = 2`
+
+```python
+z = z**power + c  # You can change this for different set
+```
+
+* [Pillow built-in ImagingEffectMandelbrot](https://github.com/python-pillow/Pillow/blob/10.1.0/src/libImaging/Effects.c#L23)
+
+* [Exaloop Codon version of Mandelbrot](https://github.com/exaloop/codon/blob/develop/bench/mandelbrot/mandelbrot.codon)
+
+* [Modular Mojo version of Mandelbrot](https://github.com/modularml/mojo/blob/main/examples/mandelbrot.mojo)
+
+* [Mojo Complex squared_norm](https://docs.modular.com/mojo/stdlib/complex/complex.html#squared_norm)
+
+* [Matplotlib Mandelbrot](https://matplotlib.org/stable/gallery/showcase/mandelbrot.html)
+
+
 # Awesome Mojo🔥 code
 
 
