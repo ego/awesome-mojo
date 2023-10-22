@@ -76,27 +76,27 @@ def main():
     #     print("failed to show plot:", e)
 
 
-def show_plot(tensor: Tensor[float_type]):
-    alias scale = 10
-    alias dpi = 64
+# def show_plot(tensor: Tensor[float_type]):
+#     alias scale = 10
+#     alias dpi = 64
 
-    from python import Python
-    np = Python.import_module("numpy")
-    plt = Python.import_module("matplotlib.pyplot")
-    colors = Python.import_module("matplotlib.colors")
+#     from python import Python
+#     np = Python.import_module("numpy")
+#     plt = Python.import_module("matplotlib.pyplot")
+#     colors = Python.import_module("matplotlib.colors")
 
-    numpy_array = np.zeros((height, width), np.float64)
+#     numpy_array = np.zeros((height, width), np.float64)
 
-    for row in range(height):
-        for col in range(width):
-            numpy_array.itemset((col, row), tensor[col, row])
+#     for row in range(height):
+#         for col in range(width):
+#             numpy_array.itemset((col, row), tensor[col, row])
 
-    fig = plt.figure(1, [scale, scale * height // width], dpi)
-    ax = fig.add_axes((0.0, 0.0, 1.0, 1.0))
-    light = colors.LightSource(315, 10, 0, 1, 1, 0)
+#     fig = plt.figure(1, [scale, scale * height // width], dpi)
+#     ax = fig.add_axes((0.0, 0.0, 1.0, 1.0))
+#     light = colors.LightSource(315, 10, 0, 1, 1, 0)
 
-    image = light.shade(numpy_array, plt.cm.hot, colors.PowerNorm(0.3), "hsv", 0, 0, 1.5)
-    plt.imshow(image)
-    plt.axis("off")
-    plt.savefig("multibrot_mojo_ parallelize.mojo.png")
-    plt.show()
+#     image = light.shade(numpy_array, plt.cm.hot, colors.PowerNorm(0.3), "hsv", 0, 0, 1.5)
+#     plt.imshow(image)
+#     plt.axis("off")
+#     plt.savefig("multibrot_mojo_ parallelize.mojo.png")
+#     plt.show()
