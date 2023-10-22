@@ -543,6 +543,74 @@ Benchmark 1: ./benchmarks/multibrot_set/multibrot\
   Range (min … max):   134639.9 µs … 137621.4 µs    10 runs
 
 
+### [Mojo Parallelized Mandelbrot Set](benchmarks/multibrot_set/multibrot_mojo_parallelize.mojo)
+
+```mojo
+fn mandelbrot_kernel_SIMD[
+    simd_width: Int
+](c: ComplexSIMD[float_type, simd_width]) -> SIMD[float_type, simd_width]:
+    """A vectorized implementation of the inner mandelbrot computation."""
+    let cx = c.re
+    let cy = c.im
+    var x = SIMD[float_type, simd_width](0)
+    var y = SIMD[float_type, simd_width](0)
+    var y2 = SIMD[float_type, simd_width](0)
+    var iters = SIMD[float_type, simd_width](0)
+
+    var t: SIMD[DType.bool, simd_width] = True
+    for i in range(MAX_ITERS):
+        if not t.reduce_or():
+            break
+        y2 = y * y
+        y = x.fma(y + y, cy)
+        t = x.fma(x, y2) <= 4
+        x = x.fma(x, cx - y2)
+        iters = t.select(iters + 1, iters)
+    return iters
+
+
+fn compute_multibrot_parallelized() -> Tensor[float_type]:
+    let t = Tensor[float_type](height, width)
+
+    @parameter
+    fn worker(row: Int):
+        let scale_x = (max_x - min_x) / width
+        let scale_y = (max_y - min_y) / height
+
+        @parameter
+        fn compute_vector[simd_width: Int](col: Int):
+            """Each time we operate on a `simd_width` vector of pixels."""
+            let cx = min_x + (col + iota[float_type, simd_width]()) * scale_x
+            let cy = min_y + row * scale_y
+            let c = ComplexSIMD[float_type, simd_width](cx, cy)
+            t.data().simd_store[simd_width](
+                row * width + col, mandelbrot_kernel_SIMD[simd_width](c)
+            )
+
+        # Vectorize the call to compute_vector where call gets a chunk of pixels.
+        vectorize[simd_width, compute_vector](width)
+
+    # Parallelized
+    parallelize[worker](height, height)
+    return t
+
+
+def main():
+    _ = compute_multibrot_parallelized()
+```
+
+```shell
+mojo build benchmarks/multibrot_set/multibrot_mojo_parallelize.mojo
+
+hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/multibrot_set/multibrot_mojo_parallelize.exe.json './benchmarks/multibrot_set/multibrot_mojo_parallelize'
+```
+
+**RESULT**:\
+Benchmark 1: ./benchmarks/multibrot_set/multibrot_mojo_parallelize\
+  Time (mean ± σ):     7139.4 µs ± 596.4 µs    [User: 36535.2 µs, System: 6670.1 µs]\
+  Range (min … max):   6222.6 µs … 8269.7 µs    10 runs
+
+
 ### [Codon Mandelbrot Set](benchmarks/multibrot_set/multibrot.codon)
 ```codon
 def mandelbrot_kernel(c):
@@ -623,14 +691,10 @@ Detailed one by one
 
 Places
 
-1. Codon
-2. Mojo
-3. Python
-
-TODO:
-
-1) We are waiting for Mojo optimized version!
-Like here [Mojo Mandelbrot](https://docs.modular.com/mojo/notebooks/Mandelbrot.html)
+1. Mojo (parallelize)
+2. Codon
+3. Mojo
+4. Python
 
 
 Links:
