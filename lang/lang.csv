@@ -1,0 +1,4843 @@
+title     appeared  type rank
+Java 1995 pl   0
+JavaScript     1995 pl   1
+C    1972 pl   2
+Python    1991 pl   3
+SQL  1974 queryLanguage  4
+C++  1985 pl   5
+Linux     1991 os   6
+HTML 1991 textMarkup     7
+XML  1996 dataNotation   8
+PHP  1995 pl   9
+Perl 1987 pl   10
+MATLAB    1984 pl   11
+Ruby 1995 pl   12
+C#   2000 pl   13
+Android   2008 os   14
+MySQL     1995 queryLanguage  15
+Fortran   1957 pl   16
+CSS  1996 stylesheetLanguage  17
+R    1993 pl   18
+Go   2009 pl   19
+JSON 2001 dataNotation   20
+iOS  2007 os   21
+Swift     2014 pl   22
+Scala     2004 pl   23
+Ada  1980 pl   24
+COBOL     1959 pl   25
+Rust 2010 pl   26
+PostgreSQL     1986 queryLanguage  27
+Kotlin    2011 pl   28
+PowerShell     2006 pl   29
+Arduino Programming Language  2005 pl   30
+Pascal    1970 pl   31
+Haskell   1990 pl   32
+TypeScript     2012 pl   33
+SAS  1976 pl   34
+ARM  1985 assembly  35
+Lisp 1958 pl   36
+Lua  1993 pl   37
+Node.js   2009 pl   38
+Julia     2012 pl   39
+Prolog    1972 pl   40
+Clojure   2007 pl   41
+HTTP 1989 protocol  42
+Objective-C    1984 pl   43
+Assembly language   1960 assembly  44
+Scheme    1970 pl   45
+Mathematica    1988 pl   46
+Erlang    1986 pl   47
+Bash 1989 pl   48
+JQuery    2006 library   49
+ISBN 1970 schema    50
+Elixir    2011 pl   51
+CUDA 2007 pl   52
+Dart 2011 pl   53
+Emacs     1976 editor    54
+Modula-2  1978 pl   55
+MongoDB   2009 application    56
+Visual Basic   1991 pl   57
+Tcl  1988 pl   58
+ActionScript   1998 pl   59
+VBA  1993 pl   60
+WordPress 2003 application    61
+Vim  1991 editor    62
+Ruby on Rails  2005 framework 63
+BASIC     1964 pl   64
+Verilog   1984 hardwareDescriptionLanguage   65
+Solidity  2014 contractLanguage    66
+awk  1977 pl   67
+Delphi    1995 pl   68
+ASCII     1963 characterEncoding   69
+F#   2005 pl   70
+AWS  2006 cloud     71
+Regular Expressions 1951 queryLanguage  72
+Elm  2012 pl   73
+Eiffel    1986 pl   74
+ASP  1996 template  75
+Crystal   2014 pl   76
+OCaml     1996 pl   77
+Smalltalk 1972 pl   78
+Git  2005 application    79
+Modula-3  1986 pl   80
+Yacc 1975 grammarLanguage     81
+Racket    1994 pl   82
+D    2001 pl   83
+Unix 1969 os   84
+Sage 2005 pl   85
+Reason    2016 pl   86
+Groovy    2003 pl   87
+UML  1996 xmlFormat 88
+Maple     1982 pl   89
+Common Lisp    1984 pl   90
+Unicode   1987 characterEncoding   91
+CoffeeScript   2009 pl   92
+VHDL 1983 hardwareDescriptionLanguage   93
+APL  1964 pl   94
+OpenCL    2009 pl   95
+YAML 2001 dataNotation   96
+Microsoft Azure     2010 cloud     97
+UTF-8     1993 characterEncoding   98
+DOI  2000 schema    99
+MediaWiki 2002 wikiMarkup     100
+REST 1996 protocol  101
+Microsoft Excel     1987 application    102
+XQuery    2007 pl   103
+PostScript     1982 textMarkup     104
+Nginx     2004 configFormat   105
+GraphQL   2012 queryLanguage  106
+SPSS 1968 pl   107
+PowerPC   1992 isa  108
+Eclipse   2001 editor    109
+TLS  1999 protocol  110
+FTP  1971 protocol  111
+Visual Studio  1997 editor    112
+WebAssembly    2015 bytecode  113
+SOAP 1998 xmlFormat 114
+Literate CoffeeScript    2013 pl   115
+Vue  2014 framework 116
+Matplotlib     2003 library   117
+Rexx 1979 pl   118
+ANTLR     1992 grammarLanguage     119
+Nim  2008 pl   120
+Pug  2010 template  121
+X86  1978 isa  122
+Liquid    2008 template  123
+TCP  1974 protocol  124
+SciPy     2001 library   125
+Smali     2010 assembly  126
+Scratch   2002 visual    127
+Markdown  2004 textMarkup     128
+LFE  2008 pl   129
+LaTeX     1985 textMarkup     130
+Haxe 2005 pl   131
+Forth     1970 pl   132
+Visual Basic .NET   2001 pl   133
+SMTP 1982 protocol  134
+PureBasic 1998 pl   135
+ML   1973 pl   136
+Solaris   1992 os   137
+Chapel    2004 pl   138
+fish 2005 pl   139
+VBScript  1996 pl   140
+PDF  1993 binaryDataFormat    141
+LabVIEW G 1986 pl   142
+Oberon    1986 pl   143
+CIL  2000 pl   144
+Applescript    1993 pl   145
+Lasso     1995 pl   146
+LLVM IR   2003 ir   147
+Oz   1991 pl   148
+Red  2011 pl   149
+ECMAScript     1997 pl   150
+Idris     2014 pl   151
+Simula    1965 pl   152
+V    2019 pl   153
+Protocol Buffers    2008 idl  154
+SQLite    2000 queryLanguage  155
+UDP  1980 protocol  156
+Tex  1978 pl   157
+Logo 1967 pl   158
+AMPL 1985 pl   159
+OpenGL    1992 library   160
+sed  1974 pl   161
+PicoLisp  1988 pl   162
+FreeBSD   1993 os   163
+Standard ML    1990 pl   164
+Visual Studio Code  2015 editor    165
+Drupal    2000 application    166
+JVM  1994 vm   167
+BCPL 1966 pl   168
+Apache Maven   2004 application    169
+Dylan     1992 pl   170
+PL/SQL    1991 pl   171
+Unity     2005 library   172
+PureScript     2013 pl   173
+REBOL     1997 pl   174
+FLUX 2014 pl   175
+Processing     2001 pl   176
+MIPS architecture   1985 isa  177
+Hack 2014 pl   178
+URL  1994 schema    179
+Org  2003 textMarkup     180
+OWL  2004 xmlFormat 181
+SVG  2001 textMarkup     182
+Monaco Editor  2016 editor    183
+Brainfuck 1993 esolang   184
+Algol     1958 pl   185
+FAT  1977 filesystem     186
+DOT  2007 textMarkup     187
+Squirrel  2003 pl   188
+Coq  1989 pl   189
+Fantom    2005 pl   190
+FLEX 1987 grammarLanguage     191
+Monkey    2011 pl   192
+Jinja     2006 template  193
+AUTOCAD   1982 application    194
+BlitzBasic     2000 pl   195
+ABAP 1983 pl   196
+Limbo     1995 pl   197
+EuLisp    1985 pl   198
+Agda 2007 pl   199
+HAML 2006 template  200
+RDF  1997 dataNotation   201
+GAME 1977 pl   202
+MUMPS     1966 pl   203
+x86 Assembly   1972 assembly  204
+ColdFusion     1995 pl   205
+Occam     1983 pl   206
+J    1990 pl   207
+Emacs Lisp     1985 pl   208
+AutoIt    1999 pl   209
+Qt   1995 framework 210
+Zig  2015 pl   211
+NewLisp   1991 pl   212
+Nearley   2014 grammarLanguage     213
+Jison     2009 pl   214
+Makefile  1976 pl   215
+Vala 2006 pl   216
+MIME 1991 textDataFormat 217
+MoonScript     2011 pl   218
+Nemerle   2003 pl   219
+XAML 2008 xmlFormat 220
+TOML 2013 dataNotation   221
+Ballerina 2015 pl   222
+Flow 2014 pl   223
+Terra     2012 pl   224
+Icon 1977 pl   225
+Scilab    1990 pl   226
+X10  2004 pl   227
+Scikit-learn   2007 library   228
+Frege     2011 pl   229
+Slim 2010 template  230
+Turing    1982 pl   231
+PostCSS   2013 textMarkup     232
+idyll     2017 pl   233
+MicroPython    2014 pl   234
+Reverse Polish notation  1953 notation  235
+Io   2002 pl   236
+QML  2009 pl   237
+Mercury   1995 pl   238
+RPG  1959 pl   239
+xBase     1986 pl   240
+JSP  1999 template  241
+Opa  2011 pl   242
+IDL  1977 pl   243
+Hy   2013 pl   244
+Boo  2003 pl   245
+TensorFlow     2015 library   246
+GNU Octave     1988 pl   247
+Ceylon    2011 pl   248
+Zephir    2013 pl   249
+highlight.js   2006 library   250
+Redis     2009 application    251
+SPARQL    2008 queryLanguage  252
+Object Pascal  1986 pl   253
+LOLCODE   2007 esolang   254
+SPARC     1987 isa  255
+Lean 2015 pl   256
+SystemVerilog  2002 pl   257
+Arc  2001 pl   258
+Clean     1987 pl   259
+RobotFramework 2013 pl   260
+SuperCollider  1996 pl   261
+RFC  1969 notation  262
+ALGOL 60  1960 pl   263
+Pony 2012 pl   264
+QBasic    1991 pl   265
+Factor    2003 pl   266
+Cython    2007 pl   267
+Bison     1985 grammarLanguage     268
+XPath     1999 queryLanguage  269
+WebGL     2011 library   270
+CLIPS     1985 pl   271
+Inform    1993 pl   272
+KiCad Legacy Layout 1992 application    273
+SNOBOL    1962 pl   274
+vi   1976 editor    275
+reStructuredText    2002 textMarkup     276
+JSON5     2012 dataNotation   277
+Nextflow  2013 pl   278
+PL/pgSQL  1998 pl   279
+CMake     2000 application    280
+Sass 2006 stylesheetLanguage  281
+Stata     1985 pl   282
+Sublime Text   2008 editor    283
+Multi-User Forth    1995 pl   284
+SI   1960 notation  285
+grep 1974 pl   286
+EDN  2012 dataNotation   287
+API Blueprint  2013 pl   288
+NetLogo   1999 pl   289
+Metal     2014 library   290
+Self 1987 pl   291
+NumPy     1995 library   292
+Pike 1994 pl   293
+RAML 2013 yamlFormat     294
+Gzip 1992 binaryDataFormat    295
+HCL  2014 dataNotation   296
+Isabelle  1986 pl   297
+Magit     2013 application    298
+WSDL 2000 xmlFormat 299
+Deno 2018 compiler  300
+Click     1999 pl   301
+Extensible Linking Format     1999 binaryExecutable    302
+New Technology File System    1993 filesystem     303
+MiniD     2006 pl   304
+Ace Editor     2010 editor    305
+D3.js     2011 library   306
+PL/I 1964 pl   307
+ClojureScript  2011 pl   308
+S-algol   1979 pl   309
+OpenRC runscript    2007 application    310
+ATS  2013 pl   311
+IA-32     1985 isa  312
+F*   2014 pl   313
+AutoLISP  1986 pl   314
+YANG 2014 application    315
+Perl 6    2015 pl   316
+Turtle    2011 dataNotation   317
+Subversion     2000 application    318
+Csound    1985 pl   319
+npm  2010 packageManager 320
+Morse code     1837 notation  321
+Ioke 2008 pl   322
+Lex  1975 grammarLanguage     323
+odin 2016 pl   324
+Wren 2013 pl   325
+AGC  1966 assembly  326
+YARA 2008 pl   327
+FlatBuffers    2014 idl  328
+Ini  1987 dataNotation   329
+FoxPRO    1992 pl   330
+Embedded Crystal    2016 template  331
+Gnuplot   1986 pl   332
+Xojo 1996 pl   333
+INTERCAL  1972 esolang   334
+Java Bytecode  1995 bytecode  335
+CodeMirror     2007 editor    336
+S-expressions  1960 dataNotation   337
+Alloy     1997 pl   338
+AXIOM     1992 pl   339
+POV-Ray SDL    1991 pl   340
+E    1997 pl   341
+RDoc 2004 textMarkup     342
+LiveScript     2011 pl   343
+Marko     2014 textMarkup     344
+Modelica  1997 pl   345
+Office Open XML     2006 xmlFormat 346
+Wavefront Object    1988 application    347
+Microsoft BASIC     1975 pl   348
+CSP  1978 pl   349
+Django    2005 library   350
+ERB  2004 template  351
+MariaDB   2009 queryLanguage  352
+Gradle    2008 application    353
+Dafny     2009 pl   354
+Whitespace     2003 esolang   355
+GAMS 1963 pl   356
+Batchfile 1985 pl   357
+DNS  1985 protocol  358
+SYMBOL    1971 pl   359
+Clipper   1985 pl   360
+BPMN 2004 visual    361
+Dhall     2017 dataNotation   362
+AsciiDoc  2002 textMarkup     363
+JSON-LD   2010 dataValidationLanguage   364
+Objective-J    2008 pl   365
+Datalog   1977 pl   366
+Pod  1997 textMarkup     367
+C--  1997 pl   368
+M4   1977 pl   369
+PEG.js    2010 grammarLanguage     370
+chevrotain     2015 library   371
+Ninja     2012 template  372
+Halide    2010 pl   373
+Base64    1987 textEncodingFormat  374
+B    1969 pl   375
+SaltStack 2011 pl   376
+Bicep     2020 jsonFormat     377
+Google Cloud Platform    2011 cloud     378
+Microsoft Notepad   1983 editor    379
+Wolfram Language    1988 pl   380
+Q    2003 pl   381
+TLA  1999 pl   382
+Puppet    2005 pl   383
+GDB  1986 application    384
+Gambas    1999 pl   385
+Seed7     2005 pl   386
+Speedie   2022 pl   387
+Oxygene   2002 pl   388
+C3   2019 pl   389
+Bourne shell   1977 pl   390
+Befunge   1993 esolang   391
+x86-64    2000 isa  392
+Coconut   2014 pl   393
+Twig 2009 template  394
+PowerBuilder   2010 pl   395
+HyperTalk 1987 pl   396
+Visual FoxPro  1995 pl   397
+Less 2009 stylesheetLanguage  398
+BibTeX    1985 application    399
+SGML 1986 textMarkup     400
+Miranda   1985 pl   401
+JSON Schema    2010 dataValidationLanguage   402
+eC   2004 pl   403
+XS   2002 pl   404
+G-code    1950 pl   405
+Simulink  1984 pl   406
+NATO phonetic alphabet   1956 notation  407
+ECL  2000 pl   408
+Oberon-2  1991 pl   409
+Turbo Pascal   1983 compiler  410
+AutoHotkey     2003 pl   411
+Homebrew  2009 packageManager 412
+Classroom Object Oriented Language 1996 pl   413
+GW-BASIC  1983 pl   414
+Thrift    2007 idl  415
+PL/0 1976 pl   416
+Genie     2008 pl   417
+QuickBASIC     1985 pl   418
+Scala.js  2013 pl   419
+LINQ 2007 queryLanguage  420
+SETL 1969 pl   421
+Maxima    1982 pl   422
+EJS  2010 template  423
+XBase++   1997 pl   424
+Cap'n Proto    2013 idl  425
+v8   2008 vm   426
+Netwide Assembler   1996 assembly  427
+YASnippet 2008 textMarkup     428
+wisp 2012 pl   429
+Pandas    2008 library   430
+Falcon    2003 pl   431
+Transact-SQL   1984 queryLanguage  432
+HHVM 2011 vm   433
+Markwhen  2022 textMarkup     434
+COMTRAN   1957 pl   435
+PRQL 2022 queryLanguage  436
+ink  2015 esolang   437
+Dc   1978 pl   438
+ASN.1     1984 idl  439
+Z notation     1974 notation  440
+Ext4 2008 filesystem     441
+ALGOL 68  1968 pl   442
+CLU  1975 pl   443
+Mercurial 2005 application    444
+DIAGRAM   1980 pl   445
+LiveCode  2001 pl   446
+RMarkdown 2014 textMarkup     447
+Squeak    1996 pl   448
+RStudio   2011 editor    449
+unison    2015 pl   450
+Croc 2006 pl   451
+HyperCard 1987 pl   452
+Natural Language Toolkit 2001 library   453
+Bluespec  2000 pl   454
+tornado   2009 template  455
+KaTeX     2013 textMarkup     456
+jq   2012 queryLanguage  457
+ABC  1980 pl   458
+S    1976 pl   459
+DBase     1979 application    460
+GAP  1986 pl   461
+UrWeb     2008 pl   462
+K    1993 pl   463
+starlark  2018 pl   464
+WxBasic   2002 pl   465
+Ion  2016 idl  466
+Latte     2008 template  467
+Stylus    2010 stylesheetLanguage  468
+MMX instruction set 1997 isa  469
+Vim script     1991 pl   470
+mermaid   2014 textMarkup     471
+Pygments  2006 library   472
+JScript   1996 pl   473
+chrysaLisp     2015 pl   474
+Jython    2001 pl   475
+True BASIC     1983 pl   476
+Wolfram Mathematica 1988 editor    477
+Sather    1990 pl   478
+CouchDB   2005 application    479
+React Native   2015 library   480
+TXL  1985 pl   481
+Numba     2012 compiler  482
+FASTQ     2000 textDataFormat 483
+EML  1974 textDataFormat 484
+Pig Latin 2008 queryLanguage  485
+Smarty    2006 template  486
+Graph Modeling Language  1997 application    487
+Punched tape   1943 notation  488
+Parrot    2002 vm   489
+mlir 2019 ir   490
+Malbolge  1998 esolang   491
+FreeBASIC 2004 pl   492
+DTD  1996 grammarLanguage     493
+Multics   1967 pl   494
+Ragel     2007 pl   495
+JFlex     2003 grammarLanguage     496
+Eve  2016 pl   497
+CIL  1994 pl   498
+Xtend     2011 pl   499
+IBM System z   2000 computingMachine    500
+Cue  2018 dataNotation   501
+Nu   2007 pl   502
+DTrace    2005 pl   503
+Tiny BASIC     1975 pl   504
+AspectJ   2001 pl   505
+TRS-80 Color Computer    1980 computingMachine    506
+Max  1990 jsonFormat     507
+Fennel    2016 pl   508
+ALGOL W   1966 pl   509
+RDFa 2004 xmlFormat 510
+HLSL 2002 pl   511
+janet     2018 pl   512
+Ring 2016 pl   513
+PARI/GP   1985 pl   514
+Pure Data 1996 pl   515
+Golo 2012 pl   516
+Free Pascal    1997 pl   517
+XSLT 1998 xmlFormat 518
+NL   1993 application    519
+Unicon    2008 pl   520
+Imba 2014 pl   521
+Caml 1985 pl   522
+Fortress  2004 pl   523
+Diff 1974 unixApplication     524
+beef-lang 2019 pl   525
+commonmark     2014 textMarkup     526
+Slash     2012 pl   527
+muPad     1997 pl   528
+Atmel AVR 1996 pl   529
+HOPE 1978 pl   530
+Enso 2015 pl   531
+High Level Assembly 2011 assembly  532
+Luna 2015 pl   533
+Koka 2012 pl   534
+Dogescript     2013 pl   535
+gravity   2017 pl   536
+Gosu 2002 pl   537
+OpenVera  2001 pl   538
+Gerber Image   1980 application    539
+MusicXML  2004 pl   540
+TreeSheets     2019 visual    541
+Textile   2002 textMarkup     542
+SIL  2012 ir   543
+Taichi    2019 pl   544
+Ladder Logic   1994 pl   545
+NSIS 2001 pl   546
+WDL  2012 pl   547
+RPL  1984 pl   548
+AutoCAD DXF    1982 application    549
+MDX  2017 textMarkup     550
+Closure Templates   2009 template  551
+Ron  2015 dataNotation   552
+Hierarchical Data Format 1992 binaryDataFormat    553
+MPS  2010 grammarLanguage     554
+AssemblyScript 2017 pl   555
+FASTA     2004 textDataFormat 556
+datascript     2014 queryLanguage  557
+Inno Setup     1997 pl   558
+Objective C++  1993 pl   559
+GLSL 1992 pl   560
+Curry     1990 pl   561
+Expect    1990 pl   562
+BETA 1983 pl   563
+Action!   1983 pl   564
+PEG  2002 grammarLanguage     565
+carp 2016 pl   566
+Korn shell     1983 pl   567
+CWL  2014 pl   568
+SWI Prolog     1987 pl   569
+JCL  1964 pl   570
+RATFOR    1976 pl   571
+Altair BASIC   1975 pl   572
+RISC-V    2010 isa  573
+Hjson     2014 dataNotation   574
+PL/M 1973 pl   575
+Cg   2003 pl   576
+LilyPond  1996 pl   577
+Xtext     2006 grammarLanguage     578
+SourcePawn     2014 pl   579
+Augmented Backus-Naur Form    2008 grammarLanguage     580
+Eagle     1988 application    581
+PhyloXML  2009 xmlFormat 582
+Reia 2008 pl   583
+Zip file format     1989 binaryDataFormat    584
+UNLAMBDA  1999 esolang   585
+Emojicode 2016 pl   586
+IGOR Pro  1993 pl   587
+Java EE version history  1998 pl   588
+QB64 2007 pl   589
+Commodore BASIC     1977 pl   590
+Euphoria  1993 pl   591
+Blitz3D   2001 pl   592
+.dwg 1982 binaryDataFormat    593
+Java Properties     1995 dataNotation   594
+Ren'Py    2004 pl   595
+Dynamo    2011 visual    596
+CodeQL    2018 queryLanguage  597
+BBCode    1998 textMarkup     598
+ExFAT     2006 filesystem     599
+CWEB 1987 textMarkup     600
+GAMS 1988 pl   601
+EBNF 1977 grammarLanguage     602
+Argdown   2014 textMarkup     603
+Apache Spark   2012 application    604
+PIR  2006 pl   605
+GeoJSON   2008 jsonFormat     606
+Qualcomm Hexagon    2006 assembly  607
+IMAP 1986 protocol  608
+CSON 2011 dataNotation   609
+kaitai    2016 idl  610
+mustache  2009 template  611
+Djot 2022 textMarkup     612
+OpenLisp  1988 pl   613
+LPC  1995 pl   614
+Jule 2021 pl   615
+Mirah     2009 pl   616
+Aith 2020 pl   617
+RUNOFF    1965 textMarkup     618
+mgmt 2015 pl   619
+DDML 1999 xmlFormat 620
+Dockerfile     2013 pl   621
+Rust MIR  2016 ir   622
+Velato    2009 esolang   623
+Microsoft Small Basic    2008 pl   624
+Kubernetes     2014 application    625
+RoboMind  2005 pl   626
+Information Presentation Facility  1997 pl   627
+Velocity  2003 template  628
+mavo 2015 template  629
+Futhark   2013 pl   630
+Plain English  2018 pl   631
+PIC microcontroller 1975 pl   632
+DRAKON    1996 pl   633
+Microsoft Macro Assembler     1981 assembly  634
+flowchart.fun  2021 textMarkup     635
+Manim     2015 framework 636
+SubRip Text    2005 application    637
+Keras     2015 library   638
+LyX  1995 editor    639
+PyTorch   2016 library   640
+Ghostscript    1988 pl   641
+beads-lang     2016 pl   642
+Asm.js    2013 ir   643
+Jekyll    2008 application    644
+SQLPL     2009 pl   645
+Pizza     2001 pl   646
+NewtonScript   1993 pl   647
+Svelte    2019 pl   648
+Glyph Bitmap Distribution Format   1988 application    649
+BlitzPlus 2003 pl   650
+PROMETHEUS     2012 pl   651
+CFML 1995 pl   652
+KiXtart   1991 pl   653
+Triton    2021 pl   654
+Bel  2019 pl   655
+Sqlalchemy     2006 queryLanguage  656
+Microdata HTML 2013 schema    657
+FFmpeg    2000 application    658
+Jakt 2022 pl   659
+Clarion   1986 pl   660
+VRML 1994 pl   661
+PAWN 2006 pl   662
+gogs-editor    2014 editor    663
+KML  2007 xmlFormat 664
+Readable  2018 textMarkup     665
+JADE 1996 pl   666
+Pharo     2008 pl   667
+X PixMap  1989 application    668
+tldr 2013 application    669
+Spin 2006 pl   670
+ACT-III   1956 pl   671
+LotusScript    1996 pl   672
+Felix     2001 pl   673
+ALGOL 58  1958 pl   674
+X BitMap  1989 application    675
+Yes It Is 2006 framework 676
+CSS Doodle     2017 pl   677
+Uno  2002 pl   678
+Godot     2014 library   679
+emberjs-framework   2011 framework 680
+progsbase 2018 pl   681
+JSON-stat 2011 jsonFormat     682
+QR code   1994 barCodeFormat  683
+XeTeX     2004 textMarkup     684
+mochajs   2011 library   685
+Vcpkg     2016 packageManager 686
+Concise Encoding    2018 dataNotation   687
+blockml   2014 textMarkup     688
+Bazel     2015 application    689
+JavaCC    1996 grammarLanguage     690
+Ext3 2001 filesystem     691
+BNF  1956 grammarLanguage     692
+S3   1986 pl   693
+Yoix 2000 pl   694
+MBASIC    1983 pl   695
+Troff     1973 textMarkup     696
+chaiscript     2009 pl   697
+Guile     1993 pl   698
+Shapefile 1995 binaryDataFormat    699
+Simple Binary Encoding   2013 pl   700
+Slope     2021 pl   701
+Papyrus   2015 pl   702
+Varnish Configuration Language     2006 application    703
+Rockstar  2018 esolang   704
+Project Jupyter     2014 editor    705
+ThinBasic 2004 pl   706
+Roslyn compiler     2009 compiler  707
+NetLinx   2007 pl   708
+chatterbot     2014 library   709
+JAI  2014 pl   710
+Fuzzy Markup Language    2004 xmlFormat 711
+USB  1996 standard  712
+Nushell   2019 pl   713
+fay  2012 pl   714
+FIGlet Font    1991 application    715
+Mathcad   1986 pl   716
+P4   2014 pl   717
+Nial 1981 pl   718
+Tiny C Compiler     2001 compiler  719
+FLOW-MATIC     1955 pl   720
+Grammar   2017 grammarLanguage     721
+micro-editor   2016 editor    722
+CSV  1972 dataNotation   723
+Advanced Message Queuing Protocol  2003 protocol  724
+dgraph    2015 application    725
+Secure Scuttlebutt  2014 protocol  726
+XProc     1990 pl   727
+Aldor     1990 pl   728
+jasmine   2008 library   729
+onnx 2017 binaryDataFormat    730
+HDMI 2002 standard  731
+TI MSP430 2009 isa  732
+Apache Hbase   2008 application    733
+Pick operating system    1970 os   734
+SymPy     2007 library   735
+QMake     2002 pl   736
+UTC  1960 timeFormat     737
+Rholang   2016 contractLanguage    738
+JSFuck    2012 esolang   739
+Scoop     2013 packageManager 740
+PgBouncer 2007 application    741
+LookML    2012 pl   742
+CPL  1963 pl   743
+Alice     2000 pl   744
+Modula    1975 pl   745
+ProvideX  1992 pl   746
+Mindsdb   2018 application    747
+Cobra     2006 pl   748
+cloc 2006 application    749
+Volt 2011 pl   750
+JMP  1989 application    751
+Angelscript    2003 pl   752
+Dojo 2005 pl   753
+Iterm2    1996 application    754
+Apex 2007 pl   755
+ARexx     1987 pl   756
+CLOS 1988 pl   757
+Visual Prolog  1996 pl   758
+Asymptote 2004 application    759
+NCAR Command Language    1994 pl   760
+GIF  1987 binaryDataFormat    761
+MQL5 2005 pl   762
+mal  2014 interpreter    763
+CoNLL-U   2014 application    764
+DisplayPort    2006 standard  765
+wasmer    2018 vm   766
+DM   1994 pl   767
+Prism     2012 library   768
+capybara  2009 library   769
+Semantic Versioning 2011 schema    770
+Ant Build System    2000 application    771
+Linden Scripting Language     2003 pl   772
+J#   2002 pl   773
+Cyclone   2001 pl   774
+Lisaac    2003 pl   775
+Karel     1981 pl   776
+JSONiq    2011 queryLanguage  777
+gridstudio-editor   2018 editor    778
+DIGITAL Command Language 1997 pl   779
+Z shell   1990 pl   780
+F Prime   2017 library   781
+Tea  1997 pl   782
+Filebench WML  2011 pl   783
+GDScript  2008 pl   784
+Roc  2020 pl   785
+Cryptol   2014 pl   786
+pyret     2011 pl   787
+Curl 1998 pl   788
+Tree Notation  2017 dataNotation   789
+GML  1969 xmlFormat 790
+Eclipse Command Language 2008 pl   791
+Logica    2020 queryLanguage  792
+Kakoune   2011 editor    793
+XL   2000 pl   794
+GOLD 2012 grammarLanguage     795
+Up-arrow notation   1976 notation  796
+BPEL 2001 xmlFormat 797
+GNU Assembler  1986 compiler  798
+ShaderLab 2000 pl   799
+dat-protocol   2013 protocol  800
+Carbon    2020 pl   801
+TSV  1993 dataNotation   802
+PIC  1988 textMarkup     803
+docopt    2012 pl   804
+Mu   2014 pl   805
+xsv-app   2014 application    806
+Vimwiki   2008 wikiMarkup     807
+Cloud Firestore Security Rules     2017 application    808
+sizzle    2008 queryLanguage  809
+RetDec    2017 decompiler     810
+Desmos    2011 pl   811
+Nix  2003 packageManager 812
+PCRE 1997 queryLanguage  813
+MD5  1991 hashFunction   814
+Ext2 1993 filesystem     815
+Not Quite C    2017 pl   816
+BeanShell 1999 pl   817
+FutureBASIC    1992 pl   818
+StarOffice Basic    2000 pl   819
+4G   2013 standard  820
+Joy  2001 pl   821
+edgedb    2017 database  822
+COLLADA   2004 application    823
+bosque    2019 pl   824
+Creole    2007 textMarkup     825
+noms-db   2015 database  826
+SHA-2     2001 hashFunction   827
+gleam     2016 pl   828
+Conan     2015 packageManager 829
+DNS Zone  2001 application    830
+htmx 2020 template  831
+Meson     2013 pl   832
+binaryen  2015 compiler  833
+Omgrofl   2006 esolang   834
+SHA-1     1993 hashFunction   835
+Pop-11    1999 pl   836
+Automatically Programmed Tool 1956 pl   837
+Mask 2012 template  838
+Harbour   1999 pl   839
+carth     2018 pl   840
+Digital Visual Interface 1999 standard  841
+BBC BASIC 1981 pl   842
+SQL-92    1992 pl   843
+Network Time Protocol    1981 protocol  844
+TextMate  2004 editor    845
+Lightweight Directory Access Protocol   1997 protocol  846
+COMPONENT PASCAL    1997 pl   847
+zephyr-asdl    1997 grammarLanguage     848
+Gettext Catalog     1990 textMarkup     849
+METAFONT  1977 application    850
+Bucklescript   2010 pl   851
+Telnet    1969 protocol  852
+chibicc   2019 compiler  853
+YoptaScript    2016 pl   854
+mckeeman-form  2020 grammarLanguage     855
+Neko 2005 pl   856
+IcedCoffeeScript    2009 pl   857
+Elvish    2013 pl   858
+BMP file format     2000 binaryDataFormat    859
+Easybuild 2014 application    860
+CartoCSS  2010 pl   861
+JOVIAL    1960 pl   862
+SysML     2000 pl   863
+ooc  2009 pl   864
+Rascal    2013 grammarLanguage     865
+Spyder    2009 editor    866
+Thymeleaf 2011 template  867
+Tagged Image File Format 1986 binaryDataFormat    868
+Lily 2011 pl   869
+Refal     1968 pl   870
+Yorick    1996 pl   871
+Zuo  2022 pl   872
+UCL  2013 dataNotation   873
+BlitzMax  2014 pl   874
+SAM file format     2009 textDataFormat 875
+SCSS 2006 stylesheetLanguage  876
+contracts.coffee    2011 pl   877
+ICD-10-CM diagnosis 1983 schema    878
+Ante 2015 pl   879
+Jasmin    1997 pl   880
+RenderScript   2011 pl   881
+Literate Agda  2009 pl   882
+walt 2017 pl   883
+Turbo Basic    1987 pl   884
+penrose   2016 pl   885
+OPL  1984 pl   886
+Ravenscar profile   1997 pl   887
+TELCOMP   1966 pl   888
+Praat Script   1997 pl   889
+ToffeeScript   2013 pl   890
+BlackCoffee    2014 pl   891
+Nit  2008 pl   892
+Dartmouth BASIC     1964 pl   893
+heap.coffee    2012 pl   894
+MarkovJunior   2022 pl   895
+EmberScript    2012 pl   896
+UPC  2003 pl   897
+PowerBASIC     1989 pl   898
+Game Maker Language 1999 pl   899
+Caffeine  2012 pl   900
+tbox-lib  2010 library   901
+LuaJIT    2005 compiler  902
+vyper     2016 pl   903
+skip 2018 pl   904
+Context Diff   1981 diffFormat     905
+skulpt    2009 pl   906
+OpenSCAD  2010 pl   907
+hasklig   2012 font 908
+clay 2010 pl   909
+codecept  2015 library   910
+Speakeasy 2006 pl   911
+WML  2006 template  912
+AsciiDots 2017 esolang   913
+Message Queuing Telemetry Transport     1999 protocol  914
+Google File System  2003 filesystem     915
+Edje Data Collection     2010 jsonFormat     916
+TiddlyWiki     2004 wikiMarkup     917
+Power BI  2011 application    918
+Tableau Software    2003 application    919
+CLIST     1990 pl   920
+Euclidean geometry  -300 notation  921
+UNITY     1988 pl   922
+Slice     2011 pl   923
+HFS Plus  1998 filesystem     924
+Streem    2014 pl   925
+Blender   1998 application    926
+m3db 2016 database  927
+Hyperscript    2012 template  928
+Security Assertion Markup Language 2001 xmlFormat 929
+SimCode   1997 pl   930
+omega     2005 pl   931
+Beatnik   2001 esolang   932
+Sweet.js  2012 pl   933
+Impala    2012 queryLanguage  934
+HTTP/2    2015 protocol  935
+ArkScript 2019 pl   936
+BLISS     1969 pl   937
+ROFF 1971 textMarkup     938
+OX   1996 pl   939
+Alpine Abuild  2006 pl   940
+JRuby     2001 pl   941
+Motif     1989 pl   942
+SmallBASIC     2001 pl   943
+ohm  2014 grammarLanguage     944
+xCard     2011 xmlFormat 945
+SMIL 1997 pl   946
+SugarSS   2016 textMarkup     947
+Binary notation     1689 notation  948
+Stripe company 2011 webApi    949
+TI-BASIC  1970 pl   950
+ISLISP    2007 pl   951
+FM broadcasting     1950 standard  952
+Whiley    2009 pl   953
+Atari BASIC    1983 pl   954
+UCSD Pascal    1978 pl   955
+Applesoft BASIC     1979 pl   956
+zz   2019 pl   957
+GCC Machine Description  2001 pl   958
+Jupyter Notebook    2014 jsonFormat     959
+ActiveVFP 2001 pl   960
+ALEF 1992 pl   961
+netbeans-editor     2013 editor    962
+Shen 2011 pl   963
+oil  2016 pl   964
+Please Build   2016 pl   965
+mun-lang  2019 pl   966
+Melody    2022 pl   967
+Mojo 2022 pl   968
+chef 2002 esolang   969
+GraphIt   2017 pl   970
+SHA-3     2015 hashFunction   971
+MATHLAB   1964 pl   972
+groff     1990 textMarkup     973
+ROOT 1994 library   974
+Cesil     1974 pl   975
+chisel    2015 hardwareDescriptionLanguage   976
+Fancy     2010 pl   977
+Geography Markup Language     2000 xmlFormat 978
+Qalb 2012 pl   979
+verona    2019 pl   980
+Cell 2017 pl   981
+Hackett   2017 pl   982
+Stan 2012 pl   983
+Stencil   2018 template  984
+lmdb 2011 library   985
+PogoScript     2011 pl   986
+Brightscript   2010 pl   987
+winxed    2009 pl   988
+Megaparsec     2015 library   989
+Tap code  1941 notation  990
+ColaScript     2012 pl   991
+Laravel   2011 framework 992
+xlwings-editor 2013 library   993
+Strips    1969 pl   994
+MVEL 2003 pl   995
+IP Pascal 1990 pl   996
+Perl Data Language  1996 pl   997
+kitten    2012 pl   998
+Mech 2018 pl   999
+DOML 2017 dataNotation   1000
+Large-scale Atomic/Molecular Massively Parallel Simulator Format 1995 application    1001
+LOGLAN    1982 pl   1002
+DokuWiki  2004 wikiMarkup     1003
+svgbob    2016 textMarkup     1004
+SRL  2016 queryLanguage  1005
+rant 2014 pl   1006
+manhood   2014 pl   1007
+Cycript   2008 pl   1008
+Raku 2019 pl   1009
+Vigil     2013 esolang   1010
+Pure 2008 pl   1011
+Formulating On-Line Calculations in Algebraic Language 1968 pl   1012
+Real-time Transport Protocol  1996 protocol  1013
+Ch   2003 pl   1014
+Hindu-Arabic numeral system   825  numeralSystem  1015
+checked-c 2015 pl   1016
+Committee on Uniform Security Identification Procedures     1968 schema    1017
+SMT  2003 pl   1018
+Caché Basic    1997 queryLanguage  1019
+A-0 system     1951 compiler  1020
+storyscript    2017 pl   1021
+Aardvark  2020 pl   1022
+VML  1998 xmlFormat 1023
+Cranelift 2016 ir   1024
+Ezhil     2007 pl   1025
+Snowman   2015 decompiler     1026
+FreeMarker     2000 template  1027
+Pan  2011 pl   1028
+Pep8 2009 assembly  1029
+Logtalk   1998 pl   1030
+SRecode Template    2000 textMarkup     1031
+TI Program     1970 assembly  1032
+Fibonacci 1991 pl   1033
+Observable     2017 pl   1034
+packagist-pm   2011 packageManager 1035
+WebIDL    2012 idl  1036
+Sieve mail filtering language 2008 application    1037
+Notepad++ 2003 editor    1038
+Hyperscript    2020 pl   1039
+gluon     2014 pl   1040
+BQN  2020 pl   1041
+Spatial   2018 pl   1042
+Common Object File Format     1983 binaryExecutable    1043
+Jargon    1987 pl   1044
+json-graph-format   2014 jsonFormat     1045
+Not eXactly C  2006 pl   1046
+Mary 1970 pl   1047
+DOODLE    1992 pl   1048
+Apache Lucene  1999 queryLanguage  1049
+Dak  2022 pl   1050
+T    1980 pl   1051
+Open Data Protcol   2007 protocol  1052
+P    2013 pl   1053
+JSON with Comments  2001 dataNotation   1054
+Luna 2011 pl   1055
+Property list  2012 textMarkup     1056
+ActivityPub    2018 protocol  1057
+Script.NET     2007 pl   1058
+bog  2020 pl   1059
+MAXScript 1996 pl   1060
+invokator 2004 pl   1061
+Umple     2008 pl   1062
+Open Shading Language    2008 pl   1063
+YAWL 2006 pl   1064
+C2   2012 pl   1065
+Creative Basic 2008 pl   1066
+Pandoc    2006 application    1067
+mathics   2012 pl   1068
+LoomScript     2013 pl   1069
+Shakespeare    2001 pl   1070
+Basis Codec    2019 binaryDataFormat    1071
+SQL/PSM   1996 pl   1072
+Linotte   2005 pl   1073
+Flutter   2017 framework 1074
+Almquist shell 1989 pl   1075
+JOSS 1966 pl   1076
+Stutter   2018 esolang   1077
+Compiler-Compiler   1963 pl   1078
+Epigram   2004 pl   1079
+Kodu Game Lab  2009 pl   1080
+WebP 2010 binaryDataFormat    1081
+TIScript  2007 pl   1082
+ARC processor  1995 isa  1083
+XHTML     2000 dataNotation   1084
+pasukon   2020 grammarLanguage     1085
+Gopher    1991 protocol  1086
+roy  2011 pl   1087
+Video Graphics Array     1987 standard  1088
+Apache Cassandra    2008 database  1089
+jsil-compiler  2010 compiler  1090
+plot 2019 template  1091
+desktop   2008 application    1092
+Type Language  2013 pl   1093
+Windows Registry Entries 1992 application    1094
+Programming Language for Business  1972 pl   1095
+UBASIC    1991 pl   1096
+Unified Diff   1990 diffFormat     1097
+Post Office Protocol     1957 protocol  1098
+OpenEdge ABL   2006 pl   1099
+Blockly   2011 library   1100
+Nexus file     1997 textDataFormat 1101
+NetRexx   1996 pl   1102
+MOO  1993 pl   1103
+Treelang  1988 pl   1104
+Touch     2020 textMarkup     1105
+InfiniBand     1999 standard  1106
+Bun  2021 vm   1107
+HeLang    2022 pl   1108
+Esterel   1980 pl   1109
+PL360     1967 pl   1110
+nesC 2002 pl   1111
+Jolie     2006 pl   1112
+Opal 1994 pl   1113
+RPM Spec  1997 application    1114
+NATURAL   1971 pl   1115
+Arden syntax   1992 dataNotation   1116
+ColdFusion Components    1995 xmlFormat 1117
+Glicol    2020 musicalNotation     1118
+Autodesk Revit 1997 application    1119
+spry 2015 pl   1120
+Turbo Assembler     1989 pl   1121
+Quaint    2014 textMarkup     1122
+Sheep     2000 pl   1123
+EXPRESS   2004 dataNotation   1124
+souper    2014 optimizingCompiler  1125
+AviSynth  2000 editor    1126
+Jison Lex 2013 pl   1127
+Blade     2011 template  1128
+Extensible Embeddable Language     2005 pl   1129
+dexvis    2012 application    1130
+GRASS     1977 pl   1131
+hurl 2020 application    1132
+TECO 1963 pl   1133
+VHDL-AMS  1993 pl   1134
+Fable     2012 pl   1135
+Flow9     2010 pl   1136
+M4Sugar   2003 pl   1137
+Operational Control Language  1986 pl   1138
+Violent ES     2022 pl   1139
+asterius-compiler   2017 compiler  1140
+Parrot Assembly     2003 assembly  1141
+HL7  1989 pl   1142
+FP   1977 pl   1143
+Smiles    1988 textDataFormat 1144
+PEARL     1977 pl   1145
+tidyverse 2016 library   1146
+SSI  2004 template  1147
+Open Database Connectivity    1990 protocol  1148
+Google Apps Script  2009 pl   1149
+llhd 2016 hardwareDescriptionLanguage   1150
+opam-pm   2012 packageManager 1151
+WHOIS     1970 protocol  1152
+lamdu-editor   2011 editor    1153
+Lamdu     2011 pl   1154
+erg  2022 pl   1155
+MATH-MATIC     1957 pl   1156
+EGL  2008 pl   1157
+FML  2012 pl   1158
+Speedcoding    1953 pl   1159
+Flix 2016 pl   1160
+Kaggle    2010 application    1161
+Rpm  1997 packageManager 1162
+Wasp 2019 pl   1163
+OpenNN    2003 library   1164
+bpkg-pm   2017 packageManager 1165
+Query by Example    1969 pl   1166
+Cyber     2022 pl   1167
+Carpet    1997 pl   1168
+Molfile   1979 textDataFormat 1169
+crush     2020 pl   1170
+Reko 2007 decompiler     1171
+comby     2019 grammarLanguage     1172
+VCF  2011 textDataFormat 1173
+Earl Grey 2014 pl   1174
+Scroll    2020 textMarkup     1175
+Handel-C  1996 pl   1176
+Newick format  1986 textDataFormat 1177
+IBM 1620  1959 assembly  1178
+Maya Embedded Language   2013 pl   1179
+Logos     2010 pl   1180
+Spline Font Database     2004 application    1181
+exkited   2018 template  1182
+Markus    2020 queryLanguage  1183
+Txt2tags  2001 textMarkup     1184
+leo-editor     2013 editor    1185
+ferret    2017 pl   1186
+Xgboost   2014 binaryDataFormat    1187
+PDP-11    1970 computingMachine    1188
+TAP  1988 protocol  1189
+tiledb    2017 database  1190
+GFA BASIC 1986 pl   1191
+haste     2014 pl   1192
+Ternary numeral system   2001 notation  1193
+XC   2005 pl   1194
+HiveQL    2011 queryLanguage  1195
+X Font Directory Index   1991 application    1196
+XCompose  2006 application    1197
+snakemake 2012 pl   1198
+femtolisp 2008 pl   1199
+Swallow   2021 pl   1200
+Ark  2014 pl   1201
+BlooP     1979 esolang   1202
+tht  2017 pl   1203
+monte     2014 pl   1204
+ELLA 1979 pl   1205
+astroml   2012 library   1206
+Cypher Query Language    2011 queryLanguage  1207
+Lingo     1988 pl   1208
+MXML 2004 xmlFormat 1209
+EEX  2012 template  1210
+JSX  2013 template  1211
+Guix Workflow Language   2017 pl   1212
+GNU nano  2000 editor    1213
+kona 2010 pl   1214
+Lux  2014 pl   1215
+Hedy 2020 pl   1216
+Semantic Patch Language  2006 grammarLanguage     1217
+XML Binding Language     2000 xmlFormat 1218
+lobster   2011 pl   1219
+3DS  1990 binaryDataFormat    1220
+Vale 2017 assembly  1221
+gentee    2018 pl   1222
+MACRO-10  1978 pl   1223
+Cali-Lang 2015 pl   1224
+Em   2020 textMarkup     1225
+Superjson 2014 dataNotation   1226
+clash     2015 pl   1227
+lispyscript    2012 pl   1228
+Punycode  2003 characterEncoding   1229
+XBLite    2001 pl   1230
+NestedText     2020 dataNotation   1231
+CFEngine  1993 application    1232
+KRL  1976 pl   1233
+Frost     2017 pl   1234
+Q#   2017 pl   1235
+fetlang   2017 esolang   1236
+Mesa 1970 pl   1237
+ALGO 1958 pl   1238
+Genshi    2006 template  1239
+Sinclair BASIC 1979 pl   1240
+Farcaster 2021 protocol  1241
+Berry     2018 pl   1242
+Ć    2011 pl   1243
+DNS over HTTPS 2018 protocol  1244
+Adept     2018 pl   1245
+Plus 1976 pl   1246
+Module Management System 2005 pl   1247
+turnstile 2017 grammarLanguage     1248
+Stackless Python    1998 interpreter    1249
+Asterisk  1999 application    1250
+MurmurHash     2008 hashFunction   1251
+ISWIM     1966 pl   1252
+Differential Datalog     2018 pl   1253
+kasaya    2018 application    1254
+Noweb     1989 textMarkup     1255
+1C Enterprise Script     2002 pl   1256
+Rapira    1987 pl   1257
+dslx 2020 pl   1258
+PLZ  1979 pl   1259
+dex  2018 pl   1260
+MASM 1981 pl   1261
+FOCUS     1997 pl   1262
+miniML_error   2013 plzoo     1263
+XUML 2002 pl   1264
+Z-machine 1980 pl   1265
+lem-editor     2015 editor    1266
+harlan    2011 pl   1267
+sile 2012 textMarkup     1268
+Sweave    2002 template  1269
+Newspeak  2006 pl   1270
+AsciiMath 2014 textMarkup     1271
+ACL2 1990 pl   1272
+Object Rexx    1988 pl   1273
+Locomotive BASIC    1984 pl   1274
+spider    2014 pl   1275
+Knitr     2012 template  1276
+XPages    2008 application    1277
+Xbasic    1988 pl   1278
+Executable JSON     2013 pl   1279
+relax     2000 grammarLanguage     1280
+WML  1998 xmlFormat 1281
+reflex-framework    2015 framework 1282
+tea  2021 packageManager 1283
+Ch computer programming  2001 pl   1284
+Typed Lua 2019 pl   1285
+hobbes    2017 pl   1286
+Autocode  1954 pl   1287
+circle-lang    2019 pl   1288
+Mond 2014 pl   1289
+Gentoo Ebuild  1999 pl   1290
+MIRC scripting language  1995 pl   1291
+HXML 2009 application    1292
+JAL compiler   2000 compiler  1293
+PROMAL    1986 pl   1294
+Rescript  2020 pl   1295
+Hierarchical File System 1985 filesystem     1296
+cityhash-hash-function   2011 hashFunction   1297
+Google Sheets  2006 application    1298
+Smartsheet     2006 application    1299
+Wyvern    2012 pl   1300
+International System of Quantities 2009 schema    1301
+score     2013 pl   1302
+Nios II   2000 isa  1303
+rason     2015 pl   1304
+Revolution     1993 pl   1305
+UnrealScript   1998 pl   1306
+Subleq    2009 isa  1307
+Simple Actor Language System and Architecture     2001 pl   1308
+Avail     2010 pl   1309
+BARE 2020 idl  1310
+XSD  2001 dataValidationLanguage   1311
+General Purpose Simulation System  1960 pl   1312
+NS Basic  1994 pl   1313
+AL   2016 pl   1314
+Assembly CLI   2005 library   1315
+.QL  2007 pl   1316
+dub-pm    2012 packageManager 1317
+atomspace 2008 application    1318
+neut 2018 pl   1319
+bee  2019 pl   1320
+Object Linking and Embedding  1990 protocol  1321
+NGS  2013 pl   1322
+CSVw 2014 dataValidationLanguage   1323
+Grammatical Framework    1998 grammarLanguage     1324
+Qore 2006 pl   1325
+Aheui     2012 esolang   1326
+Parser 3  1997 pl   1327
+neeilang  2019 pl   1328
+hilvl     2015 pl   1329
+Maude     1990 pl   1330
+fo   2018 pl   1331
+Swagger   2011 framework 1332
+Pyret     2012 pl   1333
+Schema.org     2011 dataValidationLanguage   1334
+curv 2016 pl   1335
+I-expressions  2003 dataNotation   1336
+PLANNER   1969 pl   1337
+HP BASIC for OpenVMS     1982 pl   1338
+SuperBASIC     1984 pl   1339
+Confluence     2004 textMarkup     1340
+Sam Coupé 1989 pl   1341
+XBRL 2003 xmlFormat 1342
+BASIC Stamp    1990 pl   1343
+Rc   1989 pl   1344
+Livr 2012 dataValidationLanguage   1345
+F    1996 pl   1346
+muon 2019 pl   1347
+SATySFi   2015 textMarkup     1348
+Mako 2006 template  1349
+Yet Another Scripting Language     2017 pl   1350
+Frink     2001 pl   1351
+Fast Healthcare Interoperability Resources   2011 standard  1352
+visdown   2016 textMarkup     1353
+NuGet     2010 packageManager 1354
+CLISP     1973 pl   1355
+FAUST     2002 pl   1356
+Template Attribute Language   2007 template  1357
+GLBasic   2003 pl   1358
+EXEC 1966 pl   1359
+Gerbil Scheme  2016 pl   1360
+BitBake   2004 pl   1361
+Gherkin   2008 pl   1362
+flagship  1986 pl   1363
+mpl  1988 pl   1364
+BASIC Programming   1979 pl   1365
+Handlebars     2010 template  1366
+ObjDump   1991 application    1367
+ApacheConf     1995 application    1368
+Nymph     2017 pl   1369
+Crema     2014 pl   1370
+Caltech Intermediate Form     1980 pl   1371
+Recfiles  1994 dataNotation   1372
+Jsonnet   2014 dataNotation   1373
+Pomsky    2022 pl   1374
+Connection Machine  1990 pl   1375
+Extended file system     1992 filesystem     1376
+Dale 2013 pl   1377
+F-Script  2009 pl   1378
+CIR  2020 ir   1379
+LUCID     1976 pl   1380
+Cayenne   1998 pl   1381
+Fully Automated Compiling Technique     1959 pl   1382
+Parrot BASIC   2009 pl   1383
+hamler    2019 pl   1384
+Integer BASIC  1977 pl   1385
+xodio     2015 visual    1386
+kitlang   2018 pl   1387
+Passerine 2021 pl   1388
+Etoys     1996 pl   1389
+Babylonian numerals -2000     numeralSystem  1390
+GN   2015 application    1391
+SQF  2002 pl   1392
+tcsh 1983 pl   1393
+Orc  2004 pl   1394
+p4p  2010 pl   1395
+Language Server Index Format  2019 jsonFormat     1396
+Hare 2020 pl   1397
+Ligo 2019 contractLanguage    1398
+ddfql     2016 queryLanguage  1399
+SFC  1993 pl   1400
+basic calculator    1975 pl   1401
+hashlink  2015 bytecode  1402
+Caramel   2020 pl   1403
+abs  2018 pl   1404
+Snap!     2011 pl   1405
+International Chemical Identifier  2005 textDataFormat 1406
+ink-lang  2019 pl   1407
+Memex     1945 computingMachine    1408
+COMAL     1973 pl   1409
+Spec Sharp     2004 pl   1410
+vdscript  2000 pl   1411
+MiniZinc  2012 pl   1412
+Zonnon    2003 pl   1413
+SdlBasic  2002 pl   1414
+General feature format   2006 textDataFormat 1415
+firrtl    2015 ir   1416
+dlvm 2017 ir   1417
+PowerQuery M   2015 queryLanguage  1418
+Ren  2013 dataNotation   1419
+Formatted Table     1990 dataNotation   1420
+bloom     2010 pl   1421
+APT Debian     1998 packageManager 1422
+djangoql  2017 pl   1423
+Atmel AVR instruction set     1996 isa  1424
+S-PLUS    1988 pl   1425
+mochi     2014 pl   1426
+koara     2016 textMarkup     1427
+Hocon     2011 dataNotation   1428
+ToonTalk  1995 pl   1429
+fe   2019 pl   1430
+Oxyl 2019 pl   1431
+Lisp Machine Lisp   1974 pl   1432
+ballerina-central-pm     2015 packageManager 1433
+Z    2012 pl   1434
+Fun  2010 pl   1435
+Genero Business Development Language    2010 pl   1436
+holyc     2005 pl   1437
+Interlisp 1966 pl   1438
+Catala    2019 pl   1439
+hacspec   2018 pl   1440
+silk 2019 pl   1441
+Uniform eXchange Format  2022 dataNotation   1442
+txr  2009 pl   1443
+Zimpl     2004 pl   1444
+TELOS     1990 pl   1445
+Flavors   1980 pl   1446
+Egison    2013 pl   1447
+Pact 2016 contractLanguage    1448
+scribble  1997 pl   1449
+OCL  1997 pl   1450
+JavaFX Script  2005 pl   1451
+NeXML format   2007 xmlFormat 1452
+Bucardo   2009 application    1453
+noulith   2022 pl   1454
+JSON Query Language 2019 queryLanguage  1455
+Cirru     2012 pl   1456
+Grace     2010 pl   1457
+Adobe Font Metrics  1987 application    1458
+manool    2018 pl   1459
+Ubercode  2005 pl   1460
+Boron     2009 pl   1461
+Edge Side Includes  2001 pl   1462
+BIND 2000 application    1463
+Potion    2007 pl   1464
+spiral    2017 pl   1465
+astro     2016 pl   1466
+Z++  1991 pl   1467
+Linda     1986 pl   1468
+noisecraft     2021 pl   1469
+raptorjit 2009 pl   1470
+Marp 2018 textMarkup     1471
+eff  2012 pl   1472
+Yum  1999 packageManager 1473
+XML Metadata Interchange 2015 xmlFormat 1474
+Scribe    1980 pl   1475
+Redcode   1984 pl   1476
+humanhash-hash-function  2011 hashFunction   1477
+Flowgorithm    2014 visual    1478
+Michigan Algorithm Decoder    1959 pl   1479
+WDDX 1998 pl   1480
+Bioconductor   2001 packageManager 1481
+jayfor    2014 pl   1482
+MIMIC     1964 pl   1483
+Mouse     1970 pl   1484
+NWScript  2004 pl   1485
+JSON Graph Spec     2013 jsonFormat     1486
+Claro     2021 pl   1487
+Zot  2015 pl   1488
+lav-format     2004 textDataFormat 1489
+Acorn Atom     1980 pl   1490
+Sibelius  1998 pl   1491
+RDF Schema     1998 grammarLanguage     1492
+Family BASIC   1984 pl   1493
+Vale 2020 pl   1494
+tsquery   2018 queryLanguage  1495
+VisualWorks    1985 pl   1496
+WATFIV    1968 pl   1497
+NixOS     2003 os   1498
+MACRO     1979 pl   1499
+sixten    2014 pl   1500
+oden 2016 pl   1501
+Cadence SKILL  1990 pl   1502
+Parallax Propeller  2006 isa  1503
+MUSIC/SP  1972 pl   1504
+Adventure Game Studio Script  2001 pl   1505
+Kit  2012 template  1506
+Alma 2014 pl   1507
+C shell   1978 pl   1508
+Charity   1992 pl   1509
+Toi  2015 pl   1510
+Pawn 1998 pl   1511
+owen-lang 2019 pl   1512
+epsilon   1967 pl   1513
+GraphQL Schema Definition Language 2018 idl  1514
+Watcom    1988 pl   1515
+05AB1E    2015 esolang   1516
+Plankalkul     1948 pl   1517
+RELAX NG  2001 grammarLanguage     1518
+hazel     2016 pl   1519
+Oak  1991 pl   1520
+Jank 2015 pl   1521
+MXF  2004 binaryDataFormat    1522
+GraphML   2001 xmlFormat 1523
+Tuple space    1988 pl   1524
+RSS  1999 protocol  1525
+JSLT 2017 pl   1526
+Berkeley DB    1994 library   1527
+attoparsec     2010 library   1528
+Morfik    2000 pl   1529
+StarLogo  2008 pl   1530
+Airtable  2012 application    1531
+HAGGIS    2010 pl   1532
+Deb file format     2003 binaryDataFormat    1533
+AMOS 1990 pl   1534
+Lustre    1993 pl   1535
+GNU Data Language   2004 idl  1536
+CFScript  1999 pl   1537
+TextMate Language   2004 grammarLanguage     1538
+Umka 2020 pl   1539
+pie-lang  2018 pl   1540
+Hodor     2015 esolang   1541
+Rouge     2012 pl   1542
+popr 2012 pl   1543
+Groovy Server Pages 2008 template  1544
+PeopleCode     2008 pl   1545
+FaCT 2017 pl   1546
+parenthetic    2012 esolang   1547
+Battlestar     2014 pl   1548
+kai  2016 pl   1549
+UCG  2017 dataNotation   1550
+Invisible XML  2020 grammarLanguage     1551
+Xidoc     2021 textMarkup     1552
+JS++ 2011 pl   1553
+latino    2015 pl   1554
+Conceptual     2019 pl   1555
+HMMM 2006 assembly  1556
+AmigaBASIC     1985 pl   1557
+XPL  1967 pl   1558
+Numbers   2007 application    1559
+MSX BASIC 1984 pl   1560
+multicodec     2015 standard  1561
+Property Specification Language    2004 pl   1562
+HAL/S     1972 assembly  1563
+DAX  2009 queryLanguage  1564
+CORAL     1964 pl   1565
+SISAL     1983 pl   1566
+CHIP-8    1970 pl   1567
+Liberty BASIC  1992 pl   1568
+COWSEL    1964 pl   1569
+PILOT     1962 pl   1570
+QuakeC    1996 pl   1571
+SCRIPT markup  1999 pl   1572
+Amiga E   1993 pl   1573
+Yacas     1999 pl   1574
+Q    1991 pl   1575
+Kid templating language  1999 template  1576
+REDUCE    2011 pl   1577
+Vvvv 1998 application    1578
+Structured text     2019 pl   1579
+BLAKE     2012 hashFunction   1580
+partiql   2019 queryLanguage  1581
+cat  2016 pl   1582
+ldpl 2019 pl   1583
+pointless 2020 pl   1584
+JSON Lines     2013 dataNotation   1585
+zenscript 2014 pl   1586
+Sophia    2018 contractLanguage    1587
+cor  2016 pl   1588
+Project Mentat 2016 queryLanguage  1589
+Z-flat    2021 pl   1590
+Incipit   2021 textMarkup     1591
+Goal 2022 pl   1592
+Lil  2022 pl   1593
+Standard Portable Intermediate Representation     2014 ir   1594
+Newsqueak 1990 pl   1595
+Coco 2010 pl   1596
+pikelet   2017 pl   1597
+Li-Chen Wang   1976 pl   1598
+forest-lang    2017 pl   1599
+k-framework    2013 grammarLanguage     1600
+BASIC-PLUS     1975 pl   1601
+CMS-2     1968 pl   1602
+Sketchpad 1962 pl   1603
+Go!  2003 pl   1604
+Information Processing Language    1954 pl   1605
+[x]it!    2022 dataNotation   1606
+Metalang99     2021 pl   1607
+OPS5 1977 pl   1608
+hakaru    2014 pl   1609
+VSXu 2004 visual    1610
+lemon     2017 pl   1611
+tao3d     2003 pl   1612
+Thue 2004 esolang   1613
+GEL Genius     1997 pl   1614
+dyvil     2014 pl   1615
+Judoscript     2001 pl   1616
+parasail  2009 pl   1617
+Breccia   2019 textMarkup     1618
+ArchieML  2015 dataNotation   1619
+Vely 2022 pl   1620
+Finite State Language    2016 pl   1621
+Soy  2008 template  1622
+StruQL    1999 queryLanguage  1623
+Euler     1965 pl   1624
+Lucidchart     2008 application    1625
+Hush 2021 pl   1626
+co-dfns   2012 pl   1627
+SIMSCRIPT 1963 pl   1628
+NESL 1993 pl   1629
+Facelets  2005 template  1630
+TOM object-oriented 1999 pl   1631
+RTL/2     1972 pl   1632
+Note 2012 dataNotation   1633
+VisSim    1989 pl   1634
+IBM POWER Instruction Set Architecture  1998 isa  1635
+RubyGems  2018 packageManager 1636
+MultiDimensional eXpressions  1997 queryLanguage  1637
+httplang  2015 pl   1638
+YARV 2007 vm   1639
+Algebraic modeling language   1980 pl   1640
+myia 2017 pl   1641
+ASDF 2015 pl   1642
+Geany     2005 editor    1643
+QUEL 1976 queryLanguage  1644
+MyBB 2002 pl   1645
+RAPID     1994 pl   1646
+FRACTRAN  1996 esolang   1647
+Forsyth-Edwards Notation 1883 notation  1648
+cuneiform 2015 pl   1649
+OpenType Feature File    1996 application    1650
+elena     2013 pl   1651
+Augeas    2007 pl   1652
+tangledown     2011 template  1653
+Pod6 2019 textMarkup     1654
+Fuzuli    2012 pl   1655
+Alpaca    2017 pl   1656
+Topaz     2021 pl   1657
+Sublime Syntax Test Lang 2008 grammarLanguage     1658
+POP-2     1967 pl   1659
+HP Time-Shared BASIC     1969 pl   1660
+Analytical engine   1837 computingMachine    1661
+Mangle    2022 pl   1662
+multiaddr 2014 schema    1663
+STOS BASIC     1988 pl   1664
+Business Basic 1970 pl   1665
+BPML 2002 pl   1666
+psyche-c  2016 compiler  1667
+Zope 1999 application    1668
+Sibilant  2010 pl   1669
+Function block diagram   2001 pl   1670
+OpenEXR   1999 binaryDataFormat    1671
+Gwion     2016 pl   1672
+micro-mitten   2020 pl   1673
+dedukti   2009 pl   1674
+Wavefront Material  1988 application    1675
+IBM i Control Language   1993 pl   1676
+Fjölnir   1986 pl   1677
+orange    2014 pl   1678
+reforth   2013 pl   1679
+Nice 2006 pl   1680
+Blacklight     2015 pl   1681
+BANCStar  1996 pl   1682
+z80  1976 assembly  1683
+gura 2012 pl   1684
+swizzle   2018 esolang   1685
+verifpal  2019 pl   1686
+Linux Kernel Module 1996 application    1687
+LOLA 1991 pl   1688
+Yedalog   2015 queryLanguage  1689
+JSON lambda    2017 queryLanguage  1690
+fleck     2019 pl   1691
+Janus     1982 pl   1692
+jeebox    2012 pl   1693
+A#   2004 pl   1694
+Bython    2016 pl   1695
+orca-pl   2018 esolang   1696
+Text Adventure Development System  1988 application    1697
+AIMMS     1993 pl   1698
+CBOR 2013 binaryDataFormat    1699
+Bro  1994 pl   1700
+topshell  2018 pl   1701
+Strongtalk     1994 pl   1702
+TRAC 1964 pl   1703
+Textadept 2007 editor    1704
+LinearML  2010 pl   1705
+Cone 2017 pl   1706
+OK   2021 pl   1707
+MDL  1971 pl   1708
+Gödel (Goedel) 1992 pl   1709
+Heron     2016 pl   1710
+taf  2012 pl   1711
+CSpydr    2021 pl   1712
+GLMS 2022 pl   1713
+BuddyScript    2002 pl   1714
+Velocity Template Language    2000 template  1715
+Ripple    2014 pl   1716
+maraca-lang    2018 pl   1717
+Aime 2013 pl   1718
+fizz 2017 pl   1719
+BALGOL    1959 pl   1720
+net-format     2006 textDataFormat 1721
+WMLScript 1998 pl   1722
+Boomerang Decompiler     2002 decompiler     1723
+N-Triples 2014 dataNotation   1724
+POPLOG    1992 pl   1725
+april     2017 pl   1726
+QtScript  2008 pl   1727
+plam 2017 pl   1728
+Quicken Interchange Format    2000 textDataFormat 1729
+quicklisp-pm   2010 packageManager 1730
+STON 2012 application    1731
+Interchange File Format  1985 binaryDataFormat    1732
+THEOS     1977 pl   1733
+Visual Objects 1994 pl   1734
+Casio BASIC    2006 pl   1735
+jsparagus 2018 grammarLanguage     1736
+HyPhy     2008 pl   1737
+TriG syntax    2007 dataNotation   1738
+mimium    2019 pl   1739
+DataWeave 2014 pl   1740
+ELFE 2003 pl   1741
+OEM  1995 schema    1742
+File Oriented Interpretive Language     1967 pl   1743
+M2001     2001 pl   1744
+Đ    2019 pl   1745
+BeBasic   2009 pl   1746
+TQL  2023 queryLanguage  1747
+GAML 1991 pl   1748
+Tao  2020 pl   1749
+HuJSON    2019 dataNotation   1750
+Kal  2012 pl   1751
+titan     2017 pl   1752
+Basic-256 2007 pl   1753
+XOTcl     2000 pl   1754
+JSL  1989 pl   1755
+bamboo    2016 pl   1756
+Turbo-Basic XL 1985 pl   1757
+Wu   2018 pl   1758
+LC-3 2003 pl   1759
+mirth     2019 pl   1760
+Austral   2018 pl   1761
+Joule     1996 pl   1762
+stoneknifeforth     2008 pl   1763
+Coco/R    1990 grammarLanguage     1764
+PBASIC    1988 pl   1765
+KRC  1981 pl   1766
+minikanren     2013 pl   1767
+Pyrex     2002 pl   1768
+baysick   2009 esolang   1769
+hexagony  2015 esolang   1770
+World of Warcraft Addon Data  2012 application    1771
+Easytrieve     1969 pl   1772
+Ohayo     2017 pl   1773
+Lite-C    2007 pl   1774
+Document Structure Description     2000 xmlFormat 1775
+Draco     1987 pl   1776
+Truth     2019 dataNotation   1777
+Zimbu     2009 pl   1778
+Promela   1997 pl   1779
+P*   2013 pl   1780
+Jevko     2021 dataNotation   1781
+Mscgen    2016 textMarkup     1782
+Picat     2012 pl   1783
+Explorer  2020 visual    1784
+AUTOCODER 1955 assembly  1785
+Jeeves    2013 pl   1786
+KUKA Robot Language 2010 pl   1787
+infusion-framework  2007 framework 1788
+buzz 2021 pl   1789
+ulisp     2016 pl   1790
+MessagePack    2009 binaryDataFormat    1791
+Executive Systems Problem Oriented Language  1967 pl   1792
+t2b  2018 pl   1793
+Model 204 1972 pl   1794
+pipelines 2018 pl   1795
+Links     2006 pl   1796
+multibase 2016 standard  1797
+Matrix protocol     2014 protocol  1798
+Notation3 1998 dataNotation   1799
+Virgil    2006 pl   1800
+Structured Query Reporter     1980 pl   1801
+solid     2013 pl   1802
+Vyxal     2020 esolang   1803
+Homa 2018 protocol  1804
+ObjectScript   2012 pl   1805
+Caché ObjectScript  1997 pl   1806
+Candy     2020 pl   1807
+SMX  1998 pl   1808
+jiyu 2019 pl   1809
+kumir     2011 pl   1810
+Atomese   2007 pl   1811
+mint 2018 pl   1812
+PML  1986 textMarkup     1813
+Manchester syntax   2006 dataNotation   1814
+HyTime    1991 pl   1815
+Linden Scripting Language     2003 pl   1816
+PLEX 1975 pl   1817
+GorillaScript  2013 pl   1818
+Balanced ternary    1544 notation  1819
+C/AL 1987 pl   1820
+COMIT     1957 pl   1821
+Basic4ppc 2005 pl   1822
+datafun   2015 pl   1823
+NEWP 1985 pl   1824
+son  2017 textMarkup     1825
+Optimized Systems Software    1981 pl   1826
+SYNAPSE   1990 pl   1827
+LispWorks 1989 pl   1828
+Processor Technology     1975 pl   1829
+fructure-editor     2017 pl   1830
+Smile data interchange format 2010 binaryDataFormat    1831
+inko 2015 pl   1832
+tampio    2017 pl   1833
+xxl  2016 pl   1834
+Uniface   1994 pl   1835
+Kamby     2022 pl   1836
+Sugar     2006 pl   1837
+ten  2019 pl   1838
+Nuua 2018 pl   1839
+Mudlle    1998 pl   1840
+Visual Tool Markup Language   1997 pl   1841
+CEEMAC    1980 pl   1842
+YESS 2022 protocol  1843
+Céu  2011 pl   1844
+Macchiato 2019 pl   1845
+concurnas 2018 pl   1846
+hoon 2011 pl   1847
+Filterscript   2012 pl   1848
+Reactive Plan Language   1993 pl   1849
+tremor-query   2019 queryLanguage  1850
+xTAO Modeling Language   2005 xmlFormat 1851
+Fossil    2006 application    1852
+GNU Guix  2013 distribution   1853
+SipHash   2011 hashFunction   1854
+Haxe Library Manager     2013 packageManager 1855
+ko   2018 pl   1856
+Small-C   1980 pl   1857
+PTX  2009 assembly  1858
+Visual Paradigm     2002 application    1859
+X BitMap  1989 textDataFormat 1860
+Gremlin   2009 queryLanguage  1861
+Semantic Web Rule Language    2004 xmlFormat 1862
+Functional PHP Preprocessor   2018 pl   1863
+SDTM 2004 standard  1864
+Conway chained arrow notation 1996 notation  1865
+crmsh     2008 pl   1866
+DML  2005 pl   1867
+juvix     2017 pl   1868
+Lucid     2014 template  1869
+Short Code computer language  1949 pl   1870
+Kuroko    2020 pl   1871
+Parenscript    2009 pl   1872
+ΜC++ 1992 pl   1873
+Wing 2022 pl   1874
+Scala Markup Language    2010 template  1875
+Gren 2012 pl   1876
+Rebeca Modeling Language 2004 pl   1877
+Parlog    1983 pl   1878
+Toy  2018 pl   1879
+blz  2015 pl   1880
+dllup     2015 textMarkup     1881
+Dashrep   2011 pl   1882
+Ook  2005 esolang   1883
+jcard     2014 jsonFormat     1884
+jplace    2012 jsonFormat     1885
+Winbatch  1989 pl   1886
+vega-editor-app     2015 application    1887
+Simplicity     2017 pl   1888
+Gist 1977 pl   1889
+WinWrap Basic  1993 pl   1890
+never     2018 pl   1891
+expresso  2012 pl   1892
+CBASIC    1982 pl   1893
+Atlas Autocode 1965 pl   1894
+OGNL 2007 pl   1895
+NELIAC    1958 pl   1896
+Continuity of Care Document   2008 xmlFormat 1897
+Color BASIC    1980 pl   1898
+MAGMA     1993 pl   1899
+Sawzall   2003 pl   1900
+ASIC 1992 pl   1901
+Zeek 1994 pl   1902
+DATABUS   1972 pl   1903
+Energy Systems Language  1950 notation  1904
+Flowcode  2002 pl   1905
+Phel 2020 pl   1906
+yeti 2007 pl   1907
+FloScript 2013 pl   1908
+Quake     2001 pl   1909
+zolang    2018 pl   1910
+video     2016 pl   1911
+hamdown   2018 textMarkup     1912
+MUDDL     1988 pl   1913
+Scsh 1993 pl   1914
+json->url 2017 jsonFormat     1915
+DAP FORTRAN    1975 pl   1916
+funl 2020 pl   1917
+Speech Synthesis Markup Language   2010 xmlFormat 1918
+texti     2017 textMarkup     1919
+Blox 2018 pl   1920
+rosette-lang   2013 pl   1921
+Sitemap   2001 xmlFormat 1922
+Data Communications ALGOL     1970 pl   1923
+Rocky Mountain BASIC     1988 pl   1924
+Python for S60 2006 pl   1925
+sporth    2015 pl   1926
+Pycket    2022 pl   1927
+Kuin 2016 pl   1928
+Edinburgh IMP  2002 pl   1929
+Pharen    2009 pl   1930
+A+   1988 pl   1931
+Clinical Document Architecture     1996 xmlFormat 1932
+Axiom     1992 pl   1933
+Euclid    1970 pl   1934
+Synon     1986 pl   1935
+XCAS 2001 pl   1936
+PL/P 1978 pl   1937
+Instruction list    2000 pl   1938
+DDA  1979 pl   1939
+Simons' BASIC  1983 pl   1940
+categorical-query-language    2019 queryLanguage  1941
+Margin    2019 textMarkup     1942
+moya 2015 pl   1943
+Wart 2010 pl   1944
+ODRL 2000 pl   1945
+Forte 4GL 1994 pl   1946
+Action Code Script  2004 pl   1947
+CobolScript    1999 pl   1948
+Project MAC’s SYmbolic MAnipulator 1968 pl   1949
+strat     2018 pl   1950
+mimix-stream-language    2018 pl   1951
+BrightScript   2008 pl   1952
+Hspec     1990 pl   1953
+Markdeep  2015 textMarkup     1954
+xsharp    2015 pl   1955
+Linker Script  1991 application    1956
+jinx 2016 pl   1957
+Tabloid   2020 esolang   1958
+SAC  1994 pl   1959
+FL   1989 pl   1960
+TAL  2008 pl   1961
+OBJ  1976 pl   1962
+GEORGE    1957 pl   1963
+Statsplorer    2014 visual    1964
+Matrix Market Coordinate Format    1996 textDataFormat 1965
+praxis-lang    2011 pl   1966
+IDL specification language    1980 idl  1967
+Armed Bear Common Lisp   2008 pl   1968
+redprl    2016 pl   1969
+Advanced Authoring Format     2002 binaryDataFormat    1970
+CHICKEN   1994 pl   1971
+MLAB 1975 pl   1972
+g-fu 2019 pl   1973
+Yabasic   1995 pl   1974
+CRAM file format    2011 binaryDataFormat    1975
+Tahoe-LAFS     2007 filesystem     1976
+Chinese BASIC  1980 pl   1977
+3D Manufacturing Format  2015 xmlFormat 1978
+little    2016 pl   1979
+BEAM Erlang virtual machine   2011 vm   1980
+MHEG-5    1997 schema    1981
+SequenceL 1989 pl   1982
+lift 2014 pl   1983
+clarity   2019 contractLanguage    1984
+Literate Haskell    1991 pl   1985
+RHTML     2004 template  1986
+wah  2017 pl   1987
+semicolon 2012 esolang   1988
+lever     2015 pl   1989
+Wonkey    2021 pl   1990
+Gellish   2005 textMarkup     1991
+Kalyn     2020 pl   1992
+aretext   2020 editor    1993
+obsidian  2018 pl   1994
+Stockholm format    1997 textDataFormat 1995
+Flatline  2013 pl   1996
+NilScript 2013 pl   1997
+ugBASIC   2021 pl   1998
+XPL0 1976 pl   1999
+ApeScript 1995 pl   2000
+SQRL 2018 queryLanguage  2001
+ISETL     1989 pl   2002
+IPL  2013 pl   2003
+Space     2013 dataNotation   2004
+Astatine  2022 pl   2005
+jasper    2014 pl   2006
+Boogie    2008 pl   2007
+D2   1995 textMarkup     2008
+dbml 2019 textMarkup     2009
+Low* 2008 pl   2010
+opengraph 2010 xmlFormat 2011
+2-pak     1975 pl   2012
+rbs  2020 headerLang     2013
+Basic4android  2011 pl   2014
+Atari Microsoft BASIC    1981 pl   2015
+Le-Lisp   1984 pl   2016
+PL/C 1973 pl   2017
+Google Data Protcol 2007 protocol  2018
+Frank     2017 pl   2019
+Pyth 2014 esolang   2020
+TMTP 2017 protocol  2021
+Binary Alignment Map     2009 binaryDataFormat    2022
+De Bruijn index     1972 notation  2023
+Pro*C     1996 pl   2024
+hr-code   2019 barCodeFormat  2025
+PEAR 1999 packageManager 2026
+CYCL 1988 pl   2027
+ESC/P     1992 pl   2028
+OQL  1986 queryLanguage  2029
+Coda web development software 2007 editor    2030
+Hotdog    2001 pl   2031
+Apple ProDOS   1983 os   2032
+Meta Expressions    1960 dataNotation   2033
+Netlib    1985 library   2034
+MAI Basic Four 1974 pl   2035
+Kaffeine  2010 pl   2036
+General-purpose macro processor    1995 grammarLanguage     2037
+ABC 80    1978 pl   2038
+Glyph     2007 pl   2039
+Savi 2018 pl   2040
+Forml     2011 pl   2041
+WebDNA    1995 pl   2042
+Ciel 2010 pl   2043
+Slideshow 2000 textMarkup     2044
+Sing Sharp     2005 pl   2045
+juniper   2016 pl   2046
+Pnuts     1997 pl   2047
+Nickle    2001 pl   2048
+huginn    2015 pl   2049
+Interactive C Interpreter     1980 pl   2050
+Alumina   2021 pl   2051
+tuplemarkup    2012 textMarkup     2052
+Dern 2008 pl   2053
+FOAF 2007 xmlFormat 2054
+SHACL     2015 pl   2055
+JCOF 2022 dataNotation   2056
+Fardlang  2022 esolang   2057
+lila-lang 2019 pl   2058
+HUGO 1995 pl   2059
+Bla  1994 pl   2060
+False     1993 pl   2061
+Lexon     2018 contractLanguage    2062
+Scrapscript    2023 pl   2063
+world     2011 pl   2064
+Worst     2001 pl   2065
+GUIDE     1994 pl   2066
+IRC chat logs  1988 application    2067
+Portable Bit Map Format  1986 textDataFormat 2068
+v8torque  2018 pl   2069
+Zork Implementation Language  1988 pl   2070
+Dink Smallwood 1998 pl   2071
+Nadesiko  2008 pl   2072
+ARITH-MATIC    1954 pl   2073
+IBM BASICA     1981 pl   2074
+SenseTalk 2001 pl   2075
+Irvine Dataflow     1975 pl   2076
+Ruby Document format     1995 textMarkup     2077
+ALGOL 68-R     1970 pl   2078
+ARM Templates  2017 jsonFormat     2079
+Crystallographic Information File  1991 textDataFormat 2080
+candor    2012 pl   2081
+Dasm 1988 assembly  2082
+Lawvere   2021 pl   2083
+ecsharp   2008 pl   2084
+SpiderBasic    2015 pl   2085
+Silicon Graphics Image   1996 binaryDataFormat    2086
+Schematron     1999 xmlFormat 2087
+Chipmunk Basic 1989 pl   2088
+Daisy Systems  1983 pl   2089
+Preferred Executable Format   1994 pl   2090
+Common Data Format  1985 binaryDataFormat    2091
+HAL Format     2012 binaryDataFormat    2092
+elymas    2012 pl   2093
+RapidQ    2000 pl   2094
+SCM  1990 pl   2095
+Split-C   1995 pl   2096
+ILBM 1985 binaryDataFormat    2097
+FXML 2011 xmlFormat 2098
+A++  1996 pl   2099
+METAPOST  1994 pl   2100
+tamgu     2019 pl   2101
+arret     2017 pl   2102
+GRAAL     1986 pl   2103
+ultralisp-pm   2018 packageManager 2104
+Charcoal  2016 esolang   2105
+Beta BASIC     1983 pl   2106
+Unity3D Asset  2005 application    2107
+tablam    2020 queryLanguage  2108
+Prograph  1983 pl   2109
+ATLAS Transformation Language 2005 pl   2110
+Tandem Advanced Command Language   1999 pl   2111
+Miva 1996 pl   2112
+Ante 2013 esolang   2113
+JSONScript     2016 pl   2114
+CLAIRE    2004 pl   2115
+Small     1980 pl   2116
+Z    2019 pl   2117
+CLPR 1986 pl   2118
+Urbiscript     2003 pl   2119
+System Automatycznego Kodowania Operacji     1960 pl   2120
+YAMP 2019 dataNotation   2121
+h    2019 esolang   2122
+iCalendar 1998 textDataFormat 2123
+pinto     2016 pl   2124
+TAO  2020 dataNotation   2125
+nydp 2014 pl   2126
+JLang     2016 pl   2127
+Link 2021 pl   2128
+Serious   2021 pl   2129
+Slim Framework 2013 framework 2130
+Acme 1994 pl   2131
+AspectC++ 2001 pl   2132
+The Dog Programming Language  2011 pl   2133
+frame     2013 pl   2134
+stella    1999 pl   2135
+z2   2015 pl   2136
+ca65 Assembly  1998 assembly  2137
+ctalk-lang     1989 pl   2138
+Run BASIC 2008 pl   2139
+Augment   1974 pl   2140
+IBM BASIC 1981 pl   2141
+MetaComCo 1981 pl   2142
+Laning and Zierler system     1953 pl   2143
+LINC 4GL  1980 pl   2144
+Spice Lisp     1980 pl   2145
+DarkBASIC 2000 pl   2146
+Portable Standard Lisp   1980 pl   2147
+Polymorphic Programming Language   1969 pl   2148
+Obliq     1993 pl   2149
+Atari ST BASIC 1985 pl   2150
+Graphics BASIC 1983 pl   2151
+IMP  1968 pl   2152
+Cullinet  1968 pl   2153
+Stalin    2006 compiler  2154
+Knowledge Interchange Format  1990 pl   2155
+Nimskull  2021 pl   2156
+cperl     2017 pl   2157
+IBM Informix-4GL    1985 queryLanguage  2158
+loci 2013 pl   2159
+hrqr 2015 barCodeFormat  2160
+Dolittle  1952 pl   2161
+Rita 2019 pl   2162
+Leda 1995 pl   2163
+MACRO-11  1974 pl   2164
+DragonBASIC    2003 pl   2165
+MakeDoc   2000 textMarkup     2166
+Namespace-based Validation Dispatching Language   2006 xmlFormat 2167
+ru   2015 pl   2168
+Chrome    2008 pl   2169
+Nord Programming Language     1974 pl   2170
+Plaid     2009 pl   2171
+adamant   2018 pl   2172
+nianiolang     2015 pl   2173
+flua 2012 pl   2174
+FCL  1989 pl   2175
+ProbeVue  2008 pl   2176
+plink-ped-format    2007 textDataFormat 2177
+starpial  2012 pl   2178
+KAML 2018 dataNotation   2179
+Kami 2022 textMarkup     2180
+Binary Lambda Calculus   2004 esolang   2181
+myrddin   2016 pl   2182
+OMG IDL   2018 idl  2183
+Plot 2006 pl   2184
+Slick     2020 pl   2185
+4th Dimension  1987 pl   2186
+chain-format   2013 textDataFormat 2187
+Fortran 90     1990 pl   2188
+Netpbm grayscale image format 1988 textDataFormat 2189
+clike     2014 pl   2190
+Tynker    2012 visual    2191
+XBEL 2006 pl   2192
+HP-GL     1986 pl   2193
+Game Oriented Assembly Lisp   1993 pl   2194
+SP/k 1974 pl   2195
+Sublime Syntax 2008 grammarLanguage     2196
+ColorForth     1992 pl   2197
+Lazy ML   1980 pl   2198
+Mortran   1973 pl   2199
+EXEC 2    1970 pl   2200
+P′′  1964 pl   2201
+ZBasic    1980 pl   2202
+Ecstasy   2015 pl   2203
+ISBL 1980 pl   2204
+SIGNAL    1982 pl   2205
+Steinhaus-Moser notation 1969 notation  2206
+MML  1982 standard  2207
+Content Assembly Mechanism    2002 xmlFormat 2208
+Dataflex  1982 pl   2209
+co2  2016 pl   2210
+Ren-C     2012 pl   2211
+rhine     2014 pl   2212
+Croma     2005 pl   2213
+Mobl 2010 pl   2214
+UBJSON    2017 binaryDataFormat    2215
+BASIC A+  1983 pl   2216
+Mallard BASIC  1985 pl   2217
+Janus     1990 pl   2218
+LISP 2    1963 pl   2219
+Ratfiv    1980 pl   2220
+Apple BASIC    1978 pl   2221
+Tree and Tabular Combined Notation 1992 pl   2222
+keli 2018 pl   2223
+mlatu     2021 pl   2224
+a Lisp Environment  2019 pl   2225
+UIML 2005 xmlFormat 2226
+Chomski   2007 pl   2227
+Visual Test    1992 pl   2228
+Argus     1982 pl   2229
+GameMonkey Script   2002 pl   2230
+Steel Bank Common Lisp   1999 pl   2231
+JIS X 0201     1969 characterEncoding   2232
+Just Another Scripting Syntax 2009 pl   2233
+LiteScript     2013 pl   2234
+Om   2012 pl   2235
+Avionics Architecture Design Language   2003 pl   2236
+Trellis   1985 pl   2237
+Kawa 1996 pl   2238
+Magik     1989 pl   2239
+Data General Business Basic   1970 pl   2240
+mythryl   2006 pl   2241
+TUTOR     1969 pl   2242
+Refer     1978 textMarkup     2243
+lambda-zero    2018 pl   2244
+Kaleidoscope   1994 pl   2245
+fp   2022 pl   2246
+zl   2012 pl   2247
+3APL 1998 pl   2248
+Enterprise Mashup Markup Language  2001 pl   2249
+OpenComal 2006 pl   2250
+nylo 2017 pl   2251
+orca 1985 pl   2252
+TI-89 series   1998 pl   2253
+rpscript  2018 pl   2254
+awl  2014 pl   2255
+juicy     2017 pl   2256
+RapidBatch     2017 pl   2257
+kerf 2015 pl   2258
+Devicetree     2009 dataNotation   2259
+G-Portugol     2005 pl   2260
+nimrod    2013 pl   2261
+Objective-S    1980 pl   2262
+protium   2007 pl   2263
+bml  2014 dataNotation   2264
+Make 1977 application    2265
+WHIRL     1997 pl   2266
+Y    1981 pl   2267
+SnapTag   2011 barCodeFormat  2268
+Transaction Language 1   1984 pl   2269
+Gene transfer format     2006 textDataFormat 2270
+MEDUSA    2002 pl   2271
+Aztec C   1980 pl   2272
+ΛProlog   1986 pl   2273
+CECIL     1992 pl   2274
+polyglot-compiler   2003 compiler  2275
+ana  2018 pl   2276
+CodeGear Delphi     1995 pl   2277
+Vilnius BASIC  1986 pl   2278
+Scratchpad     1971 pl   2279
+l2   2017 pl   2280
+Jisp 2014 pl   2281
+mys  2020 pl   2282
+Integrated Data Store    1964 queryLanguage  2283
+DYNAMO    1959 pl   2284
+Eurisko   1978 pl   2285
+Alma-0    1997 pl   2286
+RamdaScript    2016 pl   2287
+hivemind  2015 pl   2288
+B32 Business Basic  1986 pl   2289
+WFL  1961 pl   2290
+AgentSpeak     1994 pl   2291
+BCX  1999 pl   2292
+Cornell University Programming Language 1967 pl   2293
+Meditech Interpretive Information System     1986 pl   2294
+Gforth    1992 pl   2295
+Sun Raster     1989 binaryDataFormat    2296
+UPIC 2018 pl   2297
+MAPPER    1960 pl   2298
+mages     2016 pl   2299
+jonprl    2015 pl   2300
+txtzyme   2010 pl   2301
+Piet 1990 esolang   2302
+Slony     2004 application    2303
+SIMPL     1990 pl   2304
+Text Executive Programming Language     1979 pl   2305
+Wirth syntax notation    1977 grammarLanguage     2306
+egel 2016 interpreter    2307
+Common Lisp with Arc Macros and Procedures   2014 pl   2308
+I    2012 pl   2309
+RLaB 1998 pl   2310
+QOIR 2022 binaryDataFormat    2311
+Formula language    1989 pl   2312
+OptimJ    2006 pl   2313
+rainbow   2009 pl   2314
+fjs  2013 pl   2315
+phorth    2016 pl   2316
+CMS Pipelines  1986 pl   2317
+DEVIL     2000 pl   2318
+icarus    2015 pl   2319
+Ham  2013 pl   2320
+sill 2015 pl   2321
+badlanguage    2017 pl   2322
+rel-lang  2015 pl   2323
+gintonic  2018 queryLanguage  2324
+jedlang   2015 pl   2325
+runiq     2015 pl   2326
+blur-markup-language     2017 textMarkup     2327
+formality 2019 pl   2328
+ramen     2017 pl   2329
+corescript     2018 pl   2330
+X PixMap  1989 textDataFormat 2331
+mdl  2019 isa  2332
+lezer     2019 grammarLanguage     2333
+emesh     2014 esolang   2334
+flownote  2019 pl   2335
+oopsilon  2017 esolang   2336
+U    2013 pl   2337
+elegance  2017 pl   2338
+AmbientTalk    2006 pl   2339
+emfatic   2004 pl   2340
+git-config     2005 application    2341
+LARP 2003 pl   2342
+Lazy K    2002 esolang   2343
+Liso 2014 dataNotation   2344
+><>  2009 esolang   2345
+Ion Schema Language 2018 grammarLanguage     2346
+Robots.txt     1994 configFormat   2347
+specrtl   2011 pl   2348
+vivaldi   2015 pl   2349
+PascalABC.NET  2002 pl   2350
+kei  2019 pl   2351
+edgelisp  2008 pl   2352
+D data language specification 1994 queryLanguage  2353
+CONVERT   1966 pl   2354
+GeneXus   1988 pl   2355
+unseemly  2016 pl   2356
+typecobol 2015 pl   2357
+Alternate Instruction Set     2001 isa  2358
+r4   2009 pl   2359
+Fenix Project  2006 pl   2360
+ScriptBasic    1999 pl   2361
+BASICODE  1980 pl   2362
+Knowledge Query and Manipulation Language    1993 queryLanguage  2363
+MARK IV   1985 pl   2364
+TTM  1968 pl   2365
+Ease 1991 pl   2366
+JOSS Extended and Adapted for Nineteen-hundred    1960 pl   2367
+Lava 2001 pl   2368
+BASIC09   1978 pl   2369
+MacBASIC  1985 pl   2370
+Encore    2014 pl   2371
+Brain-Flak     2016 esolang   2372
+R++  1990 pl   2373
+CHILL     1980 pl   2374
+ELAN 1974 pl   2375
+SAOL 1999 pl   2376
+Southampton BASIC System 1960 pl   2377
+IPTSCRAE  1994 pl   2378
+moinmoin  2000 textMarkup     2379
+CodeStudAssembler   2017 assembly  2380
+ktexteditor-editor  2014 editor    2381
+Cambridge Algebra System 1973 pl   2382
+PACT I    1955 pl   2383
+Continuity of Care Record     2007 xmlFormat 2384
+AUI  2002 pl   2385
+Amigas    1989 pl   2386
+Hopscotch 2016 pl   2387
+SPIP 1977 pl   2388
+Nomad software 1976 pl   2389
+Corman Common Lisp  1995 pl   2390
+Ciao 1984 pl   2391
+PICO 1997 pl   2392
+Join Java 2000 pl   2393
+fork-lang 2014 pl   2394
+Scheme 2-D     2021 pl   2395
+Snowball  2001 pl   2396
+preforth  2018 pl   2397
+quaint-lang    2015 pl   2398
+RascalMPL 2010 pl   2399
+TScript   2012 pl   2400
+remix     2016 pl   2401
+VlibTemplate   2003 template  2402
+neutron   2019 pl   2403
+emerald-lang   2019 pl   2404
+Riff 2020 pl   2405
+HCard     2009 xmlFormat 2406
+Ad-hoc    2017 pl   2407
+polymath  2020 textMarkup     2408
+Edina     2022 pl   2409
+rocket    2018 pl   2410
+Jammy     2021 pl   2411
+nlpl 2018 pl   2412
+lsd  2016 textMarkup     2413
+Calc4     2018 pl   2414
+cosh 2022 pl   2415
+eskew     2019 pl   2416
+BML  2007 xmlFormat 2417
+coherence 2009 pl   2418
+s-lang    1992 pl   2419
+CBOR data definition language 2017 idl  2420
+hop  2006 pl   2421
+Joyfully Universal Language for (Inline) Assembly 2016 pl   2422
+LIFE 1987 pl   2423
+Myghty    2006 pl   2424
+ppm-format     1988 textDataFormat 2425
+SHIFT     1997 pl   2426
+Visual Smalltalk Enterprise   1992 pl   2427
+PV-Wave   1988 pl   2428
+APLX 1985 pl   2429
+ABSET     1969 pl   2430
+Agora     1993 pl   2431
+MapBasic  1997 pl   2432
+TMG  1968 grammarLanguage     2433
+Elliott ALGOL  1962 pl   2434
+Jet Propulsion Laboratory Display Information System   1973 pl   2435
+Bounce    2016 pl   2436
+Pascal Script  2000 pl   2437
+ircis     2019 esolang   2438
+Concurrent ML  1993 pl   2439
+DML  1992 pl   2440
+THINK C   1986 pl   2441
+OpenROAD  1990 pl   2442
+GUIDO music notation     1998 textDataFormat 2443
+EasyLanguage   1995 pl   2444
+Data Catalog Vocabulary  2014 schema    2445
+Meta II   1962 grammarLanguage     2446
+Omnis Studio   1982 pl   2447
+Easy Programming Language     2004 pl   2448
+Systems Biology Markup Language    2006 xmlFormat 2449
+ITL  1981 pl   2450
+Protel    1975 pl   2451
+V    2016 esolang   2452
+ALGOL N   1967 pl   2453
+Galaksija BASIC     1983 pl   2454
+FastTrack Scripting Host 2006 pl   2455
+APSE 1980 pl   2456
+Harwell-Boeing file format    1989 textDataFormat 2457
+SPITBOL   1971 pl   2458
+String diagram 1971 notation  2459
+Intuit Interchange Format     2004 textDataFormat 2460
+PALASM    1980 pl   2461
+WOL  1997 pl   2462
+Framework office suite   1983 pl   2463
+QUIKSCRIPT     1965 pl   2464
+SBASIC    1983 pl   2465
+Star 2021 pl   2466
+Jazz 2019 pl   2467
+Abbreviated Test Language for All Systems    1984 pl   2468
+mycroft   2013 pl   2469
+ralph     2010 pl   2470
+grid-notation  2013 textDataFormat 2471
+MewMew    2020 esolang   2472
+sugartex  2018 textMarkup     2473
+y-lang    2019 pl   2474
+Calypso   2020 pl   2475
+Proteus   1998 pl   2476
+whack     2018 pl   2477
+BlazeX    2020 pl   2478
+setlx     2011 pl   2479
+flame-ir  2015 ir   2480
+toki sona 2021 pl   2481
+CGOL 1973 pl   2482
+ZENO 1995 pl   2483
+AIML 2001 dataNotation   2484
+Little Implementation Language     1974 pl   2485
+Insitux   2021 pl   2486
+Cane 2022 musicalNotation     2487
+Rye  2019 pl   2488
+Daplex    1979 pl   2489
+NXT-G     2006 pl   2490
+r3   2021 pl   2491
+shadama   2017 pl   2492
+PCrap     2021 pl   2493
+RigC 2021 pl   2494
+Amazon Redshift     2012 queryLanguage  2495
+RTF  1987 textMarkup     2496
+vCard     1998 textDataFormat 2497
+Chika     2019 pl   2498
+latte-js  2012 pl   2499
+duro 2003 queryLanguage  2500
+Blue 1977 pl   2501
+Lesma     2022 pl   2502
+HuwCode   2018 pl   2503
+penguor   2020 pl   2504
+taxa 2014 pl   2505
+acorn-lang     2015 pl   2506
+newclay   2011 pl   2507
+Idio 2015 pl   2508
+Mewl 2022 esolang   2509
+stacklang 2018 pl   2510
+Storymatic     2022 pl   2511
+Esoteric Reaction   2020 esolang   2512
+Horse64   2020 pl   2513
+passambler     2015 pl   2514
+rockstar-rkt   2019 pl   2515
+Workfl    2019 textMarkup     2516
+GamerLanguage  2021 pl   2517
+Marine Trading Markup Language     2000 xmlFormat 2518
+Procfile  2012 pl   2519
+quorum    2013 pl   2520
+srv  2010 idl  2521
+Trex 2001 grammarLanguage     2522
+USD  2016 pl   2523
+wescheme  2009 pl   2524
+APL2 1984 pl   2525
+blue 2009 pl   2526
+EFL  1979 pl   2527
+Structured Control Language   1998 pl   2528
+Twelf     2006 pl   2529
+TASM 1989 pl   2530
+Tosh 2015 pl   2531
+Visual DataFlex     1982 pl   2532
+Rexon     1978 pl   2533
+FpgaC     1996 pl   2534
+Object-Z  1991 pl   2535
+SYMPL     1970 pl   2536
+Ikarus Scheme implementation  2007 pl   2537
+LYaPAS    1964 pl   2538
+ObjectLOGO     1993 pl   2539
+Agilent VEE    1991 pl   2540
+AlphaBasic     1976 pl   2541
+BASIC-11  1976 pl   2542
+PS-algol  1981 pl   2543
+Structured Product Labeling   2004 xmlFormat 2544
+GARP 1988 pl   2545
+CS-Script 2004 pl   2546
+PROIV     1976 pl   2547
+RuleML    2002 pl   2548
+aplette   2014 pl   2549
+DEMOS     1978 pl   2550
+Flex language  1967 pl   2551
+SLIP 1960 pl   2552
+glush     2019 grammarLanguage     2553
+Taijilang 2014 pl   2554
+CMU Common Lisp     1980 pl   2555
+ALCOR     1959 pl   2556
+Larceny Scheme implementation 2017 pl   2557
+Acornsoft Logo 1985 pl   2558
+Napier88  1989 pl   2559
+Basic4GL  2002 pl   2560
+GNU E     1991 pl   2561
+Nested Context Language  2000 xmlFormat 2562
+SuperTalk 1989 pl   2563
+SAM76     1970 pl   2564
+Standard for Exchange of Non-clinical Data   2002 standard  2565
+VAL  1980 pl   2566
+Robot Battle   1994 pl   2567
+INFER     1992 pl   2568
+S/SL 1980 pl   2569
+Digital Interactive Business Oriented Language    1970 pl   2570
+Tymshare SuperBasic 1968 pl   2571
+Tag Line Commands   2015 pl   2572
+KamilaLisp     2021 pl   2573
+eco-editor     2012 editor    2574
+sham 2016 grammarLanguage     2575
+Extended ML    1985 pl   2576
+BASIC-E   1976 pl   2577
+UniVerse  1997 pl   2578
+Post production     1941 grammarLanguage     2579
+6gunz     2018 pl   2580
+Dexterity 1991 pl   2581
+DARPA Agent Markup Language   1999 xmlFormat 2582
+PASCAL/MT+     1988 pl   2583
+LIMDEP    1980 pl   2584
+Atom 2007 pl   2585
+SASL 1972 pl   2586
+NCAR Command Language    1990 pl   2587
+CommonLoops    1986 pl   2588
+Khepri    2012 pl   2589
+Typographical Number Theory   1979 notation  2590
+UNCOL     1958 ir   2591
+SISC 2007 pl   2592
+Alpha     1971 pl   2593
+ALTRAN    1968 pl   2594
+PowerHouse     1988 pl   2595
+Secure Operations Language    1970 pl   2596
+Election Markup Language 2001 xmlFormat 2597
+RenderMan Shading Language    1989 pl   2598
+ed   1973 editor    2599
+Squire    2021 pl   2600
+Knight    2021 pl   2601
+Hook 2021 pl   2602
+Langage Sans Espoir 1971 pl   2603
+Flapjax   2006 pl   2604
+Little b  2004 pl   2605
+CheetahTemplate     2001 template  2606
+AIL  2016 ir   2607
+nulan     2012 pl   2608
+Hot Cocoa Lisp 2013 pl   2609
+Lithe     1982 pl   2610
+Curly     2021 pl   2611
+RustScript     2021 pl   2612
+rio  2017 pl   2613
+Bizubee   2015 pl   2614
+KavaScript     2021 pl   2615
+Octune    2021 pl   2616
+mlpolyr   2016 pl   2617
+Cotton    2021 pl   2618
+ForthScript    2020 pl   2619
+lamderp   2013 pl   2620
+Iode 2015 pl   2621
+PearScript     2016 pl   2622
+woe  2009 pl   2623
+H++  2013 pl   2624
+Jingo     2020 pl   2625
+Hina 2020 pl   2626
+microl    2021 pl   2627
+Fern 2022 pl   2628
+MeanscriptCLI  2020 pl   2629
+mountain  2019 pl   2630
+lambcalc  2019 pl   2631
+Broccoli  2020 pl   2632
+mai  2019 pl   2633
+alan 2018 pl   2634
+avro 2012 idl  2635
+beautiful-report-language     2003 pl   2636
+Copilot   2021 pl   2637
+lain 2017 pl   2638
+luau 2020 pl   2639
+MathLingua     2019 pl   2640
+michelson 2017 pl   2641
+Nasal     2002 pl   2642
+plantuml  2010 textMarkup     2643
+rosie     2015 queryLanguage  2644
+Timpani   2017 textMarkup     2645
+bioscript 2019 pl   2646
+CP   1987 pl   2647
+Darcs Advanced Revision Control System  2003 application    2648
+Emerald   1987 pl   2649
+QCL  2005 pl   2650
+rise 2020 pl   2651
+sora 2019 pl   2652
+SubX 2019 assembly  2653
+webql     2001 queryLanguage  2654
+MINC 1985 pl   2655
+OWBasic   2000 pl   2656
+Phoenix Object Basic     2001 pl   2657
+CA-Realizer    1992 pl   2658
+FLACC     1977 pl   2659
+Object Oberon  1990 pl   2660
+Ramis software 1960 pl   2661
+Smalltalk MT   1994 pl   2662
+Mama 2010 pl   2663
+TOM  2001 pl   2664
+ZigZag    1965 knowledgeBase  2665
+Actor     1988 pl   2666
+Gello Expression Language     2001 pl   2667
+OMeta     2007 grammarLanguage     2668
+NPL  1977 pl   2669
+IFPS 1970 pl   2670
+Matita    1999 pl   2671
+Abstract State Machine Language    2001 pl   2672
+CA-Telon  1981 pl   2673
+SR   1988 pl   2674
+Lynx 1984 pl   2675
+PIKT 1998 pl   2676
+Distributed Application Specification Language    1999 pl   2677
+Langage Implementation Systeme     1980 pl   2678
+Algebraic Logic Functional    1990 pl   2679
+Subtext   2005 pl   2680
+CAL Actor Language  2001 pl   2681
+FuzzyCLIPS     1995 knowledgeBase  2682
+Tektronix 4050 1980 pl   2683
+IBM 1401 Symbolic Programming System    1959 compiler  2684
+Information Algebra 1962 pl   2685
+PVS  1992 pl   2686
+Real-time Cmix 1992 pl   2687
+Actor-Based Concurrent Language    1986 pl   2688
+Occam π   2005 pl   2689
+Strand    1989 pl   2690
+Onyx 1989 pl   2691
+Tiger-BASIC    1986 pl   2692
+IBM Rational SQABasic    1996 pl   2693
+Batari Basic   2007 pl   2694
+Bywater BASIC  1992 pl   2695
+NorthStar BASIC     1977 pl   2696
+Allegro Common Lisp 1986 pl   2697
+Todotxt   2006 dataNotation   2698
+CokeScript     2015 pl   2699
+D4   2001 pl   2700
+Texy!     2004 textMarkup     2701
+ShEx 2012 grammarLanguage     2702
+Scriptol  2001 pl   2703
+Alphard   1974 pl   2704
+Typecast.js    2013 pl   2705
+daonode   2011 pl   2706
+CLiX markup    1998 xmlFormat 2707
+LEAP 1969 pl   2708
+t-lang    2019 pl   2709
+Swym 2012 pl   2710
+gfoo 2020 pl   2711
+Ferite    2000 pl   2712
+Moescript 2012 pl   2713
+tridash   2018 pl   2714
+wats 2017 pl   2715
+weebasic  2021 pl   2716
+FutureScript   2015 pl   2717
+TextFrame 2008 textMarkup     2718
+Broccoli  2008 pl   2719
+leaf 2013 pl   2720
+psyche    2018 pl   2721
+Broccoli  2022 esolang   2722
+LES  2012 grammarLanguage     2723
+The New Hampshire X Format    1999 textDataFormat 2724
+Patient-Oriented Prescription Programming Language     2015 pl   2725
+Spice     2021 pl   2726
+Sweet Expressions   2013 dataNotation   2727
+verve     2017 pl   2728
+Eden 1995 pl   2729
+emoticon  2004 esolang   2730
+mmix 1999 assembly  2731
+Red  1972 pl   2732
+ssl-lang  1976 pl   2733
+Hummingbird QuickScript  1990 pl   2734
+High Tech BASIC     1988 pl   2735
+Gauche Scheme implementation  1998 pl   2736
+Stratego/XT    1998 grammarLanguage     2737
+DAML+OIL  2001 pl   2738
+XCore Architecture  2007 isa  2739
+Advanced Continuous Simulation Language 1967 pl   2740
+Averest   2005 pl   2741
+EUMEL     1979 pl   2742
+SIMPLE    1980 pl   2743
+Ecological Metadata Language  1997 xmlFormat 2744
+muMath    1978 pl   2745
+PALcode   1996 isa  2746
+PICT 1992 pl   2747
+YAP  1985 pl   2748
+MathType  1987 application    2749
+Ethernet  1973 protocol  2750
+JPEG 1992 binaryDataFormat    2751
+Open Financial Exchange  1997 xmlFormat 2752
+patch     1985 unixApplication     2753
+Mass Energy Equation     1905 equation  2754
+QED  1967 editor    2755
+Autoconf  1991 configFormat   2756
+Common Log Format   1995 textDataFormat 2757
+ex   1978 editor    2758
+Interpress     1986 textMarkup     2759
+XGMML     2006 pl   2760
+FILETAB   1966 pl   2761
+BEFLIX    1963 pl   2762
+Data Access Language     1990 pl   2763
+Service Modeling Language     2009 pl   2764
+CorVision 1986 pl   2765
+IAL  1958 pl   2766
+Joe-E     2004 pl   2767
+O-Matrix  1994 pl   2768
+SA-C 1998 pl   2769
+WLambda   2019 pl   2770
+zlang     2017 pl   2771
+PLEXIL    2005 pl   2772
+System 2  2008 pl   2773
+WCPS 2008 pl   2774
+cytosol   2020 pl   2775
+BRUIN     1968 pl   2776
+Yakou Lang     2021 pl   2777
+DIANA     1980 ir   2778
+WSFN 1983 pl   2779
+Dixy 2017 dataNotation   2780
+RicScript 2019 pl   2781
+truck     2019 pl   2782
+ASP.NET   2002 pl   2783
+MathML    1998 xmlFormat 2784
+Namespace Routing Language    2003 xmlFormat 2785
+tsar 2019 pl   2786
+RoyalScript    2016 pl   2787
+dreamlisp 2019 pl   2788
+Tawa 2021 pl   2789
+SQHTML    2022 pl   2790
+Sugi 2021 pl   2791
+albatross 2015 pl   2792
+empirical 2019 pl   2793
+GolfScript     2007 esolang   2794
+hecl 2004 pl   2795
+Indental  2017 dataNotation   2796
+Jesth     2022 dataNotation   2797
+links     2016 pl   2798
+PromQL    2014 queryLanguage  2799
+qed-lang  2015 pl   2800
+runic     2017 template  2801
+Seq  2019 pl   2802
+Bossam Rule Language     2004 queryLanguage  2803
+kivy-lang 2010 pl   2804
+phylip    1991 textDataFormat 2805
+Public Key File     1995 application    2806
+REALBasic (now Xojo)     1996 pl   2807
+Rust HIR  2015 ir   2808
+euboea    2018 pl   2809
+Nuprl     1984 pl   2810
+ABSYS     1966 pl   2811
+KL0  1982 pl   2812
+cql  1998 pl   2813
+QUTE 1986 pl   2814
+CHIP 1985 pl   2815
+DATATRIEVE     1970 queryLanguage  2816
+IBM HAScript   1990 pl   2817
+PL-11     1971 pl   2818
+ROOP 1995 pl   2819
+ZOPL 1979 pl   2820
+SNOBOL4   1967 pl   2821
+Mentat    1987 pl   2822
+Kermeta   2012 pl   2823
+XDR Schema     1998 xmlFormat 2824
+LEXX 1985 editor    2825
+Schema for Object-Oriented XML     1998 xmlFormat 2826
+COFFEE Cinema 4D    1992 pl   2827
+Visual DialogScript 2000 pl   2828
+FX-87     1987 pl   2829
+JAWS Scripting Language  2008 pl   2830
+MacroML   2001 pl   2831
+Business Object Notation 1989 notation  2832
+CYBIL     1980 pl   2833
+Datapoint's Advanced Systems Language   1982 pl   2834
+FORMAC    1993 pl   2835
+KonsolScript   2005 pl   2836
+Spark     1988 pl   2837
+tibet     1997 framework 2838
+codeflow  2014 pl   2839
+c-talk    1999 pl   2840
+hilbert   2014 pl   2841
+Lush 2002 pl   2842
+Pickle    1995 binaryDataFormat    2843
+pikachu   2017 esolang   2844
+SARL 2013 pl   2845
+ttsneo    2006 pl   2846
+Typoscript     1998 dataNotation   2847
+ASCII Armor    2007 textEncodingFormat  2848
+CSL  1966 pl   2849
+Homespring     2003 pl   2850
+PLAIN     1976 pl   2851
+Post-X    1980 grammarLanguage     2852
+prompter  2011 pl   2853
+strudel   2011 textDataFormat 2854
+IpTables Rope  2005 pl   2855
+Datomic   2012 queryLanguage  2856
+CLX  1985 pl   2857
+Adenine   1999 pl   2858
+Lagoona   1997 pl   2859
+Sort Merge Generator     1951 pl   2860
+TACPOL    1976 pl   2861
+MARIA XML 2009 xmlFormat 2862
+AMBIT     1964 pl   2863
+o:XML     2002 pl   2864
+BBj  2001 pl   2865
+BBx  1985 pl   2866
+R2ML 2003 xmlFormat 2867
+JSML 2001 xmlFormat 2868
+SYMBOLIC ASSEMBLY   1956 assembly  2869
+FleXML    2001 pl   2870
+GRML 2003 pl   2871
+Robic     1975 pl   2872
+ThingLab  1979 pl   2873
+51forth   1980 pl   2874
+Concurrent METATEM  1993 pl   2875
+LispMe    2008 pl   2876
+Met-English    1950 pl   2877
+ObjectPAL 1993 pl   2878
+SheerPower4GL  2000 pl   2879
+Business application language 1974 pl   2880
+IITRAN    1969 pl   2881
+Soulver   2005 editor    2882
+Bayer Expressions   2018 dataNotation   2883
+ed script 1973 diffFormat     2884
+mawk 1991 pl   2885
+Tefkat    2004 pl   2886
+XMTC 1990 pl   2887
+APE100    1995 pl   2888
+BasicX    1998 pl   2889
+RASP 1988 pl   2890
+CaPSL     1989 pl   2891
+CorbaScript    1998 pl   2892
+RunRev    2003 pl   2893
+Compact Application Solution Language   1997 pl   2894
+FXScript  2002 pl   2895
+ProSet    1990 pl   2896
+Minilang  2016 interpreter    2897
+20-GATE   1961 pl   2898
+Citrine   2014 pl   2899
+SMILES arbitrary target specification   1987 textDataFormat 2900
+boa  2013 plzoo     2901
+Entropy   2021 esolang   2902
+Freefem   2000 pl   2903
+Linked Markdown     2022 textMarkup     2904
+Loom 1987 knowledgeBase  2905
+o42a 2010 pl   2906
+operon    2018 queryLanguage  2907
+Planguage 2001 dataNotation   2908
+ScriptEase     2001 pl   2909
+Suneido   2000 pl   2910
+whalecalf 2000 grammarLanguage     2911
+Algae     1997 pl   2912
+DAS  1962 pl   2913
+g-expressions  2012 pl   2914
+Metaweb Query Language   2006 queryLanguage  2915
+Newton    1977 pl   2916
+Pandora   1989 pl   2917
+PSI  2013 pl   2918
+Push 2001 pl   2919
+rapidgen-rpl   1983 pl   2920
+Spill     1997 pl   2921
+xduce     2003 pl   2922
+nirvana   2018 pl   2923
+X-BASIC   1987 pl   2924
+Xupdate   2000 pl   2925
+Baby modula-3  1993 pl   2926
+Hbasic    2007 pl   2927
+Multi-user BASIC    1980 pl   2928
+Firefox   2004 webBrowser     2929
+WebKit    1998 browserEngine  2930
+XGBoost   2014 library   2931
+LSP  2016 protocol  2932
+root-format    1994 binaryDataFormat    2933
+DomainKeys Identified Mail    2004 standard  2934
+GHC  1992 compiler  2935
+JMAP 2019 protocol  2936
+PSYCO     2007 grammarLanguage     2937
+alfred    1972 pl   2938
+Boost C++ libraries 1998 library   2939
+Oracle Java    2010 pl   2940
+ZIM Format     2009 binaryDataFormat    2941
+Seph 2010 pl   2942
+SpiderMonkey   1996 vm   2943
+parquet   2014 binaryDataFormat    2944
+Docker    2013 application    2945
+Linoleum (L.in.oleum)    1996 pl   2946
+GCC  1987 compiler  2947
+GeoGebra  2001 application    2948
+MathJax   2008 textMarkup     2949
+GraphQL+- 2017 queryLanguage  2950
+hackage-pm     2007 packageManager 2951
+mockingbird-notation     1996 notation  2952
+kernel    2009 pl   2953
+Sourcetree     2010 application    2954
+Abacus    -2700     computingMachine    2955
+ADS-B     2006 standard  2956
+Attic numerals -600 numeralSystem  2957
+Bit array 2004 dataStructure  2958
+Fast Fourier Transform Equation    1965 equation  2959
+Feynman diagram     1948 notation  2960
+Greek numerals -300 numeralSystem  2961
+Navier-Stokes Equation   1821 equation  2962
+Pascal's calculator 1642 computingMachine    2963
+Roman abacus   -2700     computingMachine    2964
+Roman numerals -900 numeralSystem  2965
+ALOHAnet  1971 protocol  2966
+CueCat    2000 barCodeFormat  2967
+Etruscan numerals   -700 numeralSystem  2968
+Liber Abaci    1202 notation  2969
+Visual J++     1996 pl   2970
+MonoDevelop    2003 editor    2971
+Normal Distribution Equation  1823 equation  2972
+Vienna Development Method Specification Language  1996 pl   2973
+Address   1955 pl   2974
+AFS  1982 filesystem     2975
+Ampère's Circuital Equation   1961 equation  2976
+Apple I   1976 computingMachine    2977
+Atom 2014 editor    2978
+Coulomb's Equation  1785 equation  2979
+Steinberg Cubase    1989 application    2980
+Faraday's Induction Equation  1831 equation  2981
+Gauss Flux Formula  1773 equation  2982
+Gauss Magnetism Formula  1773 equation  2983
+Gecko     1997 browserEngine  2984
+HCCB 2007 barCodeFormat  2985
+HLASM     1992 assembly  2986
+IMac 1998 computingMachine    2987
+Ingres database     1974 database  2988
+IPad 2010 computingMachine    2989
+IPhone    2007 computingMachine    2990
+IPv4 1984 protocol  2991
+Language H     1962 pl   2992
+MacBook Air    2008 computingMachine    2993
+Macintosh 1984 computingMachine    2994
+MP3  1993 binaryDataFormat    2995
+OpenDoc   1993 protocol  2996
+PL/I 1981 pl   2997
+Price Equation 1967 equation  2998
+Pythagorean Equation     -570 equation  2999
+Safari    2003 webBrowser     3000
+Set-builder notation     1942 notation  3001
+Sender Policy Framework  2000 standard  3002
+Sprite Operating System  1984 os   3003
+SYBYL line notation 1997 textDataFormat 3004
+Wiswesser line notation  1949 textDataFormat 3005
+Bayes' Equation     1763 equation  3006
+Device independent file format     1982 binaryDataFormat    3007
+Dot Product Equation     1773 equation  3008
+Gravity Equation    1687 equation  3009
+Information Theory Equation   1948 equation  3010
+InterPlanetary File System    2015 protocol  3011
+nroff     1972 textMarkup     3012
+PHIGS     1988 library   3013
+PNG  1996 binaryDataFormat    3014
+QFX file format     1997 textDataFormat 3015
+Razor     2010 template  3016
+SK8  1988 pl   3017
+SPARQCode 2010 barCodeFormat  3018
+Superplan 1951 pl   3019
+WATBOL    1969 compiler  3020
+ALGOL X   1963 pl   3021
+Energy Momentum Equation 1928 equation  3022
+HEIC 2015 binaryDataFormat    3023
+Lincos    1961 notation  3024
+Molecular Query Language 2007 queryLanguage  3025
+COM Structured Storage   2010 binaryDataFormat    3026
+Advice Taker   1958 pl   3027
+BBN-LISP  1960 pl   3028
+Dendral   1965 application    3029
+eqn  1974 textMarkup     3030
+Euler's Equation    1748 equation  3031
+GENSTAT   1968 application    3032
+HyperFun  1999 pl   3033
+Kyma 1986 pl   3034
+Macintosh Common Lisp    1984 pl   3035
+Object Definition Language    1991 pl   3036
+ObjVlisp  1984 pl   3037
+PM2  1989 pl   3038
+Prolog++  1994 pl   3039
+RPG III   1968 pl   3040
+Schoonschip    1963 pl   3041
+SDF  1989 grammarLanguage     3042
+Setun     1958 computingMachine    3043
+SQUOZE    1958 binaryDataFormat    3044
+STRINGCOMP     1967 pl   3045
+FLANG     1988 pl   3046
+General Activity Simulation Program     1961 pl   3047
+Integral Equation   1888 equation  3048
+Iota-and-jot   2001 esolang   3049
+Little Smalltalk    1987 pl   3050
+Optimization Programming Language  1999 pl   3051
+Parasolid 2000 application    3052
+RPG II    1965 pl   3053
+Semi-Thue 1914 grammarLanguage     3054
+SHRDLU    1968 application    3055
+DAD  2015 pl   3056
+Gofer     1994 pl   3057
+Programming Language for the University of Maryland    1978 pl   3058
+Interscript    1984 textMarkup     3059
+ISO 8601  1988 standard  3060
+Nyquist   1997 pl   3061
+Rosetta-2 2006 pl   3062
+Shared Dataspace Language     1988 pl   3063
+Definite clause grammar  1980 grammarLanguage     3064
+Language for Your Remote Instruction by Computer  1966 pl   3065
+ZPL  1993 pl   3066
+beagle    2019 pl   3067
+draconian 2021 pl   3068
+stringbean     2016 pl   3069
+8th  2014 pl   3070
+arvelie-format 2017 timeFormat     3071
+Flare     2001 pl   3072
+MINI OBJECT-ORIENTED LANGUAGE 2010 pl   3073
+plasma    2015 pl   3074
+RQL  2017 pl   3075
+AArch64   2011 assembly  3076
+CLASS     1970 pl   3077
+Edison    1992 pl   3078
+Electre   1983 pl   3079
+EverParse3D    2022 idl  3080
+GRIN 1977 pl   3081
+guru 2009 pl   3082
+iikuse    2010 esolang   3083
+manticore 2009 pl   3084
+Nelua     2019 pl   3085
+PLEASE    1984 pl   3086
+rbscript  1996 pl   3087
+SBA  1977 pl   3088
+SCAN 1987 pl   3089
+sh   1971 pl   3090
+Statement List 1993 assembly  3091
+V    1997 pl   3092
+WebAssembly Text Format  2015 pl   3093
+XML Query Language  1998 queryLanguage  3094
+xt3d 2000 grammarLanguage     3095
+atx  2002 textMarkup     3096
+w    2019 pl   3097
+LOGIN     1986 pl   3098
+Moby 1998 pl   3099
+algobox   2011 pl   3100
+COMSOL Script  1998 pl   3101
+Nosica    2002 pl   3102
+Bistro    1999 pl   3103
+BitC 2004 pl   3104
+Boxx 2002 pl   3105
+Hyper Basic    1985 pl   3106
+MetaL     2001 pl   3107
+Monesa    2002 pl   3108
+Tibbo BASIC    2000 pl   3109
+TouchDevelop   2012 pl   3110
+UJML 2000 pl   3111
+WinDev    1993 pl   3112
+Wlanguage 1992 pl   3113
+XProfan   1990 pl   3114
+Bigwig Programming Language   1998 pl   3115
+Deesel    2005 pl   3116
+Timber    1999 pl   3117
+Micro-PROLOG   1980 pl   3118
+Scieneer Common Lisp     2002 pl   3119
+Superx++  2001 pl   3120
+CHAIN     1981 pl   3121
+Escapade  1977 pl   3122
+Izibasic  2004 pl   3123
+M    2008 pl   3124
+Mocklisp  1981 pl   3125
+Moonrock Basic Compiler  1994 pl   3126
+Omikron BASIC  1985 pl   3127
+PROC procedure language  1986 pl   3128
+Bon  1967 pl   3129
+Marmot    2000 pl   3130
+Portal langage 1978 pl   3131
+PowerLanguage  1997 pl   3132
+HTTP/3    2018 protocol  3133
+MUSP 1960 pl   3134
+NGL  2001 pl   3135
+Klerer-May System   1964 pl   3136
+Legal Knowledge Interchange Format 2007 xmlFormat 3137
+OPL  1989 pl   3138
+iScript   2008 pl   3139
+SIMAN     1983 pl   3140
+clox 2020 pl   3141
+rlox 2004 pl   3142
+Biological Expression Language     2003 textDataFormat 3143
+converge  2004 pl   3144
+datev     2017 pl   3145
+dynamo-pm 2013 packageManager 3146
+eta  2017 pl   3147
+foundry   2013 pl   3148
+grain     2017 pl   3149
+habit     2016 pl   3150
+liquidity 2017 pl   3151
+mypy 2012 pl   3152
+NumPad    2022 editor    3153
+package-control-pm  2014 packageManager 3154
+shakti    2019 pl   3155
+tablatal  2017 pl   3156
+arrow     2015 pl   3157
+axt-format     2004 textDataFormat 3158
+Browser Extensible Data Format     2004 textDataFormat 3159
+DUEL 1993 pl   3160
+EQS  1978 pl   3161
+EZ   1984 pl   3162
+Interleaved Notation     2022 pl   3163
+OASIS     1994 pl   3164
+PAMELA    1992 pl   3165
+RAISE Specification Language  1992 pl   3166
+School    1990 pl   3167
+SNQL: A Social Network Query and Transformation Language    2011 queryLanguage  3168
+System V ABI   1983 binaryExecutable    3169
+Titanium  1998 pl   3170
+SDMS 2001 pl   3171
+shml 2015 textMarkup     3172
+sentient  2016 pl   3173
+squiggle  2015 pl   3174
+shill     2014 pl   3175
+IT   1955 pl   3176
+calc 2013 plzoo     3177
+clojars-pm     2009 packageManager 3178
+cocoapods-pm   2011 packageManager 3179
+cpan-pm   1995 packageManager 3180
+crates-pm 2014 packageManager 3181
+ctan-pm   1998 packageManager 3182
+dio  2020 pl   3183
+enso 2011 pl   3184
+Extempore 2011 pl   3185
+goose     2018 pl   3186
+grunt     2011 library   3187
+imp-lang  2019 pl   3188
+JMESPath  2013 pl   3189
+kilo-lisp 2019 pl   3190
+lasp 2015 pl   3191
+Leazy     1990 compiler  3192
+melpha-pm 2014 packageManager 3193
+Omega     2019 pl   3194
+pgql 2016 pl   3195
+PickCode  2021 visual    3196
+plink-bed-format    2007 binaryDataFormat    3197
+plumb     2014 pl   3198
+powershell-gallery-pm    2014 packageManager 3199
+PSeInt    2003 pl   3200
+robotc    2005 pl   3201
+sdf-format     2012 xmlFormat 3202
+skew 2015 pl   3203
+smalltalkhub-pm     2011 packageManager 3204
+souffle   2019 pl   3205
+spark-pm  2014 packageManager 3206
+statebox  2008 visual    3207
+versioned-text-markup-language     1999 textMarkup     3208
+ABEL 1979 pl   3209
+Afnix     2003 pl   3210
+BOLT 1981 pl   3211
+CCS  1999 pl   3212
+Chimera   1994 pl   3213
+Descartes 1983 pl   3214
+DINO 1990 pl   3215
+DLP  1992 pl   3216
+HScript   1996 pl   3217
+Lila 2017 pl   3218
+Lorel     1996 queryLanguage  3219
+MDL  1992 pl   3220
+PAISley   1982 pl   3221
+Relational Data File     1965 queryLanguage  3222
+Ruri 2000 pl   3223
+SCROLL    1970 pl   3224
+SquidConf 1996 configFormat   3225
+Timeless Instruction Set (TL ISA)  2022 isa  3226
+UnQL 2000 queryLanguage  3227
+WATFOR    1966 pl   3228
+Wikitax   2002 wikiMarkup     3229
+unlws     2010 notation  3230
+WebStorm  2010 editor    3231
+Floral    2020 pl   3232
+REC Studio     2010 decompiler     3233
+thune     2014 pl   3234
+BIPLAN    2017 pl   3235
+bytecode-modeling-language    2008 bytecode  3236
+coi-protocol   2019 protocol  3237
+Datalisp  2020 pl   3238
+iqr  1994 barCodeFormat  3239
+jedit-editor   1998 editor    3240
+lunar     2017 pl   3241
+marten    1980 visual    3242
+Nova 2019 editor    3243
+PhpStorm  2011 editor    3244
+Plush     2017 pl   3245
+resharper-editor    2004 editor    3246
+rider-editor   2017 editor    3247
+stx  1999 pl   3248
+tetruss-app    1996 application    3249
+unicon-adl     1996 pl   3250
+Vortex    2020 pl   3251
+aubit-4gl 2001 pl   3252
+AUR  2015 packageManager 3253
+bscript-interpreter 1999 interpreter    3254
+BScript   1999 pl   3255
+chicken-lang   2013 esolang   3256
+cixl 2018 pl   3257
+clickpath 2011 queryLanguage  3258
+Coral     2017 pl   3259
+domino    1989 pl   3260
+frtime    2004 pl   3261
+hac  2007 pl   3262
+hsaml-format   2013 xmlFormat 3263
+Imandra Protocol Language     2017 pl   3264
+klisp     1958 pl   3265
+kvsapi    2019 standard  3266
+Lanai     2016 isa  3267
+lazarus-editor 2012 editor    3268
+listdown  2017 textMarkup     3269
+Mascara   2009 pl   3270
+Multihash 2017 hashFunction   3271
+paperalgo 2014 notation  3272
+powerloom-knowledgeBase  1999 knowledgeBase  3273
+quicksight-app 2015 application    3274
+rlmeta    2018 grammarLanguage     3275
+tab  2015 pl   3276
+tarot     2017 compiler  3277
+teal 1987 pl   3278
+underlay  2018 protocol  3279
+Vim Scripts    2001 packageManager 3280
+Visual Studio Marketplace     2015 packageManager 3281
+yinyang   2013 pl   3282
+Arturo    2019 pl   3283
+BRL  1997 pl   3284
+business-rule-language   2012 pl   3285
+bx   1990 pl   3286
+Cheri     2010 isa  3287
+ctalk     2006 pl   3288
+dec64     2009 numeralSystem  3289
+gemini-protocol     2020 protocol  3290
+Gnome Basic    1999 pl   3291
+google-data-studio-app   2016 application    3292
+General purpose     2015 pl   3293
+helium    2003 pl   3294
+holonforth     1989 pl   3295
+JuliaHub Packages   2014 packageManager 3296
+MathWorks File Exchange  1997 packageManager 3297
+miso-framework 2016 framework 3298
+objective-modula-2  2009 pl   3299
+qbe  2015 pl   3300
+Radish    2022 pl   3301
+readable-lisp  2013 pl   3302
+redpanda-app   2009 application    3303
+rhoscript 2013 pl   3304
+ruby-mine-editor    2008 editor    3305
+sharpscript    2019 pl   3306
+sierra    2018 pl   3307
+tengo     2019 pl   3308
+tinygo-compiler     2018 compiler  3309
+Lambda Diagrams     2014 notation  3310
+uml2-sp   2018 pl   3311
+Wolfram Data Framework   2014 dataNotation   3312
+atomo     2010 pl   3313
+B3 IR     2016 ir   3314
+blank     2018 esolang   3315
+Blueprints     2014 visual    3316
+C^3  2009 pl   3317
+c-smile   2002 pl   3318
+calc_var  2013 plzoo     3319
+chaos-lang     2020 pl   3320
+Cobol.NET 2002 pl   3321
+coffeepp  2017 pl   3322
+Conan Center   2016 packageManager 3323
+dart-pm   2011 packageManager 3324
+dfns 2014 pl   3325
+dss  2018 pl   3326
+Elm Packages   2012 packageManager 3327
+emu  2019 pl   3328
+fmj  2003 pl   3329
+Genshi Text    2020 pl   3330
+GNU Linear Programming Kit    2000 library   3331
+High-Level Virtual Machine    2009 vm   3332
+Kefir     2021 compiler  3333
+klong     2015 pl   3334
+kogut     2004 pl   3335
+koi  2010 pl   3336
+lllpg     2012 library   3337
+Maven Central Repository 2018 packageManager 3338
+minihaskell    2013 plzoo     3339
+miniprolog     2013 plzoo     3340
+mir  2015 ir   3341
+mlite     2004 pl   3342
+Optimized Row Columnar   2016 binaryDataFormat    3343
+piccola   2002 pl   3344
+Pursuit PureScript Package Repository   2014 packageManager 3345
+pyke 2008 knowledgeBase  3346
+Python Format Specification   2008 template  3347
+ra   2015 pl   3348
+raco-pm   2012 packageManager 3349
+redscript 2013 pl   3350
+retroforth     2000 pl   3351
+rsharp    2003 pl   3352
+scopes    2016 pl   3353
+shade     2012 pl   3354
+skookumscript  2004 pl   3355
+SmartGameFormat     1987 pl   3356
+SNBT 2011 pl   3357
+solaris-pm     2004 packageManager 3358
+SOQL 2006 queryLanguage  3359
+sub  2013 plzoo     3360
+tern 2019 pl   3361
+terse     1986 assembly  3362
+tetra     2017 pl   3363
+texpr     2013 pl   3364
+thorn     2014 pl   3365
+tilton    2000 pl   3366
+typedefs  2017 grammarLanguage     3367
+Zoem 2005 pl   3368
+AIR  2016 ir   3369
+BUSH 2002 pl   3370
+chirp     2008 visual    3371
+cloe 2018 pl   3372
+comm 2013 plzoo     3373
+CorelScript    1994 pl   3374
+crack     2011 pl   3375
+cran-pm   1993 packageManager 3376
+Descript  2018 pl   3377
+D++  1999 pl   3378
+DRAGOON   1989 pl   3379
+Emacs Lisp Package Archive    2016 packageManager 3380
+envoy-app 2017 application    3381
+flux-lang 2006 pl   3382
+forthnet-pm    2010 packageManager 3383
+fox  2017 pl   3384
+GSQL 2015 pl   3385
+Hex-Rays  2005 decompiler     3386
+JSGF 1998 pl   3387
+lambda    2013 plzoo     3388
+levy 2013 plzoo     3389
+loglo     2020 pl   3390
+Maplesoft Application Center  2004 packageManager 3391
+miniml    2013 plzoo     3392
+New AWK   1993 pl   3393
+nimble-pm 2016 packageManager 3394
+oforth    2009 pl   3395
+Ordered graph data language   2002 textDataFormat 3396
+orca-lang 2014 pl   3397
+polly     2016 template  3398
+poly 2013 plzoo     3399
+popcorn-linux  1994 os   3400
+PyPI 2015 packageManager 3401
+raptor    2015 visual    3402
+Restricted Python   2007 pl   3403
+sepi 2012 pl   3404
+slim-pl   1999 pl   3405
+SOSL 2006 queryLanguage  3406
+Boston College Statistical Software Components    1996 packageManager 3407
+subscript 2012 pl   3408
+Table Query Language     1997 queryLanguage  3409
+toadskin  2003 esolang   3410
+TWiki     1998 wikiMarkup     3411
+ugnis     2017 pl   3412
+Visual Logic   2005 visual    3413
+woofjs    2016 pl   3414
+xmpp-protocol  2003 protocol  3415
+Xoc  2008 compiler  3416
+angr 2015 decompiler     3417
+antha     2014 pl   3418
+arend     2019 pl   3419
+Apache Arrow   2016 binaryDataFormat    3420
+Binary Ninja   2015 decompiler     3421
+bjou 2019 pl   3422
+charly    2017 pl   3423
+circa     2012 pl   3424
+cleanlang 2017 pl   3425
+cx   2015 pl   3426
+edgeql    2017 queryLanguage  3427
+Elpi 2014 pl   3428
+eno  2018 pl   3429
+ForgeBox  2015 packageManager 3430
+Ghidra    2019 decompiler     3431
+glitch-editor  2017 editor    3432
+GNS  2018 protocol  3433
+Header Dictionary Triples     2012 binaryDataFormat    3434
+helena    2017 pl   3435
+hello     2015 pl   3436
+Hilltop   2018 pl   3437
+joker     2018 pl   3438
+kate-editor    2000 editor    3439
+kima 2018 pl   3440
+l    2013 pl   3441
+min  2017 pl   3442
+neovim-editor  2015 editor    3443
+neralie-format 2017 timeFormat     3444
+none 2015 pl   3445
+onex 2014 application    3446
+OpenSpice 2005 pl   3447
+par  2018 pl   3448
+pisc 2017 pl   3449
+plink-bim-format    2007 textDataFormat 3450
+plink-fam-format    2007 textDataFormat 3451
+potential 2010 pl   3452
+prodel    2014 pl   3453
+Sather-K  1995 pl   3454
+The Synthetic Biology Open Language     2010 xmlFormat 3455
+simit     2016 pl   3456
+Smithy    2016 pl   3457
+socialite 2015 pl   3458
+syndicate 2016 pl   3459
+Tea  2019 library   3460
+Typst     2022 textMarkup     3461
+urn  2017 pl   3462
+bag-format     2010 binaryDataFormat    3463
+C∀   2018 pl   3464
+chartio-app    2010 application    3465
+chocolatey-pm  2011 packageManager 3466
+Clausal Language    1997 pl   3467
+ctr  2017 pl   3468
+darklang  2019 pl   3469
+Dimensional Script  2012 notation  3470
+Fawlty    2006 pl   3471
+goby 2017 pl   3472
+Hex  2014 packageManager 3473
+juttle    2014 pl   3474
+kayia     1999 pl   3475
+ki   2014 pl   3476
+libsvm-format  2011 textDataFormat 3477
+luarocks-pm    2007 packageManager 3478
+mathematica-packagedata-pm    2015 packageManager 3479
+Mathpix Markdown    2019 textMarkup     3480
+merd 2002 pl   3481
+morfa     2015 pl   3482
+nectar    2016 pl   3483
+np   2013 pl   3484
+NU-Prolog 1988 pl   3485
+PacmanConf     2019 configFormat   3486
+panther-lang   2010 pl   3487
+paxScript 2011 pl   3488
+PkgConfig 2000 configFormat   3489
+pliant    1999 pl   3490
+plink-map-format    2007 textDataFormat 3491
+Simkin    1995 pl   3492
+singular  1987 pl   3493
+soul 2000 queryLanguage  3494
+T3X  1995 pl   3495
+tiddler   2004 pl   3496
+Alma 1997 pl   3497
+AlpHard   1996 pl   3498
+COPE 1977 pl   3499
+cT   1989 pl   3500
+EDUCE     1986 pl   3501
+gnu-rtl   1987 ir   3502
+INQUIRE   1969 queryLanguage  3503
+McLeyvier Command Language    1982 pl   3504
+Modified Integration Digital Analog Simulator     1963 pl   3505
+O++  1989 pl   3506
+order     2003 pl   3507
+Perfectscript  1995 pl   3508
+PO   2000 pl   3509
+PROSPER   1989 pl   3510
+Sapphire  1995 pl   3511
+SHADOW    1958 pl   3512
+SHEEP     1978 pl   3513
+SLANG     1960 pl   3514
+UnQL 2011 queryLanguage  3515
+WebGPU Shading Language  2020 pl   3516
+XE   1988 pl   3517
+XQL  1998 queryLanguage  3518
+BEAM Bytecode  2017 bytecode  3519
+Vienna Definition Language    1965 pl   3520
+CDL  1995 pl   3521
+FORTRAN 77     1977 pl   3522
+Snit 2002 pl   3523
+Cish 2022 pl   3524
+SNOBOL3   1966 pl   3525
+Zeta 2008 pl   3526
+ACCENT    1990 pl   3527
+Argos     1992 pl   3528
+BABEL     1990 pl   3529
+BridgeTalk     1987 pl   3530
+Combined Log Format 2002 textDataFormat 3531
+DDF  2016 dataNotation   3532
+DEMETER   1995 pl   3533
+Dribble   2003 pl   3534
+ETC  1971 pl   3535
+Fable     1983 pl   3536
+Friendly Enough Expression Language     2015 queryLanguage  3537
+Generic Expression Language   2008 textMarkup     3538
+GLOSS     1971 pl   3539
+Herbrand  1995 pl   3540
+JACL 1997 pl   3541
+KB   1990 pl   3542
+LESK 1975 pl   3543
+Lighttpd configuration file   2003 configFormat   3544
+Lisp Object-Oriented Programming System 1983 pl   3545
+MADCAP VI 1972 pl   3546
+MENDEL    1985 pl   3547
+nML  1991 pl   3548
+Patchwork 1996 pl   3549
+PLAN2D    1976 pl   3550
+Pluk 1995 pl   3551
+Prolog Pack    2012 packageManager 3552
+RLISP     1970 pl   3553
+ROS Message    2010 idl  3554
+SMDL 1991 pl   3555
+SoQL 2009 queryLanguage  3556
+Statemate 1998 pl   3557
+Tick C    1997 pl   3558
+Tiki Wiki Markup    2002 wikiMarkup     3559
+topaz     2011 pl   3560
+torchscript    2018 pl   3561
+Tutorial D     1994 queryLanguage  3562
+AMTRAN    1966 pl   3563
+ANNA 1987 pl   3564
+APL-GPSS  1988 pl   3565
+aQasm     2017 assembly  3566
+Arc Assembly   1947 assembly  3567
+bawk 1994 pl   3568
+Binary Equation     1689 equation  3569
+BIRD 2021 pl   3570
+CDL++     1999 pl   3571
+CMIX 1980 pl   3572
+COMMEN    1967 pl   3573
+cooC 2000 pl   3574
+TypeScript Type Declarations  2012 headerLang     3575
+EXPLAN    1994 pl   3576
+EXPLOR    1972 pl   3577
+FORTRAN assembly program 1959 assembly  3578
+FAR  2000 pl   3579
+flowlog   2014 pl   3580
+Giotto    2001 pl   3581
+Hadoop Distributed File System     2011 filesystem     3582
+Heron     2008 pl   3583
+IBEX 2002 pl   3584
+IFO  1987 pl   3585
+Knowledge Acquisition and Representation Language 1993 pl   3586
+L6   1963 pl   3587
+LISP 1.5  1959 pl   3588
+Lorel     1974 pl   3589
+MAPS 1993 pl   3590
+MOOSE     1994 pl   3591
+MSL  1977 pl   3592
+NAKL 1982 pl   3593
+NODAL     1972 pl   3594
+o2   1989 pl   3595
+OOPS+     1988 pl   3596
+PACTOLUS  1964 pl   3597
+Pascal-XSC     1991 pl   3598
+Petr 1999 pl   3599
+PopAsm    2003 pl   3600
+PUFFT     1965 pl   3601
+quexal    2007 esolang   3602
+RATSNO    1977 pl   3603
+Rapid Development and Maintenance Language   2005 pl   3604
+rds-format     2011 binaryDataFormat    3605
+Real-Time Concurrent C   1991 pl   3606
+Real-Time Mentat    1989 pl   3607
+Regina    2001 pl   3608
+REGULUS   1977 pl   3609
+RPL  1988 queryLanguage  3610
+RPT  1961 pl   3611
+Rosetta SMALLTALK   1979 pl   3612
+S-Snobol  1978 pl   3613
+SHOE 2000 pl   3614
+SIL  1990 pl   3615
+sina 1989 pl   3616
+Smalltalk YX   2007 pl   3617
+SMOKE     1992 pl   3618
+Snostorm  1984 pl   3619
+SQLMP     1991 pl   3620
+SSL  1994 protocol  3621
+STOICAL   2000 pl   3622
+TAO  1983 pl   3623
+Verse     2022 pl   3624
+Water     2002 template  3625
+xs   2019 pl   3626
+appcode-editor 2016 editor    3627
+brackets-editor     2012 editor    3628
+clion-editor   2015 editor    3629
+code-blocks-editor  2005 editor    3630
+codelite-editor     2006 editor    3631
+Schrödinger's Equation   1925 equation  3632
+synergist 1986 pl   3633
+uscript   2016 notation  3634
+uscript2  2018 notation  3635
+2lisp     1982 pl   3636
+arbortext-command-language    2009 pl   3637
+Argon     2022 pl   3638
+chappe-code    1792 notation  3639
+concordance    1994 pl   3640
+CSV++     2016 dataNotation   3641
+gedit-editor   1999 editor    3642
+Imaginary Number Equation     1572 equation  3643
+intellijidea-editor 2001 editor    3644
+komodo-editor  2007 editor    3645
+pycharm-editor 2016 editor    3646
+runescript     2001 pl   3647
+sugarj    2012 grammarLanguage     3648
+TeaSharp  2022 pl   3649
+ACSI-Matic     1959 pl   3650
+adam-standard  2009 standard  3651
+ALEPH     1992 pl   3652
+ALGOL 68-RT    1979 pl   3653
+ALJABR    1991 pl   3654
+Altibase  1999 database  3655
+amalthea  2002 pl   3656
+Amazon DynamoDB     2012 database  3657
+Amazon RDS     2009 database  3658
+AMTRAN 70 1969 pl   3659
+Apache Derby   2004 database  3660
+Apache Phoenix 2014 database  3661
+APLO 1989 pl   3662
+ArangoDB  2011 database  3663
+ARTA 1970 pl   3664
+AUTOCODER II   1958 assembly  3665
+BeeBasic  2013 pl   3666
+BER  1988 pl   3667
+BullFrog  2005 esolang   3668
+Celsius WebScript   2006 pl   3669
+Cigale    1986 pl   3670
+COGO 1962 pl   3671
+concept-script 1879 notation  3672
+ConCurr   1979 pl   3673
+Couchbase Mobile    2010 database  3674
+Couchbase 2011 database  3675
+Cymbal    1999 pl   3676
+Decision Model & Notation     2015 notation  3677
+DinnerBell     1990 pl   3678
+EqL  1989 pl   3679
+EXAPT     1967 pl   3680
+Firebase Realtime Database    2011 database  3681
+Google Cloud SQL    2011 database  3682
+Greenplum 2005 database  3683
+IBM DB2   1983 database  3684
+InfluxDB  2013 database  3685
+InterBase 1985 database  3686
+InterSystems Caché  1997 database  3687
+ji   2019 pl   3688
+kernel-e  1994 pl   3689
+MariaDB ColumnStore 2016 database  3690
+MarkLogic 2001 database  3691
+Memcached 2003 database  3692
+Microsoft Access    1992 database  3693
+Microsoft Azure Cosmos DB     2017 database  3694
+Microsoft SQL Server     1989 database  3695
+MODEL-K   1993 pl   3696
+Mushroom  1988 pl   3697
+NEBULA    1960 pl   3698
+Neo4j     2007 database  3699
+oniguruma 2002 queryLanguage  3700
+Oracle    1979 database  3701
+OrientDB  2010 database  3702
+PCLOS     1993 pl   3703
+Pearson correlation coefficient equation     1880 equation  3704
+PGen 2015 grammarLanguage     3705
+IBM Programming Language/Advanced Systems    1976 pl   3706
+SAP HANA  2010 database  3707
+SCAT 1957 assembly  3708
+SimpleScript   2013 pl   3709
+Socrata Query Language   2012 queryLanguage  3710
+sourcelair-editor   2011 editor    3711
+status-quo-script   2001 pl   3712
+SW2  1986 pl   3713
+SYNGLISH  1980 pl   3714
+SYNPROC   1970 pl   3715
+SYNTOL    1960 pl   3716
+TABLOG    1984 pl   3717
+TABSOL    1960 pl   3718
+TABTRAN   1967 pl   3719
+TAC  1959 pl   3720
+Tarmac    1990 pl   3721
+Taxis     1980 pl   3722
+tcc  1997 pl   3723
+TCOZ 2002 pl   3724
+TCSP 1995 pl   3725
+TDFL 1990 pl   3726
+TDMS 1970 pl   3727
+telefile-assembly   1952 assembly  3728
+TELSIM    1966 pl   3729
+Templar   1993 pl   3730
+Temporal Prolog     1983 pl   3731
+Teradata Aster 2005 database  3732
+Teradata  1979 database  3733
+TFL  1996 pl   3734
+The Message System  1967 pl   3735
+THREADED LISTS 1959 pl   3736
+TICS 1973 pl   3737
+TiDB 2015 database  3738
+Timed CSP 1986 pl   3739
+Tinkertoy 1988 pl   3740
+TOOLBUS   1998 pl   3741
+TPDL*     1991 pl   3742
+Trafola-H 1991 pl   3743
+Traits    1982 pl   3744
+TRAMP     1968 pl   3745
+TRANQUIL  1966 pl   3746
+Transforma     1985 pl   3747
+TREET     1964 pl   3748
+triroff   1983 pl   3749
+TSL  1985 pl   3750
+TSQL2     1996 pl   3751
+Turing Plus    1987 pl   3752
+turnstile-plus 2020 grammarLanguage     3753
+Tyco 1998 pl   3754
+TyRuBa    1998 pl   3755
+U-Datalog 1997 pl   3756
+UAN  1990 pl   3757
+UberScript     2011 pl   3758
+Ubik 2000 pl   3759
+UFL  1986 pl   3760
+UFO  1992 pl   3761
+UMTA 1974 pl   3762
+UNICORN   1986 pl   3763
+UNISIM    1964 pl   3764
+UNRAVEL   1973 pl   3765
+USSA 1992 pl   3766
+Utopia 84 1979 pl   3767
+V-Promela 1999 pl   3768
+VAL II    1983 pl   3769
+VARLIST   1975 pl   3770
+Vector PASCAL  1998 pl   3771
+VENUS     1967 pl   3772
+Vienna Fortran 1992 pl   3773
+VIPTRAN   1973 pl   3774
+Viron     1983 pl   3775
+VisaVis   1994 pl   3776
+Visual Eiffel  1993 pl   3777
+Visual Occam   1997 pl   3778
+VIVA 1990 pl   3779
+viz  1990 pl   3780
+VPL  1991 pl   3781
+VSPL 2000 pl   3782
+VULCAN    1987 pl   3783
+WCL  1991 pl   3784
+WebL 2000 pl   3785
+Whirlwind 1951 pl   3786
+WRITEACOURSE   1968 pl   3787
+WYLBUR    1973 pl   3788
+X-KLAIM   2000 pl   3789
+X11-Basic 1991 pl   3790
+xADL 2000 pl   3791
+XCY  1980 pl   3792
+XML-GL    1998 queryLanguage  3793
+The Algebra    2001 grammarLanguage     3794
+XPOP 1964 pl   3795
+XSIM 1977 pl   3796
+XTRAN     1958 pl   3797
+YugabyteDB     2018 database  3798
+ZCCS 1997 pl   3799
+ZGRASS    1978 pl   3800
+1.pak     1973 pl   3801
+2OBJ 1995 pl   3802
+3-LISP    1982 pl   3803
+3DComposer     1999 pl   3804
+3RIP 1977 pl   3805
+ABAL 1974 pl   3806
+ABCL/c+   1988 pl   3807
+ABCL/f    1994 pl   3808
+ABC++     1994 pl   3809
+Abstracto 1979 pl   3810
+AC Toolbox     1992 pl   3811
+ACL  1972 pl   3812
+Acore     1988 pl   3813
+ACORN     1990 pl   3814
+ACOS 1988 pl   3815
+ACSL 1979 pl   3816
+ACT ONE   1983 pl   3817
+Actalk    1989 pl   3818
+Active Language I   1963 pl   3819
+Active-U-Datalog    1997 pl   3820
+Actus     1979 pl   3821
+Ada 95    1995 pl   3822
+Ada 9X    1988 pl   3823
+Ada/TL    1990 pl   3824
+ADABTPL   1987 pl   3825
+Adagio    2007 pl   3826
+Adaplex   1983 pl   3827
+Aditi     1992 pl   3828
+AED  1963 pl   3829
+AEPL 1971 pl   3830
+AESOP     1967 pl   3831
+Agent-K   1994 pl   3832
+AGL  1975 pl   3833
+AIDA 1986 pl   3834
+AKL  1991 pl   3835
+ALADIN    1971 pl   3836
+Alambik   2011 pl   3837
+ALBA 1993 pl   3838
+Aldat     1989 pl   3839
+Aldwych   2000 pl   3840
+ALEC 1967 pl   3841
+Algebraic Compiler  1958 pl   3842
+ALGEM     1966 pl   3843
+ALGERNON  1990 pl   3844
+ALGOL-E   1972 pl   3845
+ALGY 1961 pl   3846
+Alma-O    1998 pl   3847
+ALMIR     1968 pl   3848
+Alonzo    1994 pl   3849
+AlphaPop  1986 pl   3850
+ALTAC     1959 pl   3851
+Amanda    1988 pl   3852
+AMBIT/G   1968 pl   3853
+AMBIT/L   1970 pl   3854
+AMPPL-II  1969 pl   3855
+Andorra   1988 pl   3856
+arezzo-notation     1033 musicalNotation     3857
+AUTOCODER III  1958 assembly  3858
+axcess    1983 pl   3859
+Bison++   1998 grammarLanguage     3860
+Blade     2022 pl   3861
+Bolin     2022 pl   3862
+brooks-programming-language   2003 pl   3863
+Candy Codes    2022 barCodeFormat  3864
+Cedar     1983 pl   3865
+checkout  2011 assembly  3866
+Chicon    1998 pl   3867
+CONA 1977 pl   3868
+Cosmos    2022 pl   3869
+CVL  1993 pl   3870
+dalvik-bytecode     2008 bytecode  3871
+Data Package   2007 jsonFormat     3872
+Distributed Smalltalk    1980 pl   3873
+DM-1 1967 pl   3874
+dsym 2011 binaryDataFormat    3875
+ebg  1999 pl   3876
+Elasticsearch Query DSL  2010 queryLanguage  3877
+english-programming-language  1973 pl   3878
+ESP  1983 pl   3879
+EXTRAN    1978 pl   3880
+filetab-d 1978 pl   3881
+floorplan 2019 pl   3882
+forest-database     2011 application    3883
+FORTRAN III    1958 pl   3884
+FORTRAN IV     1962 pl   3885
+GAEA 1998 pl   3886
+Gaiman    2022 pl   3887
+hackppl   2019 pl   3888
+HAYSTAQ   1959 queryLanguage  3889
+honu 2012 pl   3890
+ibm-system-38-language   1978 pl   3891
+iota 1985 pl   3892
+Just 2021 pl   3893
+kaukatcr  2018 pl   3894
+Konna     2021 pl   3895
+lambda-obliv   2020 pl   3896
+LinkText  2022 pl   3897
+Low Level Lisp 2014 pl   3898
+local     2019 pl   3899
+metalex   2002 xmlFormat 3900
+microPLANNER   1970 pl   3901
+modl 1987 pl   3902
+N    1990 pl   3903
+Noms GraphQL   2017 queryLanguage  3904
+NJCL 1974 pl   3905
+Navigational User's Language  1976 pl   3906
+OMNITAB II     1970 pl   3907
+OMNITAB   1963 pl   3908
+Oxide     2021 pl   3909
+Parse Tree Notation 1994 grammarLanguage     3910
+Pegasus AUTOCODE    1959 pl   3911
+Peridot   2022 pl   3912
+PL/S-II   1974 pl   3913
+PL/S 1968 pl   3914
+PL-X 1994 pl   3915
+Pλ⍵NK     2020 pl   3916
+Protosynthex   1964 pl   3917
+Pygmalion 1974 visual    3918
+QUIKTRAN  1964 pl   3919
+RAND-ABEL 1990 pl   3920
+RAPIDWRITE     1962 pl   3921
+SALE 1959 pl   3922
+SAUSTALL  1982 pl   3923
+shiv 2018 pl   3924
+Simple Stackless Lisp    2022 pl   3925
+Siri 1991 pl   3926
+sqlite-storage-format    2000 binaryDataFormat    3927
+Sue  1971 pl   3928
+SUMMER    1980 pl   3929
+SuperForth     2022 pl   3930
+SUPERMAC  1979 pl   3931
+SVL  1994 pl   3932
+SYMBAL    1972 pl   3933
+SymbMath  1999 pl   3934
+SYNTEX    1972 pl   3935
+TACTICS   1972 pl   3936
+TALE 1986 pl   3937
+TALL 1962 pl   3938
+TeLa 2000 pl   3939
+TEMPO     1995 pl   3940
+TOMAL     1975 pl   3941
+TRACE     1967 pl   3942
+TRANSCODE 1953 pl   3943
+TRANSLANG 1970 pl   3944
+TRIO 1990 pl   3945
+TRIPLE    2002 pl   3946
+TS   1988 pl   3947
+TWO-D     1971 pl   3948
+twoducks  2006 esolang   3949
+UC   1995 pl   3950
+VEX  1995 notation  3951
+Visual    2000 pl   3952
+WIZOR     1962 pl   3953
+Xmind Format   2007 xmlFormat 3954
+ycp  2005 pl   3955
+yoga 2020 pl   3956
+Zed  1978 pl   3957
+zish 2017 dataNotation   3958
+A51 Assembly   1988 assembly  3959
+Aardappel 1997 pl   3960
+ABC ALGOL 1973 pl   3961
+Actors    1971 pl   3962
+ADES II   1955 pl   3963
+ADES 1955 pl   3964
+ADLIB     1980 pl   3965
+AIDS 1970 pl   3966
+ALDES     1976 pl   3967
+ALLO 1995 pl   3968
+ALPS 1988 pl   3969
+Amber     1984 pl   3970
+AMBUSH    1971 pl   3971
+AMPPL-I   1968 pl   3972
+Amulet    1996 pl   3973
+And/Or    1980 pl   3974
+Andante   1980 pl   3975
+Andorra-I 1991 pl   3976
+ANS MUMPS 1977 pl   3977
+ANSI BASIC     1980 pl   3978
+APAR 1958 pl   3979
+APAREL    1969 pl   3980
+APL/Z80   1979 pl   3981
+APLGOL-2  1973 pl   3982
+APLGOL    1972 pl   3983
+APOSTLE   1996 pl   3984
+APPL/A    1995 pl   3985
+APPLOG    1986 pl   3986
+APROL     1998 pl   3987
+AQL  1977 pl   3988
+Aquarius Prolog     1989 pl   3989
+ARABLAN   1995 pl   3990
+ARCHI     1986 pl   3991
+Arjuna    1989 pl   3992
+ARK  2002 pl   3993
+Armani    1999 pl   3994
+ASF+SDF   1993 pl   3995
+ASPEN     1977 pl   3996
+associons 1972 pl   3997
+Asspegique     1985 pl   3998
+ASTLOG    1997 pl   3999
+ATOL 1979 pl   4000
+AUTASIM   1974 pl   4001
+AUTODRAFT 1965 pl   4002
+AUTOGRP   1972 pl   4003
+AUTOMAST  1966 pl   4004
+Avalon/Common LISP  1990 pl   4005
+B4Tran    1975 pl   4006
+BALG 1975 pl   4007
+BALM 1969 pl   4008
+BALSA     1998 pl   4009
+Baltík    1996 pl   4010
+Bartok    2001 pl   4011
+Basic PDP-1 Lisp    1963 pl   4012
+BASIL     1979 pl   4013
+BC NELIAC 1962 pl   4014
+BDL  1987 pl   4015
+BEDSOCS   1973 pl   4016
+BESYS     1958 pl   4017
+Beta-Prolog    1992 pl   4018
+BGRAF2    1975 pl   4019
+BHSL 1966 pl   4020
+Bigloo    1995 pl   4021
+BIOMOD    1970 pl   4022
+BIOSSIM   1978 pl   4023
+BLAZE     1985 pl   4024
+BLOOMS    1997 pl   4025
+BMD  1961 pl   4026
+Bob  1991 pl   4027
+BOIL 1998 pl   4028
+Booster   1989 pl   4029
+Borneo    1998 pl   4030
+Bounce    1994 pl   4031
+Boxer     1985 pl   4032
+BPL  1978 pl   4033
+Basic Petri Net Programming Notation    1992 pl   4034
+Brisk     1995 pl   4035
+BSML 1996 pl   4036
+BSP  1989 pl   4037
+BUGSYS    1964 pl   4038
+Butterfly Common LISP    1993 pl   4039
+ByteLisp  1965 pl   4040
+C Header Files 1972 headerLang     4041
+CABAL     1997 pl   4042
+Cactus    1998 pl   4043
+cado-systems-technical-information 1973 pl   4044
+CAGES     1973 pl   4045
+CAISYS    1973 pl   4046
+CAMAC     1979 pl   4047
+CAMIL     1978 pl   4048
+Cantor    1987 pl   4049
+Common Authentication Protocol Specification Language  1996 pl   4050
+Capsule   1981 pl   4051
+CASSANDRE 1967 pl   4052
+Catalysis 1998 pl   4053
+CAYLEY    1975 pl   4054
+CCEL 1993 pl   4055
+Cedar Fortran  1984 pl   4056
+CELIP     1990 pl   4057
+CELLSIM   1973 pl   4058
+Ceprol    1985 pl   4059
+CHAMP     1968 pl   4060
+CHARM++   1993 pl   4061
+Charrette Ada  1980 pl   4062
+CHARYBDIS 1967 pl   4063
+ChemTrains     1992 pl   4064
+Chronolog 1985 pl   4065
+ChronologMC    1996 pl   4066
+ChronologZ     1993 pl   4067
+cimfast   1991 pl   4068
+CIMS PL/I 1970 pl   4069
+CL-I 1960 pl   4070
+Clascal   1983 pl   4071
+Classic-Ada    1992 pl   4072
+Clear Language for Expressing Orders    1963 pl   4073
+CLeogo    1998 pl   4074
+CLEOPATRA 1973 pl   4075
+CLOVER    1996 pl   4076
+CLP* 1989 pl   4077
+CMN  1990 pl   4078
+COBLOC    1964 pl   4079
+CODIL     1970 pl   4080
+CogMap    1992 pl   4081
+COLASL    1962 pl   4082
+COLD-K    1989 pl   4083
+Complex-Prolog 1989 pl   4084
+Computer Compiler   1969 pl   4085
+COMSL     1970 pl   4086
+ConC 1991 pl   4087
+Concert/C 1993 pl   4088
+CONCUR    1981 pl   4089
+Concurrent Pascal   1972 pl   4090
+conGolog  1994 pl   4091
+ConMan    1988 pl   4092
+CONNIVER  1973 pl   4093
+ConstraintLisp 1992 pl   4094
+CONTRANS  1960 pl   4095
+COPAS     1981 pl   4096
+CORAL 64  1964 pl   4097
+Coral++   1993 pl   4098
+CORC 1963 pl   4099
+CosmicOS  2000 pl   4100
+COSMO     2001 pl   4101
+CQLF 1982 pl   4102
+CQL++     1992 pl   4103
+CSMP 1965 pl   4104
+CSP-OZ-DC 2002 pl   4105
+CSP-OZ    1997 pl   4106
+CSSA 1979 pl   4107
+Culler-Fried System 1961 pl   4108
+CuPit-2   1997 pl   4109
+cuscus    2019 pl   4110
+CypherText     1970 pl   4111
+D4   2001 queryLanguage  4112
+DAG  1989 pl   4113
+DAP-Algol 1985 pl   4114
+DartCVL   1995 pl   4115
+DATA-TEXT 1967 pl   4116
+DATAN     1966 pl   4117
+DEACON    1962 pl   4118
+DeBuMa    1988 pl   4119
+DEM  1996 pl   4120
+DESCRIPTRAN    1963 pl   4121
+DETAB/65  1964 pl   4122
+DETAB-X   1960 pl   4123
+DETAP     1965 pl   4124
+Deva 1993 pl   4125
+DFL  1983 pl   4126
+DIAMAG    1966 pl   4127
+DIGRAF    1977 pl   4128
+Diplans   1988 pl   4129
+Distributed Processes    1978 pl   4130
+DITRAN    1967 pl   4131
+DITROFF/FFORTID     1985 pl   4132
+DITROFF   1982 pl   4133
+DMAP 1975 pl   4134
+DOE Macsyma    1984 pl   4135
+DOLPHIN   1970 pl   4136
+DOWL 1993 pl   4137
+DPRL 1990 pl   4138
+DRL  1997 pl   4139
+DROL 2000 pl   4140
+DSL/90    1965 pl   4141
+DYSTAL    1965 pl   4142
+EAS-E     1983 pl   4143
+EASL 1966 pl   4144
+EASY ENGLISH   1968 pl   4145
+Eclectic CSP   2000 pl   4146
+ECT  1971 pl   4147
+Edinburgh LCF  1979 pl   4148
+EDSAC Initial Orders     1948 assembly  4149
+EDSIM     1977 pl   4150
+EDUCE*    1990 pl   4151
+EGS4 1985 pl   4152
+EL1  1970 pl   4153
+Ellie     1990 pl   4154
+ELMOL     1970 pl   4155
+Emily     1970 os   4156
+EPILOG    1981 pl   4157
+EQLog     1986 pl   4158
+EQUATE    1991 pl   4159
+ERROL     1983 pl   4160
+Ethereum Virtual Machine 2015 vm   4161
+Etude     1979 pl   4162
+FAC  1986 pl   4163
+FAD  1987 pl   4164
+FCPU 1970 pl   4165
+Fickle    2000 pl   4166
+FLENG++   1989 pl   4167
+flexbuffers    2014 idl  4168
+Flora     1995 pl   4169
+foogol    1985 pl   4170
+FORAL LP  1978 pl   4171
+FORAL     1975 pl   4172
+FORALL    1980 pl   4173
+Fork95    1995 pl   4174
+FORMS/3   1990 pl   4175
+Fortran 8x     1989 pl   4176
+FORTRAN CEP    1963 pl   4177
+Fortran D 1991 pl   4178
+FORTRAN II     1958 pl   4179
+Fortran M 1992 pl   4180
+FP2  1986 pl   4181
+FRAN 1997 pl   4182
+g-2  1992 pl   4183
+Gargoyle  1964 pl   4184
+GASP II   1967 pl   4185
+GAT  1959 pl   4186
+GaussFit  1986 pl   4187
+GCP  1985 pl   4188
+GDPL 1984 pl   4189
+Gedanken  1969 pl   4190
+Generic Haskell     2000 pl   4191
+GENTRAN 90     1990 pl   4192
+GENTRAN   1984 pl   4193
+GCC GIMPLE     2003 ir   4194
+gitignore 2005 configFormat   4195
+GKS  1983 pl   4196
+GLIDE     1977 pl   4197
+GLU  1995 pl   4198
+Glue-Nail 1991 pl   4199
+GPDS 1970 pl   4200
+GPGS 1977 pl   4201
+GPSS/360  1967 pl   4202
+GPSS FORTRAN   1976 pl   4203
+GQL  1980 pl   4204
+GRAD Assistant 1965 pl   4205
+GraphLog  1988 pl   4206
+GRAPHOS   1972 pl   4207
+Graqula   1993 pl   4208
+GROUPLOG  2000 pl   4209
+GSBL 1988 pl   4210
+GVL  1990 pl   4211
+GXL  2000 pl   4212
+Gypsy     1976 pl   4213
+Hank 1996 pl   4214
+Haskell#  1991 pl   4215
+HASL 1982 pl   4216
+HERAKLIT  1987 pl   4217
+Hermes    1990 pl   4218
+HiQ  1998 pl   4219
+HMSL 1980 pl   4220
+HOL  1985 pl   4221
+HOLCF     1994 pl   4222
+HP-PASCAL 1984 pl   4223
+HPRL 1982 pl   4224
+HSL  1991 pl   4225
+HSML 1998 pl   4226
+HTEL 1999 pl   4227
+HYPAC     1970 pl   4228
+Hyperflow 1993 pl   4229
+Hyperlisp 1971 pl   4230
+Hyperlog  1996 pl   4231
+HYTRAN    1963 pl   4232
+IAM  1968 pl   4233
+IB-Templog     1987 pl   4234
+IBM Logo  1983 pl   4235
+Integrated Civil Engineering System     1961 standard  4236
+ICETRAN   1965 pl   4237
+ICOT 1995 pl   4238
+IMP72     1972 pl   4239
+Industrial Modeling and Programming Language 2019 pl   4240
+INMAGIC   1983 pl   4241
+Inscan    1968 pl   4242
+INTERCELLAS    1977 pl   4243
+InterCONS 1995 pl   4244
+Interlisp-VAX  1981 pl   4245
+IPL-V     1957 pl   4246
+IQF  1975 pl   4247
+Isabelle-91    1991 pl   4248
+Isabelle/HOL   1997 pl   4249
+ISIS 1995 pl   4250
+ISPL 1971 pl   4251
+IVTRAN    1966 pl   4252
+JACAL     2008 pl   4253
+JavaScriptCore 2002 vm   4254
+jBC  1989 pl   4255
+JFugue    2002 pl   4256
+JMSL 1986 pl   4257
+JOSS II   1965 pl   4258
+JSyn 2010 pl   4259
+Juno 1985 pl   4260
+KAIL 1976 pl   4261
+Kaleidoquery   1998 pl   4262
+Kaleidoscope'90     1990 pl   4263
+Kaleidoscope'91     1991 pl   4264
+KEE  1984 pl   4265
+KEK-NODAL 1985 pl   4266
+kew  2004 pl   4267
+KeyKit    1995 pl   4268
+Kiev 2002 pl   4269
+King Kong 1991 pl   4270
+KL-ONE    1977 pl   4271
+KLIPA     1960 pl   4272
+KRL-0     1977 pl   4273
+KRS  1987 pl   4274
+KRYPTON   1983 pl   4275
+Kvikkalkul     2003 pl   4276
+Kylix     2000 pl   4277
+LABTRAN   1972 pl   4278
+Larch     1985 pl   4279
+LAURE     1989 pl   4280
+LCF  1972 pl   4281
+LCL  1991 pl   4282
+LDL1 1987 pl   4283
+LEGOL     1974 pl   4284
+Leogo     1997 pl   4285
+Leopard   2007 pl   4286
+LGDF 1986 pl   4287
+Libra     2020 pl   4288
+Lincoln Reckoner    1965 pl   4289
+Lingua Graphica     1992 pl   4290
+LiSEB     1994 pl   4291
+LISP A    1968 pl   4292
+LOCS 1965 pl   4293
+Logicon   1986 pl   4294
+LOGIST    1980 pl   4295
+Logres    1990 queryLanguage  4296
+LogScheme 1990 pl   4297
+Lola-2    1994 pl   4298
+LOTIS     1969 pl   4299
+LOTOS     1989 pl   4300
+LPL  1973 pl   4301
+LRLTRAN   1968 pl   4302
+Lucinda   1991 pl   4303
+M-LISP    1991 pl   4304
+MacAims   1968 pl   4305
+MACE 1989 pl   4306
+Machiavelli    1989 pl   4307
+Macro SPITBOL  1971 pl   4308
+Magma2    1984 pl   4309
+magritte  2019 pl   4310
+MALUS     1970 pl   4311
+ManuScript     2009 pl   4312
+MAP  1960 assembly  4313
+Marlais   1995 pl   4314
+Mary/2    1984 pl   4315
+MASIM     1985 pl   4316
+Mathsy    1980 pl   4317
+MATRIX PASCAL  1983 pl   4318
+MCOBOL    1980 pl   4319
+MDBS-QRS  1981 queryLanguage  4320
+MEDIC     1980 pl   4321
+Megalog   1991 pl   4322
+Mercury Programming System    1960 pl   4323
+Meroon    1991 pl   4324
+Meta-Assembler 1977 assembly  4325
+META/LISP 1970 pl   4326
+MetaML    1997 pl   4327
+METAPI    1967 pl   4328
+METASIM   1973 pl   4329
+METATEM   1989 pl   4330
+Micro-flowcharts    1959 pl   4331
+MICRODARE 1979 pl   4332
+microTAL  1981 pl   4333
+MiKe 2022 pl   4334
+Mini-ML   1986 pl   4335
+MINION    1989 pl   4336
+MINIVITAL 1974 pl   4337
+MINOPT    1998 pl   4338
+MIRAGER   1971 pl   4339
+Miranim   1985 pl   4340
+MIRFAC    1962 pl   4341
+Mizar     1973 pl   4342
+MLISP2    1972 pl   4343
+mmsearch  2001 pl   4344
+MOBL 1960 pl   4345
+MODCAP    1978 pl   4346
+MODLISP   1980 pl   4347
+MODSIM III     1996 pl   4348
+Modula-P  1992 pl   4349
+Modula/R  1983 pl   4350
+Modular Prolog 1992 pl   4351
+Molog     1987 pl   4352
+MORPHISM  1965 pl   4353
+MOUSE4    1978 pl   4354
+Moxie     1984 pl   4355
+MPGS 1972 pl   4356
+MRDB 1976 pl   4357
+MS2  1967 pl   4358
+MSG.84    1985 pl   4359
+muFP 1984 pl   4360
+Mul-T     1989 pl   4361
+Multigame 1994 pl   4362
+MUMS 1976 pl   4363
+MUNIN     1989 pl   4364
+MuSimp    1978 pl   4365
+MVL  1993 pl   4366
+NAPSS     1965 pl   4367
+NARPL     1989 pl   4368
+Nassi-Shneiderman charts 1972 pl   4369
+NSS  1999 binaryDataFormat    4370
+NDL  2007 pl   4371
+NEATER 2  1968 linter    4372
+Ness 1989 pl   4373
+Netform   1974 pl   4374
+Network Control Language 1978 pl   4375
+NeuronC   1992 pl   4376
+NFQL 1989 pl   4377
+NIKL 1986 pl   4378
+NOAH 1982 pl   4379
+Noodle    1993 pl   4380
+NOP-2     2001 pl   4381
+NPL  1963 pl   4382
+Numerica  1997 pl   4383
+Oaklisp   1986 pl   4384
+oasis-operating-system   1977 os   4385
+OBJ2 1984 pl   4386
+Objectcharts   1992 pl   4387
+ObjectWorld    1993 pl   4388
+ObjVProlog     1989 pl   4389
+OBSCURE   1985 pl   4390
+Occam 2   1987 pl   4391
+Octopus   1993 pl   4392
+O'Haskell 2002 pl   4393
+OLGA 1985 pl   4394
+OLI  1997 pl   4395
+OMNIMARK  1980 pl   4396
+OMNITAB 80     1980 pl   4397
+OOPAL     2002 pl   4398
+OpenMusic 2019 pl   4399
+OPS-3     1965 pl   4400
+OPS  1970 pl   4401
+OREGANO   1969 pl   4402
+Orlog     1992 pl   4403
+OSIRIS    1970 pl   4404
+OSL/2     1970 pl   4405
+Ottawa Euclid  1984 pl   4406
+Otter     1988 pl   4407
+OWL DL    2007 xmlFormat 4408
+P-Prolog  1986 pl   4409
+P-TAC     1989 pl   4410
+P3L  1998 pl   4411
+PACOL     1974 pl   4412
+PADL-1    1978 pl   4413
+PaiLisp   1986 pl   4414
+Palingol  1996 pl   4415
+PANCODE   1982 pl   4416
+PANON-1   1963 pl   4417
+PANON-1B  1965 pl   4418
+Parallel ELLPACK    1983 pl   4419
+Parallel Pascal     1984 pl   4420
+ParaLog_e 1997 pl   4421
+ParMod    1987 pl   4422
+Pascal Plus    1979 pl   4423
+Pascal-SC 1982 pl   4424
+PASION    1986 pl   4425
+PASRO     1985 pl   4426
+Path Pascal    1978 pl   4427
+PCN  1992 pl   4428
+PCOL 1986 pl   4429
+pC++ 1991 pl   4430
+Partial Differential Equation Language  1968 pl   4431
+PDL/Ada   1981 pl   4432
+PDL  1973 pl   4433
+Pebble    1984 pl   4434
+PEI  1994 pl   4435
+PEP  1984 pl   4436
+PFORT     1975 pl   4437
+Pfortran  1992 pl   4438
+pGOLOG    2000 pl   4439
+PHYSICTRAN     1971 pl   4440
+Pi Calculus    1991 pl   4441
+PICTOL    1975 pl   4442
+PICTUREBALM    1980 pl   4443
+PiLib     2002 pl   4444
+PL/EXUS   1973 pl   4445
+PLANIT    1967 pl   4446
+PLANNER-73     1973 pl   4447
+Playground     1989 pl   4448
+Pocket Smalltalk    1999 pl   4449
+POGOL     1973 pl   4450
+POLAC     1975 pl   4451
+Polylith  1983 pl   4452
+PolyP     1997 pl   4453
+PolyTOIL  1994 pl   4454
+POPSY     1986 pl   4455
+PORT-ALG  1973 pl   4456
+PRAXIS    1980 pl   4457
+PRESTO    1987 pl   4458
+Principle of sufficient reason     1975 pl   4459
+PRISM     1983 pl   4460
+Prisma Schema Language   2019 idl  4461
+PROCOL    1991 pl   4462
+PROGRES   1991 pl   4463
+Prolog-D-Linda 1990 pl   4464
+Prolog-ELF     1985 pl   4465
+Prolog III     1984 pl   4466
+Prolog/KR 1984 pl   4467
+Prolog-Linda   1989 pl   4468
+PROPLAN   1977 pl   4469
+PROTOS-L  1989 pl   4470
+PROW 1969 pl   4471
+pSather   1991 pl   4472
+PSG  1969 pl   4473
+PSL  1979 pl   4474
+PT   1983 pl   4475
+PUMPKIN   1974 pl   4476
+Q-GERT    1979 pl   4477
+QA4  1967 pl   4478
+QLISP     1988 pl   4479
+Qunity    2022 pl   4480
+Quty 1984 pl   4481
+rbasic    1985 pl   4482
+REC/SM    1980 pl   4483
+RECOL     1963 pl   4484
+REF-ARF   1970 pl   4485
+RefLisp   1988 pl   4486
+REGENT    1971 pl   4487
+Relationlog    2001 pl   4488
+RELFUN    1986 pl   4489
+RF-Maple  1984 pl   4490
+RHET 1990 pl   4491
+RIGAL     1987 pl   4492
+ROL  1996 pl   4493
+ROL2 1999 pl   4494
+Rosette   2000 pl   4495
+RT-ASLAN  1986 pl   4496
+RT-CDL    1989 pl   4497
+RT-Z 1999 pl   4498
+SAAL 1966 assembly  4499
+SAC-1     1967 pl   4500
+SAC-2     1969 pl   4501
+SARTEX    1985 pl   4502
+Sassy     1999 pl   4503
+SB-ONE    1990 pl   4504
+SCALPEL   1971 pl   4505
+SCHEMAL   1983 pl   4506
+SCIL-VP   1992 pl   4507
+Sclipting 2011 esolang   4508
+Scratchpad II  1980 pl   4509
+Scrimshaw 1993 pl   4510
+ScriptX   1995 pl   4511
+SectorC   2023 compiler  4512
+SEGRAS    1985 pl   4513
+SEMANOL   1969 pl   4514
+Seque     1988 pl   4515
+SEQUEL 2  1976 pl   4516
+Sequential Pascal   1970 pl   4517
+SESPOOL   1977 pl   4518
+SetLog    1991 pl   4519
+SEVAL     1981 pl   4520
+ShapeUp   1984 pl   4521
+Shared Prolog  1990 pl   4522
+SI Library     1998 pl   4523
+SIMAN IV  1990 pl   4524
+SIMCAL    1986 pl   4525
+SIMDIS    1985 pl   4526
+SIMFACTORY     1990 pl   4527
+SIML/I    1979 pl   4528
+SIMNET    1988 pl   4529
+SIMPAS    1980 pl   4530
+SIMUL     1973 pl   4531
+SIMULA 67 1967 pl   4532
+Sketchpad III  1966 pl   4533
+SL5  1975 pl   4534
+SLAM II   1980 pl   4535
+SLEUTH    1962 assembly  4536
+SLPL 1976 pl   4537
+SMALGOL   1961 pl   4538
+Small Euclid   1988 pl   4539
+SMALL-X   1985 pl   4540
+Smalltalk-76   1976 pl   4541
+Smalltalk-80   1980 pl   4542
+SMoLCS    1986 pl   4543
+SNOBAT    1976 pl   4544
+SNOOP     1988 pl   4545
+SOLMAR    1978 pl   4546
+SORCA     1983 pl   4547
+SPECL     1973 pl   4548
+spir-v    2015 ir   4549
+Symbolic Programming System   1959 pl   4550
+sqlar-format   2014 binaryDataFormat    4551
+SQURL     1981 pl   4552
+STAGE2    1970 pl   4553
+Standard Lisp  1979 pl   4554
+STAPLE    1975 pl   4555
+*Prolog   1989 pl   4556
+Static Typescript   2019 pl   4557
+StoneCutter    2020 grammarLanguage     4558
+STRCMACS  1977 pl   4559
+STREMA    1976 pl   4560
+STRESS    1963 pl   4561
+SubL 1989 pl   4562
+SURGE     1958 pl   4563
+taktentus 2015 esolang   4564
+VoxML     1998 pl   4565
+Very Tiny Language  1976 pl   4566
+wizml     1997 pl   4567
+Wolontis-Bell Interpreter     1955 pl   4568
+xl   1977 pl   4569
+XQL  1999 queryLanguage  4570
+3D Logo   1986 pl   4571
+ABLE 1981 pl   4572
+ADAM 1964 pl   4573
+ALPAK     1963 pl   4574
+APACHE    1961 pl   4575
+APL/HP    1986 pl   4576
+Arctic    1984 pl   4577
+ARTSPEAK  1974 pl   4578
+ASHMEDAI  1967 pl   4579
+ASPOL     1973 pl   4580
+Atomos    2006 pl   4581
+Aurora    1988 pl   4582
+AUTOLOFT  1962 pl   4583
+Automator 2005 pl   4584
+AUTOmatic PROgramming of Machine Tools  1961 pl   4585
+B-LINE    1968 pl   4586
+BACK 1988 pl   4587
+BaLinda Lisp   1996 pl   4588
+baltazar  1993 pl   4589
+Barrel    1980 pl   4590
+BASEBALL  1961 pl   4591
+BASEL     1968 pl   4592
+BEEF 1961 pl   4593
+Berkeley DB    1991 library   4594
+BETA Project   1961 grammarLanguage     4595
+Biferno   2003 pl   4596
+BIGMAC    1981 pl   4597
+bigWig format  2009 binaryDataFormat    4598
+BIGWIG    1998 pl   4599
+Birkbeck Assembly   1947 assembly  4600
+BLAZE 2   1989 pl   4601
+BrouHaHa  1987 pl   4602
+C flat    1991 pl   4603
+CafeObj   1997 pl   4604
+CAJOLE    1978 pl   4605
+CCal 1987 pl   4606
+CIRCAL    1985 pl   4607
+CLANGER   1995 pl   4608
+ClassiC   1998 pl   4609
+CLEAR     1976 pl   4610
+Coherent Parallel C 1988 pl   4611
+COL  1989 pl   4612
+COMFY     1997 pl   4613
+COMPUTEST 1964 pl   4614
+COMSKEE   1973 pl   4615
+Concurrent C++ 1988 pl   4616
+Concurrent Prolog   1983 pl   4617
+CONLAN    1980 pl   4618
+Connection Machine LISP  1986 pl   4619
+CONSIM    1977 pl   4620
+CONSTRAINTS    1978 pl   4621
+Consul    1981 pl   4622
+CST  1988 pl   4623
+CUBE 1992 pl   4624
+CUPID     1975 pl   4625
+DAMN 1970 pl   4626
+DEBL 1988 pl   4627
+DECLARE   1997 pl   4628
+DEL  1971 pl   4629
+Delirium  1991 pl   4630
+Delta Prolog   1984 pl   4631
+DIALOG    1966 pl   4632
+DICE 1991 pl   4633
+DIET 1975 pl   4634
+Dipe-R    2002 pl   4635
+DISC 1989 pl   4636
+DISPEL    1981 pl   4637
+DNA  1980 pl   4638
+$    1983 pl   4639
+DOPL 1982 pl   4640
+DUAL 1953 pl   4641
+Durra     1986 pl   4642
+Elegant   1987 pl   4643
+ELLPACK   1983 pl   4644
+EMMA 1999 pl   4645
+Eva  1990 pl   4646
+EXEL 1973 pl   4647
+Extended Pascal     1987 pl   4648
+FLIC 1987 pl   4649
+FlowNet   1993 protocol  4650
+FORK 1992 pl   4651
+FORTRANSIT     1956 pl   4652
+FRANK     1985 pl   4653
+Frenetic  2011 pl   4654
+Fresco    1993 pl   4655
+Galileo   1983 pl   4656
+GCLA II   1992 pl   4657
+GEM  1985 pl   4658
+GCC GENERIC    2003 ir   4659
+Gerald    1989 pl   4660
+GERMINAL  1974 pl   4661
+Glish     1993 pl   4662
+Golog     1993 pl   4663
+GOQL 1997 pl   4664
+GOSPEL    1977 pl   4665
+GPS  1957 pl   4666
+GPSS/85   1985 pl   4667
+Grapheasy 1975 pl   4668
+Green     1998 pl   4669
+GROOVE    1970 pl   4670
+Hancock   1999 pl   4671
+HARVEY    1972 pl   4672
+HELPER    1969 pl   4673
+henk 1997 pl   4674
+Hi-Visual 1992 pl   4675
+Holo 2001 pl   4676
+hoot-smalltalk 2018 pl   4677
+Hybrid    1987 pl   4678
+HyCom     1975 pl   4679
+Ibuki CL  1992 pl   4680
+ICML 2008 xmlFormat 4681
+ILU  1994 pl   4682
+ILX  2002 pl   4683
+IMAGE     1975 pl   4684
+imf  2008 textDataFormat 4685
+Ina Jo    1985 pl   4686
+INC  1987 pl   4687
+INFOLOG   1986 pl   4688
+INSIGHT   1983 pl   4689
+INTERACTIVE    1983 pl   4690
+ISAC 2003 pl   4691
+JavaML    2000 pl   4692
+JOSIE     1991 pl   4693
+Joyce     1987 pl   4694
+JOYCE+    1990 pl   4695
+JPL  1991 pl   4696
+JR   2004 pl   4697
+KATE 1979 pl   4698
+Keep It Short and Simple 1959 pl   4699
+KL1  1988 pl   4700
+Klaim     1997 pl   4701
+KRIS 1991 pl   4702
+LAMINA    1988 pl   4703
+Language for Class Description     1964 pl   4704
+LAP  1987 pl   4705
+LARIS     2000 pl   4706
+LASS 1982 pl   4707
+LDL  1984 pl   4708
+Lemick    2004 pl   4709
+LG   1969 pl   4710
+Lisptalk  1988 pl   4711
+LNF  1985 pl   4712
+LO   1990 pl   4713
+LOGAL     1977 pl   4714
+LOGLISP   1980 pl   4715
+LOGOL     1968 pl   4716
+LogoWriter     1986 pl   4717
+LOL  1994 queryLanguage  4718
+LOOPN++   2000 pl   4719
+LORE 1985 pl   4720
+Lucid representations    1991 pl   4721
+Lygon     1995 pl   4722
+MIT Algebraic Compiler   1957 pl   4723
+MADCAP    1960 pl   4724
+MADS 1964 pl   4725
+Magic Paper    1963 pl   4726
+MAPQUERY  1982 pl   4727
+MARSYAS   1970 pl   4728
+MAVIS     1992 pl   4729
+MELD 1989 pl   4730
+META/PLUS 1971 pl   4731
+MetaH     1988 pl   4732
+Microsoft Equation Editor     1993 application    4733
+Modula-2+ 1984 pl   4734
+Modula-3* 1993 pl   4735
+Morphe    1992 pl   4736
+MPSX 1978 pl   4737
+MUSYS     1969 pl   4738
+N-Prolog  1985 pl   4739
+Nail 1986 pl   4740
+NetBasic  1999 pl   4741
+Netscript 2016 pl   4742
+NIL  1983 pl   4743
+npy  2008 binaryDataFormat    4744
+NSL  1991 pl   4745
+NUA-Prolog     1991 pl   4746
+NUT  1986 pl   4747
+O    1986 pl   4748
+OFL  1995 pl   4749
+OLDAS     1968 pl   4750
+OLIVER    1976 pl   4751
+olog 1997 pl   4752
+OMAR 1999 pl   4753
+One-man-language    1977 pl   4754
+OOLP 1989 pl   4755
+OOPS 1986 pl   4756
+OpenAda   2000 pl   4757
+Orient84/K     1986 pl   4758
+Object-oriented Structured Query Language    1990 queryLanguage  4759
+P/CL 1984 pl   4760
+PACT IA   1957 pl   4761
+Paragon   1991 pl   4762
+Pascal-FC 1990 pl   4763
+PASCAL-I  1980 pl   4764
+Pascal-S  1975 pl   4765
+PHOCUS    1987 pl   4766
+PICASSO   1988 pl   4767
+PIE  1988 pl   4768
+PIN  1975 pl   4769
+PIT  1958 pl   4770
+PIXIN     1974 pl   4771
+PL/I-FORMAC    1968 pl   4772
+PL/LL     1983 pl   4773
+PL4  1974 pl   4774
+PLACA     1993 pl   4775
+POSE 1967 pl   4776
+PRIZ 1983 pl   4777
+ProFIT    1994 pl   4778
+Progol    1993 pl   4779
+PROPHET   1974 pl   4780
+proto-GNOSIS   1987 pl   4781
+ProVerif  2014 pl   4782
+Proxy     1992 pl   4783
+Py   1991 pl   4784
+python-cl-compiler  1991 compiler  4785
+QAS  1978 pl   4786
+QUADRIL   1976 pl   4787
+Quanta    2003 pl   4788
+Quick Macros   1997 pl   4789
+QUILT     1970 pl   4790
+RACK 1990 pl   4791
+RC++ 2001 pl   4792
+rdata-format   2000 binaryDataFormat    4793
+Real-Time Euclid    1986 pl   4794
+Rebus     1982 pl   4795
+Refined C 1984 pl   4796
+REL English    1975 pl   4797
+REL  1968 pl   4798
+Relix     1984 pl   4799
+Reuse Description Language    2005 pl   4800
+RoboTalk  1985 pl   4801
+ROSCOE    1979 pl   4802
+RUNCIBLE  1958 pl   4803
+RUSSELL   1970 pl   4804
+RUTH 1987 pl   4805
+SA   1977 pl   4806
+SALEM     1967 pl   4807
+Sampletalk     1991 pl   4808
+Scenic    2019 pl   4809
+SCOOP     1988 pl   4810
+SCREAMER  1993 pl   4811
+SEARCH    1973 pl   4812
+SESPATH   1985 pl   4813
+Seymour   1989 pl   4814
+SIDOPS+   1997 pl   4815
+SIGMA 76  1976 pl   4816
+SIMODULA  1988 pl   4817
+Sim++     1991 pl   4818
+Siprol    1980 pl   4819
+SKIL 1996 pl   4820
+SKY  2000 pl   4821
+SL   1988 pl   4822
+SLIPS     1984 pl   4823
+SLOG 1985 pl   4824
+Smalltalk/V    1986 pl   4825
+SmallVDM  1993 pl   4826
+SMART     1964 pl   4827
+SMSL 1995 pl   4828
+Symbolic Optimal Assembly Program  1955 assembly  4829
+Soar Markup Language     2014 xmlFormat 4830
+Spec 1990 pl   4831
+SPECOL    1968 pl   4832
+SPIL 1973 pl   4833
+SPLAW     1998 pl   4834
+SPRINT    1967 pl   4835
+SQUARE    1975 pl   4836
+SR   1988 pl   4837
+StreamIt  1992 pl   4838
+STRUDL    1965 pl   4839
+Unicode   1955 pl   4840
+Virt 1998 pl   4841
