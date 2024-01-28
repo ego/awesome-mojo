@@ -2147,3 +2147,4 @@ and [Helping Modular Humanize AI Through Brand](https://www.metalab.com/blog/hel
 * Your contributions are always welcome!
 * If you have any **question**, do not hesitate to contact me.
 * If you would like to participate in the initiative [Mojo🔥Driven Community](https://mojo-lang.dev), please contact me.
+* [Your help supporting this repository](https://github.com/ego/awesome-mojo/issues/1)
