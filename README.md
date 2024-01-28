@@ -88,6 +88,7 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* [Programming Language DataBase Research](lang/pldb.pub.md)
 * October 19, 2023 [Mojo🔥 is now available on Mac!](https://www.modular.com/blog/mojo-is-now-available-on-mac)
 [Use developer console](https://developer.modular.com/download)
 * [Chris Lattner: Future of Programming and AI | Lex Fridman Podcast #381](https://www.youtube.com/watch?v=pdJQ8iVTwj8)
@@ -656,6 +657,13 @@ hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/mul
 Benchmark 1: ./benchmarks/multibrot_set/multibrot_codon\
   Time (mean ± σ):     44184.7 µs ± 1142.0 µs    [User: 248773.9 µs, System: 72935.3 µs]\
   Range (min … max):   42963.8 µs … 46456.2 µs    10 runs
+
+
+```shell
+codon build --release -exe benchmarks/multibrot_set/multibrot_codon_par.codon -o benchmarks/multibrot_set/multibrot_codon_par
+
+hyperfine --warmup 10 -r 10 --time-unit=microsecond --export-json benchmarks/multibrot_set/multibrot_codon_par.json './benchmarks/multibrot_set/multibrot_codon_par'
+```
 
 
 ## Summary Mandelbrot Set
@@ -1946,6 +1954,45 @@ let s: String = txt.to_string()
 
 
 [libc implementation](https://github.com/crisadamo/mojo-libc/blob/main/Libc.mojo)
+
+## Pointer data
+
+```python
+from DType import DType
+from Buffer import Buffer
+from Pointer import Pointer
+from String import String, chr
+
+let hello = "hello"
+let pointer = Pointer(hello.data())
+
+print("variant 1")
+var result = String()
+for i in range(len(hello)):
+    result += chr(pointer.bitcast[Int8]().offset(i).load().to_int())
+print(result)
+
+print("variant 2")
+print(StringRef(hello.data()))
+
+print("variant 3")
+print(StringRef(pointer.address))
+
+print("variant 4")
+let pm: Pointer[__mlir_type.`!pop.scalar<si8>`] = Pointer(hello.data())
+print(StringRef(pm.address))
+
+print("variant 5")
+print(String(pointer.address))
+
+print("variant 6")
+let x = Buffer[8, DType.int8](pointer)
+let array = x.simd_load[10](0)
+var result = String()
+for i in range(len(array)):
+    result += chr(array[i].to_int())
+print(result)
+```
 
 
 ## Code share from Mojo Playground
