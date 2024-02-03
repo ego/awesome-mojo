@@ -88,6 +88,9 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 
 [new]
 
+* [Simple and fast HTTP framework for Mojo! 🔥 Perfect for building web services and simple APIs. For Mojicians](https://github.com/saviorand/lightbug_http)
+* [LLama implementations benchmarking framework](https://github.com/tairov/lamatune)
+* [Automated Python to Mojo code translation](https://github.com/msaelices/py2mojo)
 * [Programming Language DataBase Research](lang/pldb.pub.md)
 * October 19, 2023 [Mojo🔥 is now available on Mac!](https://www.modular.com/blog/mojo-is-now-available-on-mac)
 [Use developer console](https://developer.modular.com/download)
