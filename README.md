@@ -2147,8 +2147,28 @@ and [Helping Modular Humanize AI Through Brand](https://www.metalab.com/blog/hel
 
 ## Python hints
 
-Python problem with PostgreSQL Enum type.
-We need names and values as strings, and we need to maintain their order.
+Todat I would like to tell story about Python Enum problem.
+As a software engineers we often meet it in a WEB.
+Assume we have this DataBase Schema (PostgreSQL) with status `enum`:
+
+```SQL
+CREATE TYPE public.status_type AS ENUM (
+    'FIRST',
+    'SECOND'
+);
+```
+
+In a Python code we need names and values as strings (assume we use GraphQL with some ENUM type for our frontend side), and we need to maintain their order and have ability to compare these enums:
+
+`order2.status > order1.status > 'FIRST'`
+
+So it's a problem for most of common languages =) but we can use a `little-known` Python feature and override enum class method: `__new__`.
+
+- But Why?
+- Hm..
+  To assosiate each enum value with its INDEX! `MALE -> 1`, `FEMALE -> 2`, like PostgreSQL do.
+- and How?
+- Just COUNT its members with the `len` function!
 
 ```Python
 import enum
@@ -2162,8 +2182,10 @@ class BaseUniqueSortedEnum(enum.Enum):
 
     def __new__(cls, *args, **kwargs):
         obj = object.__new__(cls)
-        obj.index = len(cls.__members__) + 1
+        obj.index = len(cls.__members__) + 1  # This code line is a piece of advice, an insight and a tip!
         return obj
+
+    # and then boring Python's magic methods as usual...
 
     def __hash__(self) -> int:
         return hash(
@@ -2184,17 +2206,20 @@ class BaseUniqueSortedEnum(enum.Enum):
 
 
 class Dog(BaseUniqueSortedEnum):
+    # THIS ORDER MATTERS!
     BLOODHOUND = "BLOODHOUND"
     WEIMARANER = "WEIMARANER"
     SAME = "SAME"
 
 
-class Cat(BaseUniqueSortedEnum):
+class Cat(BaseUniqueSortedEnum)
+    # THIS ORDER MATTERS!
     BRITISH = "BRITISH"
     SCOTTISH = "SCOTTISH"
     SAME = "SAME"
 
 
+# and some tests
 assert Dog.BLOODHOUND < Dog.WEIMARANER
 assert Dog.BLOODHOUND <= Dog.WEIMARANER
 assert Dog.BLOODHOUND != Dog.WEIMARANER
@@ -2223,6 +2248,10 @@ Dog.SAME > Cat.SAME
 Dog.SAME >= Cat.SAME
 Dog.SAME != Cat.SAME
 ```
+
+The end of the story.
+and use this `Python ENUM` **insight** for your well-codding!
+
 
 # Contributing
 
