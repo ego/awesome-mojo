@@ -1,6 +1,6 @@
 # Awesome Mojo🔥
 
-![Mojo](img/mojo.png)
+![Mojo](img/mojo.png) 
 
 Mojo 🔥 — a new programming language for all developers, AI/ML scientists and software engineers.
 
