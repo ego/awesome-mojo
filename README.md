@@ -4,6 +4,10 @@
 
 Mojo 🔥 — a new programming language for all developers, AI/ML scientists and software engineers.
 
+# **AUGUST 18, 2026**
+[Mojo🔥 is now open source!](https://www.modular.com/blog/mojo-open-source)
+# **For the last four years, Mojo has been developed with an open community, but a closed compiler. Last week Mojo hit 1.0 (with source stability), and today we’re excited to open source the entire compiler and toolchain.**
+
 A curated list of awesome Mojo🔥 code, problem-solving, solution, and in future libraries, frameworks, software and
 resources.
 
@@ -87,6 +91,20 @@ other [languages](https://en.wikipedia.org/wiki/History_of_programming_languages
 # News
 
 [new]
+
+* AUGUST 18, 2026
+[Mojo🔥 is now open source!](https://www.modular.com/blog/mojo-open-source)
+
+We are happy to announce that the Mojo🔥 language is now fully open source under the Apache 2.0 license (with LLVM exceptions)!
+The source code for the Mojo compiler, tooling, and everything else you need to build the language are now available in modular GitHub repository.
+
+For the last four years, Mojo has been developed with an open community, but a closed compiler. Last week Mojo hit 1.0 (with source stability), and today we’re excited to open source the entire compiler and toolchain.
+
+```bash
+git clone https://github.com/modular/modular.git
+cd modular
+./bazelw run --config=build-mojo KGEN:mojo -- run hello.mojo
+```
 
 * Github now auto-detects Mojo code 🔥!
 
